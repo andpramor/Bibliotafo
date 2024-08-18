@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Eliminar {{ genre.genre_name }}
+{% endblock title%}
+
+{% block content %}
+<p>
+    <form method="post">
+        {% csrf_token %}
+        <p>
+            <b>¿Confirma que desea borrar el género "{{ genre.genre_name }}"?</b>
+        </p>
+        <input type="submit" value="Confirmar">
+    </form>
+</p>
+<p>
+    <a href="{% url 'genres' %}"><button>Volver al listado</button></a>
+</p>
+{% endblock content %}

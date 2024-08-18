@@ -1,0 +1,35 @@
+.custom-toast .p-toast {
+    max-width: 90%;
+    width: auto;
+    word-wrap: break-word;
+}
+
+.cover-container {
+    width: 10vw;
+    height: 15vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+.cover {
+    aspect-ratio: 0.65;
+    width: 100%;
+    object-fit: cover;
+}
+
+.title-link:hover {
+    cursor: pointer;
+}
+
+.fromMd {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .fromMd {
+        display: table-cell;
+    }
+}

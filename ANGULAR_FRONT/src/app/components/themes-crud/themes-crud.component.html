@@ -1,0 +1,134 @@
+<div class="card">
+    <p-toast class="custom-toast"/>
+    <p-toolbar styleClass="mb-4 gap-2">
+        <ng-template pTemplate="left">
+            <p-button 
+                pRipple 
+                severity="success" 
+                label="Añadir" 
+                icon="pi pi-plus" 
+                class="mr-2" 
+                (click)="openNew()" />
+            <p-button 
+                pRipple 
+                severity="danger" 
+                icon="pi pi-trash" 
+                (click)="deleteSelectedThemes()" 
+                [disabled]="!selectedThemes || !selectedThemes.length" />
+        </ng-template>
+    </p-toolbar>
+
+    <p-table
+        #dt
+        [value]="themes"
+        [rows]="10"
+        [paginator]="true"
+        (onPage)="onPageChange()"
+        [globalFilterFields]="['theme_name']"
+        [tableStyle]="{ 'min-width': '7rem' }"
+        [(selection)]="selectedThemes"
+        [rowHover]="true"
+        dataKey="id"
+        currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} temas"
+        [showCurrentPageReport]="true"
+    >
+        <ng-template pTemplate="caption">
+            <div class="flex align-items-center justify-content-between">
+                <h5 class="m-0">TEMAS</h5>
+                <span class="p-input-icon-left">
+                    <i class="pi pi-search"></i>
+                    <input
+                        pInputText 
+                        type="text" 
+                        (input)="onGlobalFilter($event, dt)" 
+                        placeholder="Buscar..." />
+                </span>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="header">
+            <tr>
+                <th style="width: 4rem">
+                    <p-tableHeaderCheckbox />
+                </th>
+                <th pSortableColumn="theme_name" style="min-width:15rem">
+                    Tema <p-sortIcon field="theme_name" />
+                </th>
+                <th style="width: 10rem"></th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-theme>
+            <tr>
+                <td>
+                    <p-tableCheckbox [value]="theme" />
+                </td>
+                <td>
+                    {{ theme.theme_name }}
+                </td>
+                <td>
+                    <p-button 
+                        pRipple 
+                        icon="pi pi-pencil" 
+                        class="mr-2" 
+                        [rounded]="true" 
+                        [outlined]="true" 
+                        severity="success" 
+                        (click)="editTheme(theme)" />
+                    <p-button 
+                        pRipple 
+                        icon="pi pi-trash" 
+                        severity="danger" 
+                        [rounded]="true" 
+                        [outlined]="true" 
+                        (click)="deleteTheme(theme)" />
+                </td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="summary">
+            <div class="flex align-items-center justify-content-between">
+                Hay un total de {{ themes ? themes.length : 0 }} temas.
+            </div>
+        </ng-template>
+    </p-table>
+
+    <p-dialog 
+        [(visible)]="themeDialog" 
+        [style]="{ 'width': '40vw', 'min-width': '400px' }" 
+        header="Detalles del tema" 
+        position="top"
+        [modal]="true" 
+        styleClass="p-fluid">
+            <ng-template pTemplate="content">
+                <img src="assets/favicon.ico" height="33" class="block mx-auto">
+                <div class="field">
+                    <label for="name">Nombre</label>
+                    <input 
+                        type="text" 
+                        pInputText 
+                        id="name" 
+                        [(ngModel)]="theme.theme_name" 
+                        required 
+                        autofocus />
+                    <small class="p-error" *ngIf="submitted && !theme.theme_name">
+                        El nombre es obligatorio.
+                    </small>
+                </div>
+            </ng-template>
+
+            <ng-template pTemplate="footer">
+                <p-button 
+                    pRipple 
+                    label="Cancelar" 
+                    icon="pi pi-times" 
+                    [text]="true" 
+                    (click)="hideDialog()" />
+                <p-button 
+                    pRipple 
+                    label="Guardar" 
+                    icon="pi pi-check" 
+                    [text]="true" 
+                    (click)="saveTheme()" />
+            </ng-template>
+    </p-dialog>
+
+    <p-confirmDialog [style]="{ width: '450px', 'min-width': '90vw' }" position="top" />
+</div>

@@ -1,0 +1,313 @@
+<div class="card">
+    <p-toast class="custom-toast"/>
+    <p-toolbar *ngIf="userRol=='manager'" styleClass="mb-4 gap-2">
+        <ng-template pTemplate="left">
+            <p-button 
+                pRipple 
+                severity="success" 
+                label="Añadir" 
+                icon="pi pi-plus" 
+                class="mr-2" 
+                (click)="openNew()" />
+            <p-button 
+                pRipple 
+                severity="danger" 
+                icon="pi pi-trash" 
+                (click)="deleteSelectedBooks()" 
+                [disabled]="!selectedBooks || !selectedBooks.length" />
+        </ng-template>
+    </p-toolbar>
+
+    <app-loader *ngIf="!loaded"></app-loader>
+
+    <p-table
+        *ngIf="loaded"
+        #dt
+        [value]="books"
+        [rows]="10"
+        [paginator]="true"
+        (onPage)="onPageChange()"
+        [globalFilterFields]="['title', 'authorsString', 'price']"
+        [tableStyle]="{ 'min-width': '7rem' }"
+        [(selection)]="selectedBooks"
+        [rowHover]="true"
+        dataKey="id"
+        currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} libros"
+        [showCurrentPageReport]="true"
+    >
+        <ng-template pTemplate="caption">
+            <div class="flex align-items-center justify-content-between">
+                <h5 class="m-0">LIBROS</h5>
+                <span class="p-input-icon-left">
+                    <i class="pi pi-search"></i>
+                    <input
+                        pInputText 
+                        type="text" 
+                        (input)="onGlobalFilter($event, dt)" 
+                        placeholder="Buscar..." />
+                </span>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="header">
+            <tr>
+                <th *ngIf="userRol=='manager'" style="width: 4rem">
+                    <p-tableHeaderCheckbox />
+                </th>
+                <th class="fromMd">
+                    Precio
+                </th>
+                <th style="width: 16vw;">
+                    Portada
+                </th>
+                <th pSortableColumn="title" style="min-width:10rem">
+                    Título <p-sortIcon field="title" />
+                </th>
+                <th style="min-width:10rem" class="fromMd">
+                    Autores
+                </th>
+                <th *ngIf="userRol=='manager'" style="width: 10rem"></th><!-- Editar y borrar -->
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-book>
+            <tr>
+                <td *ngIf="userRol=='manager'">
+                    <p-tableCheckbox [value]="book" />
+                </td>
+                <td class="cursor-pointer fromMd" [routerLink]="['/libro/', book.id]">
+                    {{ book.price | currency : 'EUR' }}
+                </td>
+                <td class="cursor-pointer" [routerLink]="['/libro/', book.id]">
+                    <a class="cover-container shadow-4">
+                        <img 
+                        *ngIf="book.cover"
+                        [src]="base_url + book.cover" 
+                        [alt]="book.title"
+                        class="cover"
+                        />
+                        <img 
+                        *ngIf="!book.cover"
+                        src="assets/defaultCover.png"
+                        [alt]="book.title"
+                        class="cover"
+                        />
+                    </a>
+                </td>
+                <td class="cursor-pointer font-bold" [routerLink]="['/libro/', book.id]">
+                    <span>
+                        <a class="text-color font-bold no-underline">
+                            {{ book.title }}
+                        </a>
+                    </span>
+                    <span class="text-xs font-normal inline md:hidden title-link">{{ book.price | currency: 'EUR' }}</span>
+                </td>
+                <td class="cursor-pointer fromMd" [routerLink]="['/libro/', book.id]">
+                    <div *ngFor="let author of book.authornames">
+                        <a class="font-bold text-color no-underline">
+                            {{ author.author_name }}
+                        </a>
+                    </div>
+                </td>
+                <td *ngIf="userRol=='manager'" style="white-space: nowrap;"><!-- Editar y borrar -->
+                    <p-button 
+                        pRipple 
+                        icon="pi pi-pencil" 
+                        class="mr-2" 
+                        [rounded]="true" 
+                        [outlined]="true" 
+                        severity="success" 
+                        (click)="editBook(book)" />
+                    <p-button 
+                        pRipple 
+                        icon="pi pi-trash" 
+                        severity="danger" 
+                        [rounded]="true" 
+                        [outlined]="true" 
+                        (click)="deleteBook(book)" />
+                </td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="summary">
+            <div class="flex align-items-center justify-content-between">
+                Hay un total de {{ books ? books.length : 0 }} libros.
+            </div>
+        </ng-template>
+    </p-table>
+
+    <p-dialog 
+        [(visible)]="bookDialog" 
+        header="Detalles del libro" 
+        position="top"
+        [modal]="true" 
+        styleClass="p-fluid"
+        [style]="{ 'width': '90vw', 'max-width': '600px',  'height': '80dvh' }">
+        <ng-template pTemplate="content">
+            <img src="assets/favicon.ico" height="33" class="block mx-auto">
+            <div class="field">
+                <label for="title">Título</label>
+                <input 
+                    type="text" 
+                    pInputText 
+                    id="title" 
+                    name="title"
+                    [(ngModel)]="book.title" 
+                    required 
+                    maxlength="50" />
+                <small class="p-error" *ngIf="submitted && !book.title">
+                    El título es obligatorio.
+                </small>
+            </div>
+            <div class="field">
+                <label for="isbn">ISBN</label>
+                <input 
+                    type="text" 
+                    pInputText 
+                    id="isbn" 
+                    name="isbn"
+                    [(ngModel)]="book.ISBN" 
+                    required 
+                    pattern="[0-9]{13}" />
+                <small class="p-error" *ngIf="submitted && (!book.ISBN)">
+                    El ISBN es obligatorio (debe tener 13 caracteres).
+                </small>
+            </div>
+            <div class="field">
+                <label for="authors">Autores</label>
+                <p-multiSelect 
+                    id="authors" 
+                    name="authors"
+                    [(ngModel)]="book.authors" 
+                    [options]="authorOptions"
+                    placeholder="Seleccione autores">
+                </p-multiSelect>
+            </div>
+            <div class="field">
+                <label for="publisher">Editorial</label>
+                <p-dropdown 
+                    id="publisher" 
+                    name="publisher"
+                    [(ngModel)]="book.publisher" 
+                    [options]="publisherOptions"
+                    placeholder="Seleccione editorial">
+                </p-dropdown>
+            </div>
+            <div class="field">
+                <label for="publication_date">Fecha de publicación</label>
+                <p-calendar 
+                    id="publication_date" 
+                    name="publication_date"
+                    [(ngModel)]="book.publication_date" 
+                    dateFormat="dd/mm/yy">
+                </p-calendar>
+            </div>
+            <div class="field">
+                <label for="synopsis">Sinopsis</label>
+                <textarea 
+                    id="synopsis" 
+                    name="synopsis"
+                    pInputTextarea 
+                    [(ngModel)]="book.synopsis">
+                </textarea>
+            </div>
+            <div class="field">
+                <label for="genres">Géneros</label>
+                <p-multiSelect 
+                    id="genres" 
+                    name="genres"
+                    [(ngModel)]="book.genres" 
+                    [options]="genreOptions"
+                    placeholder="Seleccione géneros">
+                </p-multiSelect>
+            </div>
+            <div class="field">
+                <label for="themes">Temas</label>
+                <p-multiSelect 
+                    id="themes" 
+                    name="themes"
+                    [(ngModel)]="book.themes" 
+                    [options]="themeOptions"
+                    placeholder="Seleccione temas">
+                </p-multiSelect>
+            </div>
+            <div class="field">
+                <label for="stock">Stock</label>
+                <input 
+                    type="number" 
+                    pInputText 
+                    id="stock" 
+                    name="stock"
+                    [(ngModel)]="book.stock">
+            </div>
+            <div class="field">
+                <label for="price">Precio</label>
+                <input 
+                    type="number" 
+                    pInputText 
+                    id="price" 
+                    name="price"
+                    [(ngModel)]="book.price" 
+                    step="0.01">
+            </div>
+            <div class="field">
+                <label for="style">Estilo</label>
+                <p-dropdown 
+                    id="style" 
+                    name="style"
+                    [(ngModel)]="book.style" 
+                    [options]="styleOptions"
+                    placeholder="Seleccione estilo">
+                </p-dropdown>
+            </div>
+            <div class="field">
+                <label for="cover" class="mt-2">Portada</label>
+                    <div class="card flex justify-content-center gap-3">
+                        <input 
+                            id="disabled-input" 
+                            type="text"
+                            pInputText 
+                            [disabled]="true" 
+                            placeholder="Relación de aspecto recomendada: 1.5:1"
+                            [(ngModel)]="cover_name" 
+                        />
+                        <p-fileUpload 
+                            *ngIf="!cover"
+                            mode="basic" 
+                            name="cover" 
+                            chooseIcon="pi pi-upload" 
+                            accept="image/*" maxFileSize="50000000" 
+                            (onSelect)="onFileUpload($event)" 
+                            [auto]="true" 
+                            chooseLabel="Elegir"
+                            />
+                        <p-button
+                            *ngIf="cover"
+                            pRipple 
+                            icon="pi pi-trash" 
+                            severity="info" 
+                            [rounded]="false" 
+                            [outlined]="true" 
+                            label="Limpiar"
+                            (click)="cleanPic()"
+                            class="col-4" />
+                    </div>
+            </div>
+        </ng-template>
+        
+
+        <ng-template pTemplate="footer">
+                <p-button 
+                    pRipple 
+                    label="Cancelar" 
+                    icon="pi pi-times" 
+                    [text]="true" 
+                    (click)="hideDialog()" />
+                <p-button 
+                    pRipple 
+                    label="Guardar" 
+                    icon="pi pi-check" 
+                    [text]="true" 
+                    (click)="saveBook()" />
+        </ng-template>
+    </p-dialog>
+
+    <p-confirmDialog [style]="{ width: '450px','max-width':'90vw' }" position="top" />
+</div>

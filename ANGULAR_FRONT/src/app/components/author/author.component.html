@@ -1,0 +1,101 @@
+<div class="surface-50 border-round p-5">
+    <h1 class="text-center">    
+        {{ author.author_name }}
+    </h1>
+    <div class="grid justify-content-center mt-5">
+        <div class="col-12 my-5">
+            <div class="grid justify-content-around">
+                <div class="col-12 xl:col-5 flex justify-content-center xl:justify-content-end">
+                    <div class="photo-container shadow-4">
+                        <img 
+                        *ngIf="author.author_photo"
+                        [src]="base_url + author.author_photo" 
+                        [alt]="author.author_name"
+                        class="photo"
+                        />
+                        <img 
+                        *ngIf="!author.author_photo"
+                        src="assets/defaultCover.png"
+                        [alt]="author.author_name"
+                        class="photo"
+                        />
+                    </div>
+                </div>
+                <div class="col-12 xl:col-5 flex justify-content-center xl:justify-content-start mt-3 md:mt-0">
+                    {{ author.biography }}
+                </div>
+            </div>
+        </div>
+        <div class="card col-12">
+            <div class="grid grid-nogutter justify-content-around">
+                <div *ngFor="let book of books; let first = first" class="col-12 sm:col-5 shadow-4 border-round my-3 p-3">
+                    <div class="grid justify-content-center">
+                        <div class="col-8 md:col-4 cover-container">
+                            <img class="cover border-round" [src]="base_url + book.cover" [alt]="book.title" />
+                        </div>
+                        <div class="col-12 md:col-8 book-info-container">
+                            <div class="book-info">
+                                <span class="font-medium text-color text-sm">{{ book.ISBN }}</span>
+                                <div class="text-lg font-medium text-900 mt-2">{{ book.title }}</div>
+                                <span class="font-italic text-secondary text-sm synopsis">{{ book.synopsis }}</span>
+                            </div>
+                            <div class="book-tools flex justify-content-end">
+                                <p-button *ngIf="userRol=='client' || userRol=='staff' || userRol=='manager' " label="Añadir al carrito" [raised]="true" severity="help" (onClick)="open(book)"/>
+                                <p-button label="Ver más" [raised]="true" severity="info" class="ml-5" [routerLink]="['/libro/', book.id]"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p-dialog 
+    [(visible)]="saleDialog" 
+    [style]="{ 'width': '90vw', 'max-width': '600px', 'height': '30dvh', 'min-height': '300px' }"
+    header="Añadir al carrito" 
+    position="top"
+    [modal]="true" 
+    styleClass="p-fluid">
+        <ng-template pTemplate="content">
+            <img src="assets/favicon.ico" height="33" class="block mx-auto">
+            <div *ngIf="book.stock > 0" class="flex-auto mr-3">
+                <label for="unidades">Unidades <small>(stock: {{book.stock}})</small></label>
+                <p-inputNumber 
+                    inputId="unidades" 
+                    [(ngModel)]="saleItem.units"
+                    value="1"
+                    [min]="1"
+                    [max]="book.stock"
+                    class="mt-3" /> 
+            </div>
+            <div *ngIf="book.stock == 0" class="flex-auto mr-3 text-color font-bold text-center mt-5">
+                Lo sentimos, no queda stock.
+            </div>
+        </ng-template>
+
+        <ng-template pTemplate="footer">
+            <p-button 
+                *ngIf="book.stock > 0"
+                pRipple 
+                label="Cancelar" 
+                icon="pi pi-times" 
+                [text]="true" 
+                (click)="close()" />
+            <p-button 
+                *ngIf="book.stock > 0"
+                pRipple 
+                label="Añadir" 
+                icon="pi pi-check" 
+                [text]="true" 
+                (click)="addItem()" />
+            <p-button 
+                *ngIf="book.stock == 0"
+                pRipple 
+                label="De acuerdo" 
+                icon="pi pi-times" 
+                [text]="true" 
+                (click)="close()" />
+        </ng-template>
+</p-dialog>

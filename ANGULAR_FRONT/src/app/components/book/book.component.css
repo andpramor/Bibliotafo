@@ -1,0 +1,25 @@
+.custom-toast .p-toast {
+    max-width: 90%;
+    width: auto;
+    word-wrap: break-word;
+}
+
+.enlace:hover {
+    cursor: pointer;
+}
+
+.cover-container {
+    width: 20vw;
+    height: 30vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+.cover {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

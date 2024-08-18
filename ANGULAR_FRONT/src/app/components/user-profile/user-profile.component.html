@@ -1,0 +1,208 @@
+<p-toast class="custom-toast"/>
+<div *ngIf="own || status == 'yes' " class="surface-50 border-round p-5">
+    <div class="grid justify-content-center">
+        <div class="col-12 my-5">
+            <div class="grid justify-content-around mb-5">
+                <h1 class="col-12 text-center">{{ myUser.username }}</h1>
+                <div class="col-12 flex justify-content-center">
+                    <div *ngIf="myUser.profile_picture" class="photo-container shadow-4">
+                        <img 
+                        [src]="base_url + myUser.profile_picture" 
+                        [alt]="myUser.username"
+                        class="photo"
+                        />
+                    </div>
+                </div>
+                <!-- Libros fav -->
+                <div *ngIf="myUser.rol == 'client'" class="col-12 lg:col-5 pb-5">
+                    <h2 class="text-center">Mis libros favoritos</h2>
+                    <div class="grid justify-content-around">
+                        <div *ngFor="let fav of favourites" class="col-12 md:col-5 xl:col-3 flex justify-content-center">
+                            <a class="cover-container" [routerLink]="['/libro/', fav.book]">
+                                <img src="{{base_url + 'media/' + fav.cover}}" alt="{{fav.book_title}}" class="cover">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Reseñas y valoraciones -->
+                <div *ngIf="myUser.rol == 'client'" class="col-12 lg:col-5 flex align-items-center justify-content-around surface-100 my-5 py-5 border-round">
+                    <p-button
+                        type="button" 
+                        pRipple 
+                        [outlined]="true"
+                        label="Mis reseñas"
+                        severity="info"
+                        [outlined]="true"
+                        [routerLink]="['/comentarios/usuario/' + myUser.id]" />
+                    <p-button
+                        type="button" 
+                        pRipple 
+                        [outlined]="true"
+                        label="Mis valoraciones"
+                        severity="info"
+                        [outlined]="true"
+                        [routerLink]="['/valoraciones/usuario/' + myUser.id]" />
+                </div>
+            </div>
+            <!-- Amistades -->
+            <div *ngIf="own && myUser.rol == 'client' " class="grid justify-content-center surface-100 border-round gap-5 pb-4">
+                <h2 class="col-12 text-center">Amistades</h2>
+
+                <div *ngIf="friends.length > 0" class="col-8 shadow-4 border-round surface-50">
+                    <div class="font-bold text-color text-center my-3">Mis amigos</div>
+                    <div *ngFor="let friendship of friends" class="mt-4 text-center grid justify-content-center">
+                        <p-button
+                            type="button" 
+                            pRipple 
+                            (click)="profile(friendship.friend.id)"
+                            label={{friendship.friend.username}}
+                            severity="help"
+                            class="col" />
+                        <p-button
+                            icon="pi pi-times"
+                            label="Eliminar"
+                            [rounded]="true"
+                            severity="danger"
+                            size="small"
+                            class="ml-3"
+                            [outlined]="true"
+                            class="col"
+                            (click)="deleteFriendship(friendship)" />
+                    </div>
+                </div>
+                <div *ngIf="sentFriends.length > 0" class="col-8 shadow-4 border-round surface-50">
+                    <div class="font-bold text-color text-center my-3">Peticiones enviadas</div>
+                    <div *ngFor="let friendship of sentFriends" class="mt-4 text-center grid justify-content-center">
+                        <p-button
+                            type="button" 
+                            pRipple 
+                            (click)="profile(friendship.friend.id)"
+                            label={{friendship.friend.username}}
+                            severity="info"
+                            [outlined]="true"
+                            class="col" />
+                        <p-button
+                            icon="pi pi-times"
+                            label="Cancelar"
+                            [rounded]="true"
+                            severity="danger"
+                            size="small"
+                            class="ml-3"
+                            [outlined]="true"
+                            class="col"
+                            (click)="cancel(friendship)" />
+                        
+                    </div>
+                </div>
+                <div *ngIf="receivedFriends.length > 0" class="col-8 shadow-4 border-round surface-50">
+                    <div class="font-bold text-color text-center my-3">Solicitudes recibidas</div>
+                    <div *ngFor="let friendship of receivedFriends" class="mt-4 text-center grid justify-content-center">
+                        <p-button
+                            type="button" 
+                            pRipple 
+                            (click)="profile(friendship.friend.id)"
+                            label={{friendship.friend.username}}
+                            severity="warning"
+                            [outlined]="true"
+                            class="col" />
+                        <div class="col">
+                            <p-button
+                                icon="pi pi-check"
+                                label="Aceptar"
+                                [rounded]="true"
+                                severity="success"
+                                size="small"
+                                class="mx-3"
+                                [outlined]="true"
+                                (click)="accept(friendship)" />
+                            <p-button
+                                icon="pi pi-times"
+                                label="Rechazar"
+                                [rounded]="true"
+                                severity="danger"
+                                size="small"
+                                [outlined]="true"
+                                (click)="reject(friendship)" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="own" class="flex justify-content-center">
+        <p-button 
+            type="button" 
+            pRipple 
+            (click)="deleteUser()" 
+            label="Eliminar mi cuenta" 
+            severity="danger" />
+    </div>
+    <div *ngIf="status == 'yes' " class="flex justify-content-center">
+        <p-button 
+            type="button" 
+            pRipple 
+            (click)="deleteOut()" 
+            label="Eliminar amigo" 
+            severity="danger" />
+    </div>
+</div>
+
+<!-- Pedir amistad -->
+<div *ngIf="!own && status == 'no' " class="surface-50 border-round">
+    <div class="p-5 grid justify-content-center">
+        <div class="col-12 text-center text-color font-bold">
+            {{myUser.username}}
+        </div>
+        <p-button
+            type="button" 
+            label="Pedir amistad"
+            pRipple 
+            (click)="ask()"
+            severity="help"
+            class="col-12 text-center" />
+    </div>
+</div>
+
+<!-- Se ha enviado solicitud -->
+<div *ngIf="status == 'sent' " class="surface-50 border-round">
+    <div class="p-5 grid justify-content-center">
+        <div class="col-12 text-center text-color font-bold">
+            {{myUser.username}}
+        </div>
+        <p-button
+            type="button" 
+            label="Cancelar petición"
+            pRipple 
+            (click)="cancelOut()"
+            severity="danger"
+            class="col-12 text-center" />
+    </div>
+</div>
+
+<!-- Se ha recibido solicitud -->
+<div *ngIf="status == 'received' " class="surface-50 border-round">
+    <div class="p-5 grid justify-content-center">
+        <div class="col-12 text-center text-color font-bold">
+            {{myUser.username}}
+        </div>
+        <p-button
+            type="button" 
+            label="Aceptar petición"
+            pRipple 
+            (click)="acceptOut()"
+            severity="success"
+            class="col-12 text-center" />
+        <p-button
+            type="button" 
+            label="Ignorar petición"
+            pRipple 
+            (click)="ignoreOut()"
+            severity="danger"
+            class="col-12 text-center" />
+    </div>
+</div>
+
+
+
+<p-confirmDialog [style]="{ width: '450px', 'max-width': '90vw' }" position="top"/>

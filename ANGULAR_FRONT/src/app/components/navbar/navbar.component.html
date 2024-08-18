@@ -1,0 +1,47 @@
+<div class="card">
+    <p-menubar [model]="itemsNav">
+        <ng-template pTemplate="start">
+            <a class="flex align-items-center p-menuitem-link px-2 ml-2" [routerLink]="['']">
+                <p-avatar size="large" image="assets/favicon.ico"></p-avatar>
+            </a>
+        </ng-template>
+        <ng-template pTemplate="item" let-item let-root="root">
+            <a pRipple class="flex align-items-center p-menuitem-link" [routerLink]="[item.route]">
+                <span [class]="item.icon" style="color: darkcyan; font-size: large;"></span>
+                <span class="ml-2">{{ item.label }}</span>
+                <!-- Si hay notificaciones -->
+                <p-badge *ngIf="item.badge" [ngClass]="{ 'ml-auto': !root, 'ml-2': root }" [value]="item.badge" />
+                <!-- Si hay sub-menú -->
+                <i *ngIf="item.items" [ngClass]="['pi', root ? 'pi-angle-down ml-2' : 'pi-angle-right ml-auto']"></i>
+            </a>
+        </ng-template>
+        <ng-template pTemplate="end">
+            <div class="flex align-items-center gap-2 mr-2">
+                <p-button
+                    *ngIf="!isLoggedIn"
+                    label="Regístrate"
+                    [outlined]="true"
+                    [routerLink]="['cuenta']" />
+                <app-login *ngIf="!isLoggedIn"></app-login>
+                <app-logout *ngIf="isLoggedIn" [ngStyle]="{'cursor': 'pointer'}"></app-logout>
+                <span *ngIf="isLoggedIn" class="card flex justify-content-center">
+                    <p-menu #menu [model]="itemsPic" [popup]="true" class="">
+                        <ng-template pTemplate="item" let-item>
+                            <ng-container *ngIf="item.isLogoutComponent; else menuItem">
+                                <app-logout [item]="item" (click)="handleLogoutClick($event)"></app-logout>
+                            </ng-container>
+                            <ng-template #menuItem>
+                                <a [routerLink]="item.route" class="p-menuitem-link">
+                                    <span class="ml-2">{{ item.label }}</span>
+                                    <span [class]="item.icon" class="ml-auto"></span>
+                                </a>
+                            </ng-template>
+                        </ng-template>
+                    </p-menu>
+                    <p-avatar size="xlarge" *ngIf="hasProfilePic" (click)="menu.toggle($event)" image={{profilePicUrl}} shape="circle" ariaLabel="menu, profile pic" class="hoverAvatar"/>
+                    <p-avatar size="xlarge" *ngIf="!hasProfilePic" (click)="menu.toggle($event)" image="assets/defaultProfilePic.png" shape="circle" ariaLabel="menu, profile pic" class="hoverAvatar"/>
+                </span>
+            </div>
+        </ng-template>
+    </p-menubar>
+</div>

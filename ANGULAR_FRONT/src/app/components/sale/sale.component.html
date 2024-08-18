@@ -1,0 +1,22 @@
+<div class="surface-50 border-round p-5">
+    <h2 class="text-center"> {{getFormattedDate(sale.sale_date)}} </h2>
+
+    <button *ngIf="userRol == 'manager' || userRol == 'staff' " class="mb-3">
+        Link al perfil del comprador ({{sale.buyer}}) si lo hay (añadir el nombre).
+    </button>
+
+    <div class="mb-3" *ngIf="userRol == 'manager' ">Vendedor: {{sale.seller}} (añadir el nombre).</div>
+
+    <div class="grid justify-content-around">
+        <div *ngFor="let item of sale.sale_items" class="grid justify-content-around col-12 lg:col-5 text-color no-underline mt-3 cursor-pointer shadow-4 border-round hover:surface-100 p-3" [routerLink]="['/libro/', item.book]">
+            <div *ngIf="item.cover" class="col-12 lg:col-5 cover-container">
+                <img class="cover border-round" [src]="base_url + item.cover" [alt]="item.book_title" />
+                </div>
+            <div class="col-12 lg:col-5">
+                <div class="font-bold">{{item.book_title}}.</div>
+                <div class="text-sm mt-3">Unidades: {{item.units}}.</div>
+                <div class="text-sm mt-3">Coste total: {{item.cost}}€.</div>
+            </div>
+        </div>
+    </div>
+</div>

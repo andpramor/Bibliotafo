@@ -1,0 +1,205 @@
+[
+    {
+        "model": "shop.theme",
+        "pk": 1,
+        "fields": {
+          "theme_name": "Manipulación genética"
+        }
+      },
+      {
+        "model": "shop.theme",
+        "pk": 2,
+        "fields": {
+          "theme_name": "Tecnología avanzada y sociedad"
+        }
+      },
+      {
+        "model": "shop.theme",
+        "pk": 3,
+        "fields": {
+          "theme_name": "Guerra civil"
+        }
+      },
+      {
+          "model": "shop.theme",
+          "pk": 4,
+          "fields": {
+            "theme_name": "Enemies to lovers"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 5,
+          "fields": {
+            "theme_name": "Segunda Guerra Mundial"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 6,
+          "fields": {
+            "theme_name": "Pandemia"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 7,
+          "fields": {
+            "theme_name": "Cyberpunk"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 8,
+          "fields": {
+            "theme_name": "Apocalipsis zombi"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 9,
+          "fields": {
+            "theme_name": "Colonización espacial"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 10,
+          "fields": {
+            "theme_name": "Distopía"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 11,
+          "fields": {
+            "theme_name": "Realidad virtual"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 12,
+          "fields": {
+            "theme_name": "Viaje en el tiempo"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 13,
+          "fields": {
+            "theme_name": "Conspiración global"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 14,
+          "fields": {
+            "theme_name": "Aventura arqueológica"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 15,
+          "fields": {
+            "theme_name": "Intriga política"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 16,
+          "fields": {
+            "theme_name": "Mundo post-apocalíptico"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 17,
+          "fields": {
+            "theme_name": "Amor prohibido"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 18,
+          "fields": {
+            "theme_name": "Rebelión contra el gobierno"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 19,
+          "fields": {
+            "theme_name": "Desastre natural"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 20,
+          "fields": {
+            "theme_name": "Invasión extraterrestre"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 21,
+          "fields": {
+            "theme_name": "Experimento científico fallido"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 22,
+          "fields": {
+            "theme_name": "Supervivencia en la naturaleza"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 23,
+          "fields": {
+            "theme_name": "Amistad improbable"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 24,
+          "fields": {
+            "theme_name": "Robótica avanzada"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 25,
+          "fields": {
+            "theme_name": "Secuestro y rescate"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 26,
+          "fields": {
+            "theme_name": "Mercenarios en conflicto"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 27,
+          "fields": {
+            "theme_name": "Inteligencia artificial dominante"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 28,
+          "fields": {
+            "theme_name": "Rebelión de las máquinas"
+          }
+        },
+        {
+          "model": "shop.theme",
+          "pk": 29,
+          "fields": {
+            "theme_name": "Extracción de recursos en otros planetas"
+          }
+        }
+]

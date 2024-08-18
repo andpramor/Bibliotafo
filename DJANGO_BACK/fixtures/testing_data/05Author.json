@@ -1,0 +1,227 @@
+[
+  {
+    "model": "shop.author",
+    "pk": 1,
+    "fields": {
+      "author_name": "Patrick Rothfuss",
+      "biography": "Patrick Rothfuss es el autor de El nombre del viento (Plaza & Janés, 2009), el fulgurante debut literario y primer volumen de la Crónica del Asesino de Reyes que lo consagró como fenómeno editorial y lo convirtió en un hito de la fantasía internacional. La novela, que cuenta con traducciones a treinta y cinco idiomas y elogios apasionados por parte de los lectores y de los críticos, obtuvo el premio Quill al mejor libro de literatura fantástica en 2007 y lleva vendidos diez millones de ejemplares en todo el mundo. Le siguió El temor de un hombre sabio (Plaza & Janés, 2011), la segunda entrega de la trilogía, que se posicionó en los primeros puestos de las listas de más vendidos desde la primera semana en las librerías. A este fascinante universo literario también se han unido las novelas cortas La música del silencio (Plaza & Janés, 2014), ilustrada por Marc Simonetti, y El estrecho sendero entre deseos (Plaza & Janés, 2024), ilustrada por Nate Taylor. Por su maestría como narrador y la originalidad de sus historias, la crítica ha equiparado a Rothfuss con grandes escritores como J. R. R. Tolkien, Ursula K. Le Guin y George R. R. Martin. Patrick Rothfuss vive en Wisconsin y, aparte de dedicarse a la escritura, dirige Worldbuilders, una organización benéfica con fines humanitarios.",
+      "author_photo": "testing_data/author_patrickrothfuss.jpg"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 2,
+    "fields": {
+        "author_name": "J.K. Rowling",
+        "biography": "J.K. Rowling, nacida el 31 de julio de 1965 en Yate, Gloucestershire, Inglaterra, es una de las escritoras más exitosas y conocidas del mundo. Su fama mundial proviene de la serie de libros 'Harry Potter', que sigue las aventuras del joven mago Harry y sus amigos en la escuela de magia Hogwarts. El primer libro, 'Harry Potter y la piedra filosofal', se publicó en 1997 y rápidamente se convirtió en un fenómeno global. La serie de Harry Potter consta de siete libros que han vendido más de 500 millones de copias y se han traducido a numerosos idiomas. Las novelas también se adaptaron en una exitosa serie de películas, aumentando aún más la popularidad de Rowling. La serie ha ganado múltiples premios y ha tenido un impacto significativo en la cultura popular, inspirando una generación de jóvenes lectores. Además de 'Harry Potter', Rowling ha escrito libros para adultos, incluyendo 'Una vacante imprevista' (2012) y la serie de novelas de detectives 'Cormoran Strike' bajo el seudónimo Robert Galbraith. Su estilo de escritura se caracteriza por su rica imaginación, detallados mundos ficticios y personajes profundamente desarrollados.",
+        "author_photo": "testing_data/author_jkrowling.jpg"
+    }
+  },
+  {
+      "model": "shop.author",
+      "pk": 3,
+      "fields": {
+          "author_name": "George R.R. Martin",
+          "biography": "George R. R. Martin, nacido el 20 de septiembre de 1948 en Bayonne, Nueva Jersey, es un renombrado escritor y guionista estadounidense, famoso por su serie de novelas de fantasía épica 'Canción de Hielo y Fuego'. Desde joven, Martin mostró una gran pasión por la escritura, vendiendo sus primeras historias de monstruos a otros niños del vecindario. Estudió periodismo en la Universidad Northwestern y, tras graduarse, trabajó como periodista y profesor antes de dedicarse por completo a la literatura. En los años 70, Martin comenzó a publicar relatos cortos en diversas revistas de ciencia ficción y fantasía, ganando varios premios Hugo y Nebula. Su primer éxito como novelista llegó con 'Muerte de la luz' (1977), pero fue en los años 90 cuando alcanzó la fama mundial con 'Juego de Tronos' (1996), el primer libro de la serie 'Canción de Hielo y Fuego'. La complejidad de su trama, la profundidad de sus personajes y el enfoque realista de la fantasía política le valieron a Martin una legión de seguidores y numerosos elogios críticos. La popularidad de 'Canción de Hielo y Fuego' se disparó aún más con la adaptación televisiva de HBO, 'Game of Thrones', que se emitió desde 2011 hasta 2019. Aunque la serie superó a los libros en términos de cronología, Martin ha continuado trabajando en las novelas restantes de la serie, prometiendo a sus seguidores que 'Vientos de Invierno' y 'Sueño de Primavera' completarán la saga. Además de su trabajo literario, Martin ha sido guionista y productor en varias series de televisión, incluyendo 'La Bella y la Bestia'. Es conocido por su estilo detallado y su disposición a romper con las convenciones del género de fantasía. Martin vive en Santa Fe, Nuevo México, donde continúa escribiendo y participando en proyectos relacionados con su vasto y querido universo ficticio.",
+          "author_photo": "testing_data/author_georgerrmartin.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 4,
+      "fields": {
+          "author_name": "J.R.R. Tolkien",
+          "biography": "J.R.R. Tolkien, nacido el 3 de enero de 1892 en Bloemfontein, Sudáfrica, es uno de los escritores más influyentes en la literatura fantástica. Es conocido principalmente por sus obras 'El Hobbit' (1937) y 'El Señor de los Anillos' (1954-1955), que han dejado una marca indeleble en el género de fantasía.|nTolkien se trasladó a Inglaterra en su infancia y estudió en la Universidad de Oxford, donde más tarde se convirtió en profesor de anglosajón. Durante su vida académica, Tolkien desarrolló una profunda pasión por las lenguas y las mitologías, lo que se reflejó en la creación de la Tierra Media, un mundo ficticio lleno de historia, lenguas y culturas propias. 'El Hobbit', originalmente escrito como un cuento para sus hijos, y 'El Señor de los Anillos', una épica en tres volúmenes, narran la lucha entre el bien y el mal en la Tierra Media. Estas obras no solo han cautivado a lectores de todas las edades, sino que también han inspirado numerosas adaptaciones cinematográficas y literarias, consolidando a Tolkien como el 'padre de la fantasía moderna'. Tolkien falleció el 2 de septiembre de 1973 en Bournemouth, Inglaterra, dejando un legado duradero a través de sus escritos y su impacto en la literatura de fantasía. Su detallada construcción de mundos y su habilidad para tejer historias épicas continúan inspirando a escritores y lectores en todo el mundo.",
+          "author_photo": "testing_data/author_jrrtolkien.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 5,
+      "fields": {
+          "author_name": "Stephen King",
+          "biography": "Stephen King, nacido el 21 de septiembre de 1947 en Portland, Maine, es uno de los autores más prolíficos y exitosos de la literatura contemporánea, conocido principalmente por sus obras de terror, suspense y ciencia ficción. Criado en condiciones modestas por su madre soltera después de que su padre abandonara a la familia, King mostró un temprano interés por la escritura, publicando relatos cortos en fanzines mientras aún estaba en la escuela. Asistió a la Universidad de Maine, donde estudió inglés y escribió una columna para el periódico universitario. El éxito llegó a King con la publicación de su primera novela, 'Carrie' (1974), que cuenta la historia de una adolescente con poderes telequinéticos. El libro fue un éxito inmediato, tanto crítica como comercialmente, y marcó el inicio de una carrera prolífica. Desde entonces, King ha escrito más de 60 novelas y 200 relatos cortos, muchos de los cuales han sido adaptados al cine y la televisión, incluyendo obras emblemáticas como 'El resplandor' (1977), 'It' (1986) y 'Misery' (1987). El estilo de King se caracteriza por su capacidad para combinar lo sobrenatural con los horrores cotidianos, creando personajes profundamente humanos en situaciones extraordinarias. Sus historias a menudo se ambientan en pequeñas ciudades de Maine, lo que añade una atmósfera familiar y aterradora a sus relatos. Además de sus obras de terror, King ha explorado otros géneros con gran éxito, como en 'Los cuerpos' (1982) y 'La milla verde' (1996), mostrando su versatilidad y profundidad como escritor. A lo largo de su carrera, King ha recibido numerosos premios y reconocimientos, incluyendo la Medalla Nacional de las Artes de Estados Unidos y el Premio Bram Stoker por su destacada contribución al género de terror. A pesar de su éxito, King ha mantenido una conexión cercana con sus lectores, a menudo compartiendo detalles de su vida personal y su proceso creativo. Vive en Bangor, Maine, con su esposa Tabitha, también escritora, y continúa escribiendo y publicando nuevas obras, manteniéndose como una figura central en la literatura contemporánea.",
+          "author_photo": "testing_data/author_stephenking.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 6,
+      "fields": {
+          "author_name": "Agatha Christie",
+          "biography": "Agatha Christie, nacida el 15 de septiembre de 1890 en Torquay, Inglaterra, es una de las autoras más queridas y leídas en el género de la novela de misterio y crimen. Conocida como la 'Reina del Crimen', Christie escribió 66 novelas de detectives y 14 colecciones de cuentos, además de ser autora de la obra de teatro más larga de la historia, 'La ratonera'. Su talento para crear tramas intrincadas y personajes memorables la ha convertido en un icono literario cuyas obras han sido traducidas a múltiples idiomas y adaptadas en diversas formas de medios. Christie creció en un ambiente acomodado y recibió una educación en casa antes de asistir a diversas escuelas en París. Durante la Primera Guerra Mundial, trabajó como enfermera voluntaria, una experiencia que le proporcionó un conocimiento profundo de los venenos, algo que luego utilizaría con gran efecto en sus novelas. En 1920, publicó su primera novela, 'El misterioso caso de Styles', que presentó al mundo a uno de sus personajes más famosos, el detective belga Hercule Poirot. Poirot, junto con la detective amateur Miss Marple, se convirtieron en pilares de su obra y protagonistas de muchas de sus historias más conocidas. El estilo de Christie se caracteriza por su habilidad para construir misterios complejos con soluciones sorprendentes, a menudo desafiando al lector a resolver el enigma antes del clímax revelador. Sus novelas como 'Asesinato en el Orient Express' (1934) y 'Diez negritos' (1939) son ejemplos magistrales de su destreza narrativa y han dejado una huella perdurable en la literatura de misterio. A lo largo de su carrera, Christie recibió numerosos premios y honores, incluyendo ser nombrada Dama del Imperio Británico en 1971. La vida personal de Christie también tuvo momentos de misterio y drama, incluyendo su famosa desaparición en 1926, que resultó en una búsqueda masiva antes de ser encontrada en un hotel bajo un nombre falso. Aunque nunca explicó públicamente las circunstancias de su desaparición, el incidente solo añadió a su mística. Christie falleció el 12 de enero de 1976, dejando un legado que sigue fascinando a los lectores y espectadores alrededor del mundo. Su obra continúa siendo una referencia en el género de la novela de detectives, manteniendo a los lectores al borde de sus asientos con cada vuelta de página.",
+          "author_photo": "testing_data/author_agathachristie.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 7,
+      "fields": {
+          "author_name": "Isaac Asimov",
+          "biography": "Isaac Asimov, nacido el 2 de enero de 1920 en Petrovichi, Rusia, y emigrado a los Estados Unidos a la edad de tres años, es uno de los escritores más prolíficos y respetados en el campo de la ciencia ficción y la divulgación científica. Su familia se estableció en Brooklyn, Nueva York, donde Asimov creció y desarrolló un temprano interés por la lectura y la escritura. Asimov obtuvo un título en química de la Universidad de Columbia y, posteriormente, un doctorado en bioquímica, y pasó gran parte de su carrera como profesor universitario en la Universidad de Boston. Asimov es más conocido por sus obras de ciencia ficción, especialmente por sus series 'Fundación' y 'Robot'. La serie 'Fundación', que comenzó con la novela 'Fundación' (1951), es una epopeya galáctica que explora el declive y la caída de un vasto imperio intergaláctico, y se considera una de las obras maestras del género. La serie 'Robot', que incluye cuentos como 'Yo, Robot' (1950), presenta las Tres Leyes de la Robótica, un conjunto de principios diseñados para regular el comportamiento de los robots y que han influido profundamente en la forma en que la cultura popular y la literatura imaginan la inteligencia artificial. Además de su ficción, Asimov escribió extensivamente sobre temas científicos y técnicos, haciendo accesibles conceptos complejos a los lectores no especializados. Su capacidad para explicar la ciencia de manera clara y entretenida lo convirtió en un popularizador científico de renombre. Entre sus más de 500 libros, se incluyen ensayos, guías, y textos de divulgación que abarcan desde la física y la biología hasta la historia y la literatura. La influencia de Asimov se extiende más allá de la literatura. Sus ideas sobre la robótica y la inteligencia artificial han tenido un impacto duradero en el desarrollo de la tecnología y la ética de la IA. Asimov recibió numerosos premios a lo largo de su vida, incluyendo varios Premios Hugo y Nebula, y fue honrado con el título de Gran Maestro de la Ciencia Ficción por la Asociación de Escritores de Ciencia Ficción de América. Isaac Asimov falleció el 6 de abril de 1992, pero su legado perdura a través de sus obras que continúan inspirando y educando a nuevas generaciones. Su combinación de imaginación futurista y rigor científico ha dejado una marca indeleble en la ciencia ficción y la divulgación científica, cimentándolo como una figura clave en ambos campos.",
+          "author_photo": "testing_data/author_isaacasimov.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 8,
+      "fields": {
+          "author_name": "Arthur Conan Doyle",
+          "biography": "Arthur Conan Doyle, nacido el 22 de mayo de 1859 en Edimburgo, Escocia, es universalmente conocido como el creador del icónico detective Sherlock Holmes. Doyle, hijo de padres irlandeses, recibió su educación en varias instituciones jesuitas antes de estudiar medicina en la Universidad de Edimburgo. Fue durante sus años universitarios que comenzó a escribir historias cortas para complementar sus ingresos, publicando su primer relato en una revista en 1879. En 1887, Doyle publicó 'Estudio en escarlata', la primera novela que presentó al mundo a Sherlock Holmes y su fiel amigo, el Dr. John Watson. Este trabajo no solo marcó el inicio de una serie que redefiniría el género de la novela de detectives, sino que también estableció muchos de los tropos y convenciones que ahora son comunes en la literatura de misterio. La aguda observación y el uso de la lógica deductiva de Holmes, junto con el detallado retrato de la Londres victoriana, capturaron la imaginación del público y cimentaron la reputación de Doyle como un maestro narrador. Además de las aventuras de Sherlock Holmes, que incluyen títulos célebres como 'El sabueso de los Baskerville' (1902) y 'El signo de los cuatro' (1890), Doyle escribió extensamente en otros géneros. Sus obras abarcan desde la ciencia ficción, con la serie del Profesor Challenger, comenzando con 'El mundo perdido' (1912), hasta novelas históricas y obras de teatro. Sin embargo, su fama siempre estuvo indisolublemente ligada a Holmes, a pesar de sus esfuerzos por diversificar su producción literaria. Doyle también tuvo una vida activa fuera de la escritura. Participó en campañas de justicia social, defendió a personas injustamente condenadas y mostró un profundo interés en el espiritismo y lo sobrenatural, especialmente después de la muerte de varios familiares cercanos durante la Primera Guerra Mundial. Este interés lo llevó a escribir numerosos tratados y artículos sobre el tema, aunque sus creencias en lo paranormal a menudo fueron recibidas con escepticismo por el público y la comunidad científica. Arthur Conan Doyle falleció el 7 de julio de 1930 en Crowborough, Inglaterra. Su legado perdura no solo a través de sus vastas contribuciones literarias, sino también en la continua popularidad de Sherlock Holmes, cuyas historias han sido adaptadas innumerables veces en cine, televisión y teatro. La figura de Holmes sigue siendo un símbolo perdurable de ingenio y perspicacia, testimonio del genio creativo de Doyle.",
+          "author_photo": "testing_data/author_arthurconandoyle.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 9,
+      "fields": {
+          "author_name": "Mark Twain",
+          "biography": "Mark Twain, cuyo nombre real era Samuel Langhorne Clemens, nació el 30 de noviembre de 1835 en Florida, Missouri, y se convirtió en uno de los escritores más queridos y reconocidos de la literatura estadounidense. Creció en Hannibal, una pequeña ciudad a orillas del río Mississippi, que más tarde serviría de inspiración para muchos de sus trabajos. Twain dejó la escuela a los 12 años tras la muerte de su padre y comenzó a trabajar como aprendiz de impresor, antes de convertirse en piloto de un barco de vapor en el Mississippi, una experiencia que marcó profundamente su vida y obra. El debut literario de Twain llegó con la publicación de su cuento 'La célebre rana saltarina del condado de Calaveras' en 1865, que le otorgó fama nacional. Sin embargo, fueron sus novelas 'Las aventuras de Tom Sawyer' (1876) y 'Las aventuras de Huckleberry Finn' (1884) las que consolidaron su estatus como un gigante de la literatura. Estos libros no solo ofrecen una vívida representación de la vida en el río Mississippi, sino que también abordan temas profundos como la amistad, la moralidad y las injusticias raciales, estableciendo a Twain como un crítico social perspicaz y adelantado a su tiempo. Twain era conocido por su estilo narrativo humorístico y su aguda observación de la naturaleza humana. Sus trabajos a menudo mezclaban una sátira mordaz con una profunda compasión por sus personajes, reflejando tanto las alegrías como las hipocresías de la sociedad estadounidense de su época. Además de sus famosas novelas, escribió numerosos ensayos, cuentos y artículos periodísticos, convirtiéndose en una figura prominente en el mundo literario y en una voz influyente en temas sociales y políticos. A lo largo de su vida, Twain experimentó tanto éxitos como dificultades personales y financieras. Sus inversiones fallidas lo llevaron a la bancarrota, pero logró recuperarse gracias a su incansable labor como conferenciante y escritor. A pesar de sus problemas económicos, Twain mantuvo su ingenio y espíritu crítico hasta el final de sus días. Falleció el 21 de abril de 1910 en Redding, Connecticut. El legado de Mark Twain perdura no solo en sus obras literarias, sino también en su impacto cultural. Es considerado el 'padre de la literatura estadounidense' y su influencia se extiende a través de generaciones de escritores y lectores. Sus novelas, especialmente 'Las aventuras de Huckleberry Finn', siguen siendo leídas y estudiadas por su estilo distintivo y su enfoque valiente de los problemas sociales. Twain sigue siendo una figura central en la historia literaria de Estados Unidos, celebrada por su genio narrativo y su compromiso con la verdad y la justicia.",
+          "author_photo": "testing_data/author_marktwain.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 10,
+      "fields": {
+          "author_name": "Ernest Hemingway",
+          "biography": "Ernest Hemingway, nacido el 21 de julio de 1899 en Oak Park, Illinois, fue uno de los escritores más influyentes del siglo XX. Conocido por su estilo de escritura conciso y directo, Hemingway se convirtió en una figura central del movimiento literario conocido como la Generación Perdida. Sus experiencias como conductor de ambulancias durante la Primera Guerra Mundial y como corresponsal de guerra en la Guerra Civil Española y la Segunda Guerra Mundial influyeron profundamente en su obra. Hemingway escribió muchas novelas que se consideran clásicos de la literatura estadounidense, incluyendo 'El sol también se levanta' (1926), 'Adiós a las armas' (1929), 'Por quién doblan las campanas' (1940) y 'El viejo y el mar' (1952), esta última le valió el Premio Pulitzer. En 1954, recibió el Premio Nobel de Literatura por su influencia en la narrativa contemporánea y por su dominio del arte del cuento. A lo largo de su vida, Hemingway luchó con problemas de salud física y mental, incluyendo la depresión, que finalmente lo llevaron a su suicidio el 2 de julio de 1961. Su legado perdura a través de sus obras, que continúan siendo leídas y estudiadas por su estilo distintivo y su exploración de temas como el coraje, la pérdida y la humanidad.",
+          "author_photo": "testing_data/author_ernesthemingway.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 11,
+      "fields": {
+          "author_name": "Jane Austen",
+          "biography": "Jane Austen, nacida el 16 de diciembre de 1775 en Steventon, Hampshire, Inglaterra, es una de las novelistas más queridas y reconocidas de la literatura inglesa. Su obra se caracteriza por su ingeniosa crítica social y su aguda observación de la vida cotidiana de la burguesía rural inglesa. Austen escribió seis novelas completas, entre las que destacan 'Orgullo y prejuicio' (1813), 'Sentido y sensibilidad' (1811), 'Emma' (1815) y 'Mansfield Park' (1814). Austen vivió una vida relativamente tranquila, nunca se casó y pasó la mayor parte de su vida en el entorno rural de Hampshire. Sus novelas, publicadas de forma anónima durante su vida, ofrecen una visión detallada y sutilmente irónica de las relaciones sociales y las limitaciones impuestas a las mujeres de su época. A pesar de su alcance limitado en cuanto a la acción externa, las obras de Austen son ricas en la complejidad emocional y la profundidad psicológica de sus personajes. La popularidad de Jane Austen ha perdurado a lo largo de los siglos, con sus novelas adaptadas en numerosas películas y series de televisión. Falleció el 18 de julio de 1817 en Winchester, a la edad de 41 años, pero su legado literario continúa influyendo y encantando a lectores de todo el mundo con su inteligencia, su estilo preciso y su agudo entendimiento de la naturaleza humana.",
+          "author_photo": "testing_data/author_janeausten.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 12,
+      "fields": {
+          "author_name": "Charles Dickens",
+          "biography": "Charles Dickens, nacido el 7 de febrero de 1812 en Portsmouth, Inglaterra, es uno de los novelistas más importantes y celebrados de la literatura británica. Conocido por su vívida narración y sus personajes memorables, Dickens escribió muchas obras que se han convertido en clásicos, incluyendo 'Oliver Twist' (1837-1839), 'David Copperfield' (1849-1850), 'Un cuento de Navidad' (1843), y 'Grandes esperanzas' (1860-1861). Dickens tuvo una infancia difícil; su familia enfrentó dificultades financieras, lo que llevó a su padre a la prisión por deudas. A una edad temprana, Charles tuvo que trabajar en una fábrica de betún para ayudar a sostener a su familia. Estas experiencias de pobreza e injusticia social influyeron profundamente en su escritura, donde a menudo abordó temas de desigualdad, explotación infantil y reforma social. Como escritor, Dickens ganó fama inicialmente con la publicación serializada de sus novelas, un formato que le permitió llegar a una audiencia amplia y diversa. Su estilo combinaba humor, sátira y un agudo sentido de la crítica social. Además de sus novelas, Dickens escribió cuentos cortos, obras de teatro y fue un prolífico ensayista. Charles Dickens también fue un destacado orador y defensor de varias causas sociales, incluyendo la educación para los pobres y la reforma de las prisiones. Falleció el 9 de junio de 1870 en Gad's Hill Place, dejando un legado duradero como uno de los más grandes narradores de la lengua inglesa. Su influencia perdura, y sus obras continúan siendo leídas y adaptadas en todo el mundo, destacadas por su capacidad para conmover y entretener a lectores de todas las edades.",
+          "author_photo": "testing_data/author_charlesdickens.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 13,
+      "fields": {
+          "author_name": "Leo Tolstoy",
+          "biography": "Leo Tolstoy, nacido el 9 de septiembre de 1828 en Yasnaya Polyana, Rusia, es uno de los novelistas más grandes de la literatura mundial. Conocido por sus obras monumentales 'Guerra y paz' (1869) y 'Anna Karénina' (1877), Tolstoy capturó la complejidad de la vida rusa y exploró profundos temas filosóficos y morales. Su estilo narrativo, caracterizado por la atención al detalle y la penetración psicológica, ha dejado una huella imborrable en la literatura. Tolstoy provenía de una familia noble, pero quedó huérfano a temprana edad. Tras una juventud marcada por la búsqueda de propósito y una breve carrera en el ejército, Tolstoy se dedicó a la escritura. Sus primeras obras, basadas en sus experiencias en la guerra de Crimea, ya mostraban su talento para la narrativa realista. Más allá de su carrera literaria, Tolstoy experimentó una profunda crisis espiritual a mediados de su vida, lo que lo llevó a rechazar sus riquezas y buscar una vida de simplicidad y trabajo manual. Esta transformación también influyó en sus escritos posteriores, donde promovía la no violencia, el amor universal y la crítica a las instituciones religiosas y gubernamentales. Leo Tolstoy falleció el 20 de noviembre de 1910 en la estación de tren de Astápovo, dejando un legado literario y filosófico que sigue inspirando a lectores y pensadores de todo el mundo. Su capacidad para abordar las grandes preguntas de la existencia humana, combinada con su profundo humanismo, lo ha consolidado como una figura central en la historia de la literatura.",
+          "author_photo": "testing_data/author_leotolstoy.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 14,
+      "fields": {
+          "author_name": "Fyodor Dostoevsky",
+          "biography": "Fiódor Dostoyevski, nacido el 11 de noviembre de 1821 en Moscú, Rusia, es uno de los más grandes novelistas de la literatura rusa y mundial. Conocido por sus exploraciones profundas de la psicología humana y las cuestiones existenciales, sus obras más importantes incluyen 'Crimen y castigo' (1866), 'El idiota' (1869), 'Los demonios' (1872) y 'Los hermanos Karamázov' (1880). Dostoyevski tuvo una vida marcada por la adversidad. Su padre fue asesinado cuando él era joven, y sus experiencias personales de pobreza y enfermedad influyeron profundamente en su escritura. En 1849, fue arrestado y condenado a muerte por participar en un grupo intelectual que criticaba al gobierno zarista, pero su sentencia fue conmutada a trabajos forzados en Siberia, donde pasó cuatro años. Estas experiencias de sufrimiento y redención se reflejan en la intensidad moral y espiritual de sus novelas. El estilo de Dostoyevski se caracteriza por su análisis psicológico profundo y sus complejos personajes, que a menudo se enfrentan a dilemas morales y espirituales. Sus obras exploran temas como la fe, la duda, la culpa y la redención, y presentan un retrato vívido de la sociedad rusa del siglo XIX. A través de diálogos filosóficos y narrativas introspectivas, Dostoyevski examina las profundidades del alma humana y las fuerzas que moldean la identidad y el destino. Fiódor Dostoyevski falleció el 9 de febrero de 1881 en San Petersburgo, dejando un legado perdurable en la literatura. Sus obras continúan siendo leídas y estudiadas por su aguda percepción de la condición humana y su capacidad para capturar las luchas interiores de sus personajes. La influencia de Dostoyevski se extiende más allá de la literatura, impactando campos como la psicología, la filosofía y la teología.",
+          "author_photo": "testing_data/author_fyodordostoevsky.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 15,
+      "fields": {
+          "author_name": "Gabriel Garcia Marquez",
+          "biography": "Gabriel García Márquez, nacido el 6 de marzo de 1927 en Aracataca, Colombia, es uno de los escritores más destacados del siglo XX y una figura clave en la literatura latinoamericana. Conocido por su estilo de realismo mágico, García Márquez ganó el Premio Nobel de Literatura en 1982. Sus obras más famosas, 'Cien años de soledad' (1967) y 'El amor en los tiempos del cólera' (1985), son celebradas por su rica narrativa y su capacidad para entrelazar lo fantástico con lo real. García Márquez creció con sus abuelos maternos, cuyas historias y leyendas influyeron profundamente en su imaginación y estilo literario. Estudió derecho y periodismo, pero pronto se dedicó por completo a la escritura. Su carrera literaria despegó con la publicación de 'La hojarasca' en 1955, pero fue 'Cien años de soledad' la obra que lo catapultó a la fama internacional. Esta novela, ambientada en el ficticio pueblo de Macondo, narra la saga de la familia Buendía y está considerada una de las obras más importantes de la literatura universal. Además de sus novelas, García Márquez fue un prolífico periodista y escribió numerosos cuentos y ensayos. Su estilo, caracterizado por una prosa lírica y la fusión de lo mágico y lo cotidiano, ha influido a generaciones de escritores y ha dejado una marca indeleble en la literatura mundial. Su capacidad para capturar la esencia de la cultura latinoamericana y explorar temas universales como el amor, la soledad y el destino, ha resonado con lectores de todo el mundo. Gabriel García Márquez falleció el 17 de abril de 2014 en Ciudad de México, dejando un legado literario que continúa inspirando y encantando a lectores y escritores por igual. Su habilidad para crear mundos vívidos y personajes memorables asegura que su obra perdure como un pilar fundamental de la literatura moderna.",
+          "author_photo": "testing_data/author_gabrielgarciamarquez.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 16,
+      "fields": {
+          "author_name": "J.D. Salinger",
+          "biography": "J.D. Salinger, cuyo nombre completo era Jerome David Salinger, nació el 1 de enero de 1919 en Nueva York. Es conocido principalmente por su novela 'El guardián entre el centeno' (1951), que se ha convertido en un clásico de la literatura estadounidense y una obra influyente para generaciones de jóvenes lectores. La novela sigue la historia de Holden Caulfield, un adolescente rebelde que se enfrenta a la alienación y la búsqueda de identidad en la sociedad moderna. Salinger comenzó su carrera literaria publicando cuentos en revistas como 'The New Yorker'. Durante la Segunda Guerra Mundial, sirvió en el ejército estadounidense, una experiencia que dejó una profunda impresión en él y que influyó en su escritura. Tras la publicación y el éxito de 'El guardián entre el centeno', Salinger se retiró en gran medida de la vida pública, buscando una vida de privacidad en Cornish, New Hampshire. Además de su famosa novela, Salinger escribió varios cuentos y relatos breves que han sido ampliamente elogiados, como los incluidos en 'Nueve cuentos' (1953). Su obra a menudo explora temas de inocencia, desilusión y la búsqueda espiritual. Personajes como los miembros de la familia Glass aparecen repetidamente en sus relatos, ofreciendo una visión profunda y compleja de sus vidas y pensamientos. J.D. Salinger falleció el 27 de enero de 2010 a la edad de 91 años. A pesar de su reclusión, su obra sigue siendo ampliamente leída y estudiada, y su influencia perdura en la literatura contemporánea. Su capacidad para capturar la voz y la angustia de la juventud y su exploración de temas universales aseguran su lugar como una figura central en la literatura del siglo XX.",
+          "author_photo": "testing_data/author_jdsalinger.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 17,
+      "fields": {
+          "author_name": "H.G. Wells",
+          "biography": "H.G. Wells, nacido Herbert George Wells el 21 de septiembre de 1866 en Bromley, Inglaterra, es un pionero de la ciencia ficción y un influyente escritor del siglo XX. Conocido por su imaginación visionaria, escribió clásicos del género como 'La máquina del tiempo' (1895), 'La guerra de los mundos' (1898) y 'El hombre invisible' (1897). Su formación en biología bajo el biólogo T.H. Huxley se reflejó en sus obras, que combinan especulación científica y críticas sociales. Wells utilizó sus novelas para explorar las implicaciones éticas y sociales de los avances científicos. 'La máquina del tiempo' introdujo el concepto de viajar a través del tiempo, mientras que 'La guerra de los mundos' ofreció una alegoría de la colonización. Además de la ciencia ficción, escribió sobre política y educación, siendo un defensor del socialismo y las reformas sociales. H.G. Wells falleció el 13 de agosto de 1946 en Londres. Su legado perdura a través de sus innovadoras novelas de ciencia ficción y su impacto en la literatura y el pensamiento social, recordado como un visionario que exploró las posibilidades y peligros del futuro.",
+          "author_photo": "testing_data/author_hgwells.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 18,
+      "fields": {
+          "author_name": "Orson Scott Card",
+          "biography": "Orson Scott Card, nacido el 24 de agosto de 1951 en Richland, Washington, es un aclamado escritor de ciencia ficción y fantasía. Es más conocido por su novela 'El juego de Ender' (1985), que ganó los premios Hugo y Nebula y se convirtió en una serie exitosa. La obra explora temas de estrategia militar, ética y el crecimiento personal de un joven prodigio. Además de la serie de Ender, Card ha escrito numerosos libros, cuentos y obras de teatro, destacándose también en el género de fantasía con obras como la serie 'La saga de Alvin Maker'. Su estilo narrativo y su capacidad para crear personajes complejos han ganado una amplia base de lectores. Card también ha sido un prolífico ensayista y crítico, escribiendo sobre una variedad de temas, incluyendo literatura y política. A lo largo de su carrera, ha mantenido una presencia influyente en la literatura contemporánea de ciencia ficción y fantasía.",
+          "author_photo": "testing_data/author_orsonscottcard.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 19,
+      "fields": {
+          "author_name": "Suzanne Collins",
+          "biography": "Suzanne Collins, nacida el 10 de agosto de 1962 en Hartford, Connecticut, es una reconocida autora de literatura juvenil. Es más conocida por su trilogía 'Los juegos del hambre' (2008-2010), que ha sido un éxito de ventas internacional y se ha adaptado en una exitosa serie de películas. La serie, ambientada en un futuro distópico, aborda temas de supervivencia, poder y resistencia. Antes de 'Los juegos del hambre', Collins escribió la serie de fantasía 'Gregor, la profecía del gris' (2003-2007), también muy popular entre jóvenes lectores. Su estilo narrativo dinámico y sus tramas cautivadoras han resonado con millones de lectores en todo el mundo. Collins ha sido elogiada por su capacidad para tratar temas complejos y relevantes en un formato accesible para jóvenes adultos, consolidándose como una figura influyente en la literatura juvenil contemporánea.",
+          "author_photo": "testing_data/author_suzannecollins.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 20,
+      "fields": {
+          "author_name": "Jules Verne",
+          "biography": "Jules Verne, nacido el 8 de febrero de 1828 en Nantes, Francia, es un pionero de la ciencia ficción. Conocido por sus novelas de aventuras científicas, escribió clásicos como 'Veinte mil leguas de viaje submarino' (1870), 'Viaje al centro de la Tierra' (1864) y 'La vuelta al mundo en ochenta días' (1873). Verne combinó su interés por la ciencia y la exploración con una narrativa imaginativa, anticipando muchos avances tecnológicos. Su estilo visionario y detallado ha inspirado generaciones de lectores y escritores, consolidándolo como una figura central en la literatura de ciencia ficción y aventuras. Verne falleció el 24 de marzo de 1905 en Amiens, Francia.",
+          "author_photo": "testing_data/author_julesverne.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 21,
+      "fields": {
+          "author_name": "Dan Brown",
+          "biography": "Dan Brown, nacido el 22 de junio de 1964 en Exeter, New Hampshire, es un autor estadounidense conocido por sus novelas de suspense y misterio. Su obra más famosa, 'El código Da Vinci' (2003), se convirtió en un éxito de ventas internacional y fue adaptada en una película de gran éxito. La novela, que combina arte, historia y conspiraciones religiosas, ha vendido millones de copias en todo el mundo. Antes de 'El código Da Vinci', Brown escribió 'Ángeles y demonios' (2000), que introdujo al personaje Robert Langdon, un profesor de simbología que protagoniza varias de sus novelas. Su estilo narrativo rápido y su habilidad para tejer tramas complejas y emocionantes han ganado una amplia base de lectores. Además de su éxito literario, Brown ha sido una figura controvertida debido a las temáticas que explora en sus libros, pero su influencia en el género de thriller contemporáneo es indiscutible.",
+          "author_photo": "testing_data/author_danbrown.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 22,
+      "fields": {
+          "author_name": "Neil Gaiman",
+          "biography": "Neil Gaiman, nacido el 10 de noviembre de 1960 en Portchester, Inglaterra, es un escritor prolífico conocido por su trabajo en varios géneros, incluyendo la fantasía, el horror y la ciencia ficción. Entre sus obras más destacadas se encuentran 'Sandman', una influyente serie de cómics, y las novelas 'American Gods' (2001) y 'Coraline' (2002). Gaiman ha ganado numerosos premios por su trabajo, incluyendo los premios Hugo, Nebula y Bram Stoker. Su estilo narrativo combina lo fantástico con lo cotidiano, creando mundos ricos y personajes memorables. Gaiman también ha trabajado en televisión y cine, adaptando muchas de sus propias obras para la pantalla. Su habilidad para contar historias ha resonado con lectores de todas las edades, consolidándolo como una figura central en la literatura contemporánea y en la cultura pop.",
+          "author_photo": "testing_data/author_neilgaiman.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 23,
+      "fields": {
+          "author_name": "Haruki Murakami",
+          "biography": "Haruki Murakami, nacido el 12 de enero de 1949 en Kioto, Japón, es un renombrado autor cuyas obras han ganado reconocimiento internacional. Conocido por su estilo único que mezcla lo real y lo surreal, sus novelas incluyen 'Norwegian Wood' (1987), 'Kafka en la orilla' (2002) y '1Q84' (2009-2010).|nMurakami a menudo explora temas de soledad, alienación y búsqueda de identidad, con tramas que integran elementos de la cultura pop y referencias literarias. Su narrativa es conocida por su prosa clara y sus personajes introspectivos. Además de sus novelas, ha escrito cuentos y ensayos, y también ha traducido obras de autores estadounidenses al japonés. La obra de Murakami ha sido traducida a numerosos idiomas, ganándole una amplia base de lectores y varios premios literarios. Su influencia se extiende más allá de la literatura, siendo una figura prominente en la cultura contemporánea global.",
+          "author_photo": "testing_data/author_harukimurakami.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 24,
+      "fields": {
+          "author_name": "Laura Gallego García",
+          "biography": "Laura Gallego García, nacida el 11 de octubre de 1977 en Quart de Poblet, Valencia, es una destacada autora española de literatura juvenil y fantasía. Conocida por su trilogía 'Memorias de Idhún' (2004-2006), que se ha convertido en un fenómeno literario en España, ha cautivado a lectores jóvenes con sus mundos imaginativos y personajes complejos. Además de 'Memorias de Idhún', Gallego ha escrito numerosas obras, incluyendo 'Donde los árboles cantan' (2011) y 'El valle de los lobos' (2000). Su estilo narrativo combina aventura, magia y temas universales como la amistad y el amor, resonando profundamente con su audiencia. Gallego ha recibido múltiples premios literarios, consolidándose como una figura central en la literatura juvenil en español. Su capacidad para crear mundos fantásticos y tramas emocionantes ha asegurado su lugar como una de las autoras más queridas y leídas en su género.",
+          "author_photo": "testing_data/author_lauragallegogarcia.jpg"
+      }
+  },
+  {
+      "model": "shop.author",
+      "pk": 25,
+      "fields": {
+          "author_name": "Margaret Atwood",
+          "biography": "Margaret Atwood, nacida el 18 de noviembre de 1939 en Ottawa, Canadá, es una aclamada escritora y poeta conocida por sus novelas de ficción especulativa y feminista. Entre sus obras más famosas se encuentran 'El cuento de la criada' (1985) y 'Alias Grace' (1996). 'El cuento de la criada' ha sido adaptada en una exitosa serie de televisión, incrementando aún más su relevancia contemporánea. Atwood ha explorado temas como el poder, la opresión y la resistencia en sus obras, a menudo ambientadas en futuros distópicos que ofrecen críticas sociales profundas. Su estilo narrativo es conocido por su claridad, ingenio y habilidad para tejer complejas tramas psicológicas. Además de su prolífica carrera como novelista, Atwood ha escrito poesía, ensayos y obras de crítica literaria. Ha recibido numerosos premios, incluidos el Premio Booker y el Premio Príncipe de Asturias de las Letras, consolidándose como una de las figuras más influyentes de la literatura contemporánea.",
+          "author_photo": "testing_data/author_margaretatwood.jpg"
+      }
+  }
+]

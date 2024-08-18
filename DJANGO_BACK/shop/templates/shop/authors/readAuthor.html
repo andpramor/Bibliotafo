@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	{{ author.author_name }}
+{% endblock title%}
+
+{% block content %}
+    <p>
+        <b>Nombre: </b>{{ author.author_name }}
+    </p>
+
+    <p>
+        {% if author.author_photo %}
+            <img src="{{ author.author_photo.url }}" width="300px" alt="Foto del autor">
+        {% endif %}
+    </p>
+
+    <p><b>Biografía: </b>
+    {{ author.biography }}
+    </p>
+
+    {% if user.rol == 'manager' %}
+    <p>Botones de Manager:</p>
+    <p>
+        <a href="{% url 'updateAuthor' pk=author.pk %}"><button>Editar autor</button></a>
+        <a href="{% url 'deleteAuthor' pk=author.pk %}"><button>Eliminar autor</button></a>
+    </p>
+    {% endif %}
+
+    <p>
+        <a href="{% url 'books' %}"><button>Volver al catálogo</button></a>
+    </p>
+{% endblock content %}

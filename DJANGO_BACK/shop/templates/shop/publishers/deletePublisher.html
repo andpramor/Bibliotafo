@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Eliminar {{ publisher.publisher_name }}
+{% endblock title%}
+
+{% block content %}
+<p>
+    <form method="post">
+        {% csrf_token %}
+        <p>
+            <b>¿Confirma que desea borrar la editorial "{{ publisher.publisher_name }}"?</b>
+        </p>
+        <input type="submit" value="Confirmar">
+    </form>
+</p>
+<p>
+    <a href="{% url 'publishers' %}"><button>Volver al listado</button></a>
+</p>
+{% endblock content %}

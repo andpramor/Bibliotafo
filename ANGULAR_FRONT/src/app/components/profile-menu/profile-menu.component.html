@@ -1,0 +1,13 @@
+<span class="card flex justify-content-center">
+    <p-menu #menu [model]="items" [popup]="true">
+        <ng-template pTemplate="item" let-item>
+            <ng-container>
+                <a [routerLink]="item.route" class="p-menuitem-link">
+                    <span class="ml-2">{{ item.label }}</span>
+                    <span [class]="item.icon" class="ml-auto"></span>
+                </a>
+            </ng-container>
+        </ng-template>
+    </p-menu>
+    <p-button (click)="menu.toggle($event)" icon="pi pi-ellipsis-v"/>
+</span>

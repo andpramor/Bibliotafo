@@ -1,0 +1,107 @@
+[
+    {
+        "model": "shop.publisher",
+        "pk": 1,
+        "fields": {
+          "publisher_name": "Penguin Random House"
+        }
+      },
+      {
+        "model": "shop.publisher",
+        "pk": 2,
+        "fields": {
+          "publisher_name": "HarperCollins Publishers"
+        }
+      },
+      {
+        "model": "shop.publisher",
+        "pk": 3,
+        "fields": {
+          "publisher_name": "Simon & Schuster"
+        }
+      },
+      {
+        "model": "shop.publisher",
+        "pk": 4,
+        "fields": {
+          "publisher_name": "Hachette Book Group"
+        }
+      },
+      {
+        "model": "shop.publisher",
+        "pk": 5,
+        "fields": {
+          "publisher_name": "Macmillan Publishers"
+        }
+      },
+      {
+        "model": "shop.publisher",
+        "pk": 6,
+        "fields": {
+          "publisher_name": "Scholastic Corporation"
+        }
+      },
+      {
+        "model": "shop.publisher",
+        "pk": 7,
+        "fields": {
+          "publisher_name": "Pearson Education"
+        }
+      },
+      {
+        "model": "shop.publisher",
+        "pk": 8,
+        "fields": {
+          "publisher_name": "Oxford University Press"
+        }
+      },
+      {
+        "model": "shop.publisher",
+        "pk": 9,
+        "fields": {
+          "publisher_name": "Cambridge University Press"
+        }
+      },
+      {
+        "model": "shop.publisher",
+        "pk": 10,
+        "fields": {
+          "publisher_name": "Bloomsbury Publishing"
+        }
+      },
+      {
+        "model": "shop.publisher",
+        "pk": 11,
+        "fields": {
+          "publisher_name": "Wiley-Blackwell"
+        }
+      },
+      {
+        "model": "shop.publisher",
+        "pk": 12,
+        "fields": {
+          "publisher_name": "Springer Nature"
+        }
+      },
+      {
+        "model": "shop.publisher",
+        "pk": 13,
+        "fields": {
+          "publisher_name": "Elsevier"
+        }
+      },
+      {
+        "model": "shop.publisher",
+        "pk": 14,
+        "fields": {
+          "publisher_name": "Routledge"
+        }
+      },
+      {
+        "model": "shop.publisher",
+        "pk": 15,
+        "fields": {
+          "publisher_name": "Palgrave Macmillan"
+        }
+      }
+]

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Histórico de ventas
+{% endblock title%}
+
+{% block content %}
+    {% for sale in object_list %}
+    <div>
+        <a href="#"><b>{{ sale.sale_date }}</b> </a>
+        <span><b>Comprador: </b>{{ sale.buyer.username }}.</span>
+        <span><b>Vendedor: </b>{{ sale.seller.username }}.</span>
+
+    </div>
+    <hr>
+    {% empty %}
+    <div>Aún no ha habido ventas.</div>
+    {% endfor %}
+    <a href="{% url 'home' %}"><button>Volver a inicio</button></a>
+
+    <!-- Paginación -->
+    {% if object_list %}
+        <div class="w-100 text-center text-primary">
+            {% if page_obj.has_previous %}
+                <a href="{% url 'sales' %}?page=1" class="text-decoration-none">
+                    <i class="bi bi-arrow-left-square-fill me-1" alt="Ir a la primera página"></i>
+                </a>
+                <a href="{% url 'sales' %}?page={{ page_obj.previous_page_number }}" class="text-decoration-none">
+                    <i class="bi bi-arrow-left-square me-1" alt="Ir a la página anterior"></i>
+                </a>
+            {% endif %}
+                <span class="text-black">Página {{ page_obj.number }} / {{ page_obj.paginator.num_pages }}</span>
+            {% if page_obj.has_next %}
+                <a href="{% url 'sales' %}?page={{ page_obj.next_page_number }}" class="text-decoration-none">
+                    <i class="bi bi-arrow-right-square ms-1" alt="Ir a la página siguiente"></i>
+                </a>
+                <a href="{% url 'sales' %}?page={{ page_obj.paginator.num_pages }}" class="text-decoration-none">
+                    <i class="bi bi-arrow-right-square-fill me-1" alt="Ir a la última página"></i>
+                </a>
+            {% endif %}
+        </div>
+    {% endif %}
+{% endblock content %}

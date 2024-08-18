@@ -1,0 +1,203 @@
+<div class="card">
+    <p-toast class="custom-toast"/>
+    <p-toolbar *ngIf="userRol=='manager'" styleClass="mb-4 gap-2"> <!-- Añadir y borrado bulk -->
+        <ng-template pTemplate="left">
+            <p-button 
+                pRipple 
+                severity="success" 
+                label="Añadir" 
+                icon="pi pi-plus" 
+                class="mr-2" 
+                (click)="openNew()" />
+            <p-button 
+                pRipple 
+                severity="danger" 
+                icon="pi pi-trash" 
+                (click)="deleteSelectedAuthors()" 
+                [disabled]="!selectedAuthors || !selectedAuthors.length" />
+        </ng-template>
+    </p-toolbar>
+
+    <p-table
+        #dt
+        [value]="authors"
+        [rows]="10"
+        [paginator]="true"
+        (onPage)="onPageChange()"
+        [globalFilterFields]="['author_name']"
+        [tableStyle]="{ 'min-width': '7rem' }"
+        [(selection)]="selectedAuthors"
+        [rowHover]="true"
+        dataKey="id"
+        currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} autores"
+        [showCurrentPageReport]="true"
+    >
+        <ng-template pTemplate="caption">
+            <div class="flex align-items-center justify-content-between">
+                <h5 class="m-0">AUTORES</h5>
+                <span class="p-input-icon-left">
+                    <i class="pi pi-search"></i>
+                    <input
+                        pInputText 
+                        type="text" 
+                        (input)="onGlobalFilter($event, dt)" 
+                        placeholder="Buscar..." />
+                </span>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="header">
+            <tr>
+                <th *ngIf="userRol=='manager'" style="width: 4rem">
+                    <p-tableHeaderCheckbox />
+                </th>
+                <th style="width: 11vw;">
+                    Foto
+                </th>
+                <th pSortableColumn="author_name" style="min-width:10rem">
+                    Nombre <p-sortIcon field="author_name" />
+                </th>
+                <th style="min-width:15rem" class="fromMd">
+                    Biografía
+                </th>
+                <th *ngIf="userRol=='manager'" style="width: 10rem"></th><!-- Editar y borrar -->
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-author>
+            <tr>
+                <td *ngIf="userRol=='manager'">
+                    <p-tableCheckbox [value]="author" />
+                </td>
+                <td class="cursor-pointer" [routerLink]="['/autor/', author.id]">
+                    <a class="author_photo-container shadow-4">
+                        <img 
+                        *ngIf="author.author_photo"
+                        [src]="base_url + author.author_photo" 
+                        [alt]="author.title"
+                        class="author_photo"
+                        />
+                        <img 
+                        *ngIf="!author.author_photo"
+                        src="assets/defaultAuthorPic.png"
+                        [alt]="author.title"
+                        class="author_photo"
+                        />
+                    </a>
+                </td>
+                <td class="cursor-pointer" [routerLink]="['/autor/', author.id]">
+                    <a class="font-bold text-color no-underline">
+                        {{ author.author_name }}
+                    </a>
+                </td>
+                <td class="cursor-pointer fromMd" [routerLink]="['/autor/', author.id]">
+                    {{ author.biography }}
+                </td>
+                <td *ngIf="userRol=='manager'" style="white-space: nowrap;"> <!-- Editar y borrar -->
+                    <p-button 
+                        pRipple 
+                        icon="pi pi-pencil" 
+                        class="mr-2" 
+                        [rounded]="true" 
+                        [outlined]="true" 
+                        severity="success" 
+                        (click)="editAuthor(author)" />
+                    <p-button 
+                        pRipple 
+                        icon="pi pi-trash" 
+                        severity="danger" 
+                        [rounded]="true" dialog
+                        [outlined]="true" 
+                        (click)="deleteAuthor(author)" />
+                </td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="summary">
+            <div class="flex align-items-center justify-content-between">
+                Hay un total de {{ authors ? authors.length : 0 }} autores.
+            </div>
+        </ng-template>
+    </p-table>
+
+    <p-dialog 
+        [(visible)]="authorDialog" 
+        [style]="{ 'width': '90vw', 'max-width': '600px' }" 
+        header="Detalles del autor" 
+        position="top"
+        [modal]="true" 
+        styleClass="p-fluid">
+            <ng-template pTemplate="content">
+                <img src="assets/favicon.ico" height="33" class="block mx-auto">
+                <div class="field">
+                    <label for="author_name">Nombre</label>
+                    <input 
+                        type="text" 
+                        pInputText 
+                        id="author_name" 
+                        [(ngModel)]="author.author_name" 
+                        required 
+                        autofocus />
+                    <small class="p-error" *ngIf="submitted && !author.author_name">
+                        El nombre es obligatorio.
+                    </small>
+                    <label for="biography" class="mt-2">Biografía</label>
+                    <textarea 
+                        id="biography" 
+                        name="biography"
+                        pInputTextarea 
+                        required
+                        [(ngModel)]="author.biography">
+                    </textarea>
+                    <small class="p-error" *ngIf="submitted && !author.biography">
+                        La biografía es obligatoria.
+                    </small>
+                    <label for="photo" class="mt-2">Foto</label>
+                    <div class="card flex justify-content-center gap-3">
+                        <input 
+                            id="disabled-input" 
+                            type="text"
+                            pInputText 
+                            [disabled]="true" 
+                            placeholder="Relación de aspecto recomendada: 1:1"
+                            [(ngModel)]="photo_name" 
+                        />
+                        <p-fileUpload 
+                            *ngIf="!photo"
+                            mode="basic" 
+                            name="photo" 
+                            chooseIcon="pi pi-upload" 
+                            accept="image/*" maxFileSize="50000000" 
+                            (onSelect)="onFileUpload($event)" 
+                            [auto]="true" 
+                            chooseLabel="Elegir"
+                            />
+                        <p-button
+                            *ngIf="photo"
+                            pRipple 
+                            icon="pi pi-trash" 
+                            severity="info" 
+                            [rounded]="false" 
+                            [outlined]="true" 
+                            label="Limpiar"
+                            (click)="cleanPic()"
+                            class="col-4" />
+                    </div>
+                </div>
+            </ng-template>
+
+            <ng-template pTemplate="footer">
+                <p-button 
+                    pRipple 
+                    label="Cancelar" 
+                    icon="pi pi-times" 
+                    [text]="true" 
+                    (click)="hideDialog()" />
+                <p-button 
+                    pRipple 
+                    label="Guardar" 
+                    icon="pi pi-check" 
+                    [text]="true" 
+                    (click)="saveAuthor()" />
+            </ng-template>
+    </p-dialog>
+
+    <p-confirmDialog [style]="{ width: '450px','max-width':'90vw' }" position="top"/>
+</div>

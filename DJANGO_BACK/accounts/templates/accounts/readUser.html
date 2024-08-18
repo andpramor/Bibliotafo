@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	{{ myuser.username }}
+{% endblock title%}
+
+{% block content %}
+<div class="row">
+    <h2 class="text-center">
+        loggeado: {{ user.username }} <br>
+        viendo: {{ myuser.username }}
+    </h2>
+    <h3 class="bg-warning">Que actualizar solo sea accesible para el usuario que está en su perfil.</h3>
+    {% if user.pk == myuser.pk %}
+    <!-- Con este if, garantizo que cada usuario sólo vea el enlace para actualizar su propio perfil. -->
+    <div class="col-12 text-end">
+        <a href="{% url 'updateUser' pk=user.pk %}"><button class="btn btn-primary">Actualiza tu perfil</button></a>
+    </div>
+    {% endif %}
+    <div class="col-12 col-lg-4 p-2 bg-primary">
+        <b>Datos del AbstractUser:</b><br><br>
+        <ul>
+            <li><b>username: </b>{{ myuser.username }}</li>
+            <li><b>first_name: </b>{{ myuser.first_name }}</li>
+            <li><b>last_name: </b>{{ myuser.last_name }}</li>
+            <li><b>email: </b>{{ myuser.email }}</li>
+            <li><b>password (hash): </b>{{ myuser.password }}</li>
+            <li><b>groups: </b>{{ myuser.groups }}</li>
+            <li><b>user_permissions: </b>{{ myuser.user_permissions }}</li>
+            <li><b>is_staff: </b>{{ myuser.is_staff }}</li>
+            <li><b>is_active: </b>{{ myuser.is_active }}</li>
+            <li><b>is_superuser: </b>{{ myuser.is_superuser }}</li>
+            <li><b>last_login: </b>{{ myuser.last_login }}</li>
+            <li><b>date_joined: </b>{{ myuser.date_joined }}</li>
+        </ul>
+    </div>
+    <div class="col-12 col-lg-4 p-2 bg-success">
+        <b>Datos de MyUser:</b><br><br>
+        <ul>
+            <li><b>dni: </b>{{ myuser.dni }}</li>
+            <li><b>address: </b>{{ myuser.address }}</li>
+            <li><b>phone: </b>{{ myuser.phone }}</li>
+            <li><b>profile_picture: </b>
+                {% if user.profile_picture %}
+                <img src="{{ myuser.profile_picture.url }}" width="300px" alt="Foto del usuario">
+                {% endif %}
+            </li>
+            <li><b>rol: </b>{{ myuser.rol }}</li>
+        </ul>
+    </div>
+    <div class="col-12 col-lg-4 p-2 bg-warning">
+        <b>Cosas que añadir:</b>
+        A los clientes nada más.
+        <ul>
+            {% if myuser.rol == 'client' %}
+            <li>Link a lista de favoritos.</li>
+            <li>Link a lista de amigos.</li>
+            <li><a href="#"><button class="btn btn-danger">Historial de compras</button></a></li>
+            {% endif %}
+        </ul>
+    </div>
+</div>
+{% endblock content %}

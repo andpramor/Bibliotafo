@@ -1,0 +1,2602 @@
+[
+    {
+        "model": "shop.book",
+        "pk": 1,
+        "fields": {
+            "title": "El Nombre del Viento",
+            "ISBN": 9788401337208,
+            "publisher": 1,
+            "publication_date": "2009-05-26",
+            "synopsis": "En una posada en tierra de nadie, un hombre se dispone a relatar, por primera vez, la auténtica historia de su vida. Una historia que únicamente él conoce y que ha quedado diluida tras los rumores, las conjeturas y los cuentos de taberna que le han convertido en un personaje legendario a quien todos daban ya por muerto: Kvothe... músico, mendigo, ladrón, estudiante, mago, héroe y asesino. Ahora va a revelar la verdad sobre sí mismo. Y para ello debe empezar por el principio: su infancia en una troupe de artistas itinerantes, los años malviviendo como un ladronzuelo en las calles de una gran ciudad y su llegada a una universidad donde esperaba encontrar todas las respuestas que había estado buscando. «He robado princesas a reyes agónicos. Incendié la ciudad de Trebon. He pasado la noche con Felurian y he despertado vivo y cuerdo. Me expulsaron de la Universidad a una edad a la que a la mayoría todavía no los dejan entrar. He recorrido de noche caminos de los que otros no se atreven a hablar ni siquiera de día. He hablado con dioses, he amado a mujeres y he escrito canciones que hacen llorar a los bardos. »Me llamo Kvothe. Quizá hayas oído hablar de mí.»",
+            "cover": "testing_data/cover_elnombredelviento.jpg",
+            "stock": 15,
+            "price": 22.70,
+            "style": "dura",
+            "authors": [
+                1
+            ],
+            "genres": [
+                2, 3
+            ],
+            "themes": [
+                5, 11
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 2,
+        "fields": {
+            "title": "Harry Potter y la Piedra Filosofal",
+            "ISBN": 9788478884452,
+            "publisher": 2,
+            "publication_date": "1999-03-25",
+            "synopsis": "Este libro narra el primero de los siete años que Harry Potter pasará en el Colegio de Magia Hogwarts, aunque la historia comienza exactamente el día de su nacimiento, aquella fecha especial en el que los lectores ya nos enteramos que Harry no será un niño más; él, en cambio, deberá esperar diez años más (tranquilos, en el segundo capítulo de los 17 que compone el primer libro ya pasaron diez años) para descubrir su capacidad sobrenatural, esa que ante los ojos de los humanos comunes (llamados muggles) lo presenta como un mago; y vale decir que no es sólo un mago más, sino el más famoso de la tierra, aquél que todo el mundo de la magia conoce, no solo por ser hijo de una pareja de magos muy recordada, sino además por haber derrotado, o mejor dicho por no haberse dejado derrotar por Voldemort, figura representativa del mal al que nadie se anima a nombrar.",
+            "cover": "testing_data/cover_harrypotter.jpg",
+            "stock": 15,
+            "price": 30.50,
+            "style": "dura",
+            "authors": [
+                2
+            ],
+            "genres": [
+                5, 12, 18
+            ],
+            "themes": [
+                5, 11, 19
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 3,
+        "fields": {
+            "title": "Juego de Tronos",
+            "ISBN": 9788496208407,
+            "publisher": 5,
+            "publication_date": "2010-12-24",
+            "synopsis": "Eddard Stark, señor de Invernalia y líder de la casa Stark es invitado por su amigo de la infancia y rey: Robert Baratheon a ser su consejero personal, conocido como Mano del Rey y parte hacia la corte dejando atrás su tierra y su familia. Una vez allí, se da cuenta de que las cosas en Desembarco del Rey no son lo que parecen y que la reina: Cersei Lannister alberga oscuras intenciones. Al norte de Invernalia se encuentra el Muro. Una antigua construcción levantada hace cientos de años para proteger a los reinos de lo que hay al otro lado, que, aunque se dice que no son más que leyendas que cuentan las amas de cría y que solo creen los niños, una serie de extraños sucesos ponen sobre aviso a la Guardia de la Noche. Allí, Jon Nieve, hijo bastardo de Eddard Stark, tendrá que madurar y encontrar su lugar en el mundo. Al otro lado del océano, en Essos, la princesa exiliada Daenerys Targaryen y su hermano Varys, buscan la manera de recuperar todo lo que perdieron cuando su padre Aerys II Targaryen fue asesinado por el actual rey de Poniente: Robert Baratheon. Pero la cosa se complica todavía un poquito más argumentalmente ya que nos encontraremos con muchísimos más personajes de los que he comentado por aquí encima: el resto de hijos de Eddard Stark, su esposa Catelyn, los hermanos de Cersei Lannister: Tyrion y Jaime y un infinito plantel de secundarios. Es aquí donde entra en juego la maestría de Martin, que cuenta en su currículum con una amplia relación de relatos cortos y guiones para televisión.",
+            "cover": "testing_data/cover_juegodetronos.jpg",
+            "stock": 15,
+            "price": 19.00,
+            "style": "dura",
+            "authors": [
+                3
+            ],
+            "genres": [
+                9
+            ],
+            "themes": [
+                8
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 4,
+        "fields": {
+            "title": "Cien años de soledad",
+            "ISBN": 9780123456789,
+            "publisher": 10,
+            "publication_date": "1967-06-05",
+            "synopsis": "Cien Años de Soledad narra la historia de la familia Buendía a lo largo de siete generaciones en el pueblo ficticio de Macondo, fundado por José Arcadio Buendía y Úrsula Iguarán. La novela, escrita en estilo de realismo mágico, explora temas de soledad, amor, guerra, revolución y el paso del tiempo. A lo largo de la narrativa, los Buendía enfrentan repetidamente ciclos de prosperidad y decadencia, marcados por la maldición del incesto y la repetición de sus errores. Al final, la familia es destruida por sus propios vicios y la predestinación, dejando a Macondo desierto y olvidado.",
+            "cover": "testing_data/cover_cien.jpg",
+            "stock": 20,
+            "price": 22.50,
+            "style": "dura",
+            "authors": [
+                1
+            ],
+            "genres": [
+                1
+            ],
+            "themes": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 5,
+        "fields": {
+            "title": "1984",
+            "ISBN": 9789876543210,
+            "publisher": 12,
+            "publication_date": "1949-06-08",
+            "synopsis": "Novela distópica que describe un futuro totalitario donde el Partido, liderado por el Gran Hermano, controla todos los aspectos de la vida. El protagonista, Winston Smith, trabaja en el Ministerio de la Verdad, alterando registros históricos. A medida que desarrolla un pensamiento crítico contra el régimen y se enamora de Julia, se enfrenta a la implacable vigilancia del Partido. Finalmente, Winston es capturado, torturado y lavado de cerebro, terminando como un ferviente seguidor del Gran Hermano, simbolizando la opresión absoluta del totalitarismo.",
+            "cover": "testing_data/cover_1984.jpg",
+            "stock": 18,
+            "price": 19.99,
+            "style": "blanda",
+            "authors": [
+                2
+            ],
+            "genres": [
+                2,
+                3
+            ],
+            "themes": [
+                3
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 6,
+        "fields": {
+            "title": "Orgullo y prejuicio",
+            "ISBN": 9780192833551,
+            "publisher": 6,
+            "publication_date": "1813-01-28",
+            "synopsis": "Novela que sigue la vida de Elizabeth Bennet, una joven inteligente y vivaz de una familia con cinco hijas. La historia explora temas de matrimonio, moralidad y malentendidos sociales. Elizabeth se enfrenta al arrogante y rico Sr. Darcy, a quien inicialmente desprecia. A medida que la trama avanza, ambos personajes superan sus prejuicios y malentendidos mutuos. Darcy revela su verdadero carácter y Elizabeth se da cuenta de su amor por él. Finalmente, se casan, demostrando que el amor verdadero puede superar el orgullo y los prejuicios.",
+            "cover": "testing_data/cover_orgulloyprejuicio.jpg",
+            "stock": 12,
+            "price": 17.45,
+            "style": "dura",
+            "authors": [
+                3,
+                4
+            ],
+            "genres": [
+                4
+            ],
+            "themes": [
+                5,
+                6
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 7,
+        "fields": {
+            "title": "Matar a un ruiseñor",
+            "ISBN": 9780061120084,
+            "publisher": 9,
+            "publication_date": "1960-07-11",
+            "synopsis": "Novela ambientada en la Alabama de la Gran Depresión. La historia se narra desde la perspectiva de Scout Finch, una niña que vive con su hermano Jem y su padre Atticus, un abogado. Atticus defiende a Tom Robinson, un hombre negro acusado injustamente de violar a una mujer blanca. A través del juicio, Scout y Jem enfrentan la realidad del racismo y la injusticia. A pesar de la evidencia de su inocencia, Tom es condenado. La novela aborda temas de moralidad, justicia y la pérdida de la inocencia, simbolizados en la metáfora del ruiseñor, que representa la inocencia destruida por la maldad.",
+            "cover": "testing_data/cover_matarruisenor.jpg",
+            "stock": 25,
+            "price": 20.00,
+            "style": "bolsillo",
+            "authors": [
+                5
+            ],
+            "genres": [
+                5,
+                6
+            ],
+            "themes": [
+                7
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 8,
+        "fields": {
+            "title": "El Gran Gatsby",
+            "ISBN": 9780743273565,
+            "publisher": 14,
+            "publication_date": "1925-04-10",
+            "synopsis": "Jay Gatsby, un millonario enigmático que organiza fastuosas fiestas en la esperanza de reencontrarse con su antiguo amor, Daisy Buchanan. Narrado por Nick Carraway, vecino de Gatsby, la novela explora temas de decadencia moral, el sueño americano y la superficialidad de la alta sociedad en los años 20. El trágico final de Gatsby, asesinado por un malentendido, resalta la futilidad de su obsesión y la corrupción del sueño americano.",
+            "cover": "testing_data/cover_gatsby.jpg",
+            "stock": 15,
+            "price": 21.00,
+            "style": "blanda",
+            "authors": [
+                6
+            ],
+            "genres": [
+                7
+            ],
+            "themes": [
+                8
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 9,
+        "fields": {
+            "title": "Crimen y castigo",
+            "ISBN": 9780140449136,
+            "publisher": 11,
+            "publication_date": "1866-01-01",
+            "synopsis": "Rodión Raskólnikov, un estudiante empobrecido en San Petersburgo que asesina a una usurera creyendo que con ese acto podría beneficiarse y hacer el bien. La novela explora su lucha interna entre la culpa y la justificación de su crimen, mientras es perseguido por el astuto detective Porfiri. A medida que su tormento psicológico se intensifica, Raskólnikov confiesa y es condenado a Siberia, donde comienza su redención a través del sufrimiento y el amor de Sonia.",
+            "cover": "testing_data/cover_crimencastigo.jpg",
+            "stock": 8,
+            "price": 18.00,
+            "style": "dura",
+            "authors": [
+                7
+            ],
+            "genres": [
+                8
+            ],
+            "themes": [
+                9
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 10,
+        "fields": {
+            "title": "En busca del tiempo perdido",
+            "ISBN": 9780156949606,
+            "publisher": 5,
+            "publication_date": "1913-01-01",
+            "synopsis": "Siete novelas que exploran la memoria involuntaria y el paso del tiempo a través de las experiencias del narrador, Marcel. Desde su infancia en Combray hasta su vida adulta en la alta sociedad parisina, Marcel reflexiona sobre el amor, el arte, la sociedad y la búsqueda de la verdad interior. El descubrimiento de que la literatura puede recuperar el tiempo perdido proporciona un cierre a su búsqueda y establece la importancia de la memoria y la introspección.",
+            "cover": "testing_data/cover_tiempoperdido.jpg",
+            "stock": 7,
+            "price": 35.00,
+            "style": "dura",
+            "authors": [
+                8
+            ],
+            "genres": [
+                9
+            ],
+            "themes": [
+                10,
+                11
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 11,
+        "fields": {
+            "title": "El nombre de la rosa",
+            "ISBN": 9780156001311,
+            "publisher": 1,
+            "publication_date": "1980-08-12",
+            "synopsis": "Novela de misterio ambientada en un monasterio benedictino del siglo XIV. El fraile franciscano Guillermo de Baskerville y su novicio Adso de Melk investigan una serie de muertes inexplicables. A medida que descubren la conexión entre los asesinatos y un libro prohibido en la biblioteca laberíntica del monasterio, la trama explora temas de conocimiento, herejía y poder. Al final, Guillermo revela al asesino, pero el conocimiento sigue siendo el centro de conflictos y misterios.",
+            "cover": "testing_data/cover_nombrerosa.jpg",
+            "stock": 9,
+            "price": 27.50,
+            "style": "blanda",
+            "authors": [
+                9
+            ],
+            "genres": [
+                10
+            ],
+            "themes": [
+                12
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 12,
+        "fields": {
+            "title": "El proceso",
+            "ISBN": 9780805209990,
+            "publisher": 3,
+            "publication_date": "1925-01-01",
+            "synopsis": "Cuenta la historia de Josef K., un hombre arrestado y procesado por un crimen nunca especificado. Atrapado en un sistema judicial absurdo y opresivo, Josef se enfrenta a la indiferencia y la burocracia que lo llevan a una espiral de desesperación y alienación. La novela, con su atmósfera claustrofóbica y pesadillesca, examina la lucha del individuo contra la autoridad impersonal e incomprensible. Al final, Josef es ejecutado sin saber de qué se le acusaba, simbolizando la impotencia frente a una justicia inescrutable.",
+            "cover": "testing_data/cover_elproceso.jpg",
+            "stock": 16,
+            "price": 16.95,
+            "style": "dura",
+            "authors": [
+                10
+            ],
+            "genres": [
+                11
+            ],
+            "themes": [
+                13
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 13,
+        "fields": {
+            "title": "La Odisea",
+            "ISBN": 9780140268867,
+            "publisher": 2,
+            "publication_date": "1800-01-01",
+            "synopsis": "La Odisea de Homero es una epopeya clásica que narra las aventuras de Odiseo (Ulises) mientras intenta regresar a su hogar en Ítaca tras la Guerra de Troya. Durante su viaje de diez años, enfrenta múltiples desafíos, como el cíclope Polifemo, la hechicera Circe y las sirenas. Mientras tanto, su esposa Penélope y su hijo Telémaco luchan contra los pretendientes que invaden su hogar. Finalmente, Odiseo regresa disfrazado, derrota a los pretendientes y recupera su reino, simbolizando el triunfo del ingenio y la perseverancia.",
+            "cover": "testing_data/cover_odisea.jpg",
+            "stock": 11,
+            "price": 18.75,
+            "style": "blanda",
+            "authors": [
+                11
+            ],
+            "genres": [
+                12
+            ],
+            "themes": [
+                14
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 14,
+        "fields": {
+            "title": "Don Quijote de la Mancha",
+            "ISBN": 9780060934347,
+            "publisher": 7,
+            "publication_date": "1605-01-16",
+            "synopsis": "Narra las aventuras de Alonso Quijano, un hidalgo que, tras leer demasiadas novelas de caballería, decide convertirse en caballero andante bajo el nombre de Don Quijote. Acompañado por su fiel escudero, Sancho Panza, Don Quijote se embarca en numerosas aventuras en las que confunde la realidad con sus fantasías caballerescas. Sus actos, como luchar contra molinos de viento creyendo que son gigantes, provocan tanto comicidad como tragedia. A lo largo de la obra, se exploran temas de idealismo, realidad, locura y desilusión. Al final, Don Quijote recupera la cordura y muere, dejando un legado de imaginación y nobleza.",
+            "cover": "testing_data/cover_quijote.jpg",
+            "stock": 21,
+            "price": 22.00,
+            "style": "dura",
+            "authors": [
+                12,
+                13
+            ],
+            "genres": [
+                13
+            ],
+            "themes": [
+                15
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 15,
+        "fields": {
+            "title": "La Divina Comedia",
+            "ISBN": 9780451208637,
+            "publisher": 8,
+            "publication_date": "1320-01-01",
+            "synopsis": "Una epopeya dividida en tres partes: Infierno, Purgatorio y Paraíso. La obra narra el viaje de Dante a través de estos tres reinos, guiado primero por el poeta Virgilio y luego por su amada Beatriz. En el Infierno, Dante observa los castigos de los condenados; en el Purgatorio, encuentra almas en penitencia que buscan redimirse; y en el Paraíso, experimenta la gloria de los bienaventurados y la presencia divina. A lo largo del viaje, Dante explora temas de pecado, justicia, redención y la búsqueda de la verdad y la divina gracia, culminando en una visión beatífica de Dios.",
+            "cover": "testing_data/cover_divinacomedia.jpg",
+            "stock": 6,
+            "price": 19.80,
+            "style": "blanda",
+            "authors": [
+                14
+            ],
+            "genres": [
+                14
+            ],
+            "themes": [
+                16
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 16,
+        "fields": {
+            "title": "Madame Bovary",
+            "ISBN": 9780375756740,
+            "publisher": 4,
+            "publication_date": "1857-01-01",
+            "synopsis": "Emma Bovary, una mujer atrapada en un matrimonio insatisfactorio con el médico Charles Bovary. Buscando escapar de la monotonía provincial, Emma se sumerge en fantasías románticas y consumistas. Tiene varios amantes y se endeuda profundamente, intentando encontrar la pasión y el lujo que anhela. Sin embargo, sus ilusiones se desmoronan, llevándola a la desesperación. Finalmente, Emma se suicida ingiriendo arsénico, dejando a su esposo devastado. La novela explora temas de deseo, insatisfacción, y las consecuencias trágicas de la búsqueda inalcanzable de la felicidad.",
+            "cover": "testing_data/cover_bovary.jpg",
+            "stock": 10,
+            "price": 17.20,
+            "style": "bolsillo",
+            "authors": [
+                15
+            ],
+            "genres": [
+                15,
+                16
+            ],
+            "themes": [
+                17
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 17,
+        "fields": {
+            "title": "Guerra y paz",
+            "ISBN": 9781400079988,
+            "publisher": 13,
+            "publication_date": "1869-01-01",
+            "synopsis": "Extensa novela que narra la vida de diversas familias aristocráticas rusas durante las guerras napoleónicas. La historia se centra en personajes como Pierre Bezújov, el príncipe Andréi Bolkonski y Natasha Rostova, cuyas vidas se entrelazan con eventos históricos y conflictos personales. A través de sus experiencias en la guerra y la paz, la novela explora temas de amor, honor, sacrificio y el impacto de la historia en el destino individual. Tolstói mezcla detalles históricos con profundos análisis psicológicos, pintando un retrato complejo de la sociedad rusa y la naturaleza humana.",
+            "cover": "testing_data/cover_guerrapaz.jpg",
+            "stock": 13,
+            "price": 25.00,
+            "style": "dura",
+            "authors": [
+                16
+            ],
+            "genres": [
+                17
+            ],
+            "themes": [
+                18
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 18,
+        "fields": {
+            "title": "El señor de los anillos",
+            "ISBN": 9780261103573,
+            "publisher": 15,
+            "publication_date": "1954-07-29",
+            "synopsis": "Trilogía de fantasía que narra la lucha entre el bien y el mal en la Tierra Media. La historia sigue a Frodo Bolsón, un hobbit encargado de destruir el Anillo Único, un poderoso artefacto creado por el oscuro señor Sauron para dominar el mundo. Acompañado por la Comunidad del Anillo, compuesta por hobbits, un elfo, un enano, un hombre y un mago, Frodo enfrenta numerosos peligros. La narrativa abarca batallas épicas, la amistad y el sacrificio. Finalmente, Frodo, con la ayuda de sus amigos, logra destruir el anillo, poniendo fin a la amenaza de Sauron y restaurando la paz en la Tierra Media.",
+            "cover": "testing_data/cover_anillos.jpg",
+            "stock": 14,
+            "price": 28.75,
+            "style": "blanda",
+            "authors": [
+                17,
+                18
+            ],
+            "genres": [
+                18,
+                19
+            ],
+            "themes": [
+                19
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 19,
+        "fields": {
+            "title": "Los hermanos Karamazov",
+            "ISBN": 9780140449242,
+            "publisher": 1,
+            "publication_date": "1880-01-01",
+            "synopsis": "Compleja novela que explora la moralidad, la fe y la familia a través de la historia de los Karamazov. El padre, Fiódor Pavlovich, es un hombre depravado, y sus tres hijos, Dimitri (Mitya), Iván e Alexéi (Alyosha), representan diferentes aspectos de la humanidad: pasión, razón y espiritualidad, respectivamente. Dimitri es acusado del asesinato de su padre, un crimen que en realidad comete Smerdiakov, el hijo ilegítimo. A lo largo de la novela, los hermanos enfrentan dilemas éticos y filosóficos, cuestionando la existencia de Dios, el bien y el mal, y el sentido de la justicia. La obra culmina con la condena de Dimitri, pero deja abierta la posibilidad de redención y reflexión sobre la condición humana.",
+            "cover": "testing_data/cover_karamazov.jpg",
+            "stock": 22,
+            "price": 30.50,
+            "style": "dura",
+            "authors": [
+                19
+            ],
+            "genres": [
+                20
+            ],
+            "themes": [
+                20
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 20,
+        "fields": {
+            "title": "Las mil y una noches",
+            "ISBN": 9780812972146,
+            "publisher": 10,
+            "publication_date": "1706-01-01",
+            "synopsis": "Colección de cuentos populares del Medio Oriente y Asia del Sur, narrados por Scheherezade para evitar su ejecución por el rey Shahriyar. Cada noche, Scheherezade cuenta una historia fascinante, dejando el final en suspenso para continuar al día siguiente, lo que mantiene al rey intrigado y le salva la vida. Las historias incluyen famosos relatos como 'Aladino y la lámpara maravillosa', 'Ali Baba y los cuarenta ladrones' y 'Simbad el Marino'. La colección abarca temas de amor, aventura, magia y moralidad, destacando la riqueza de la cultura árabe y la capacidad de la narrativa para influir en el destino.",
+            "cover": "testing_data/cover_milyuna.jpg",
+            "stock": 19,
+            "price": 24.99,
+            "style": "dura",
+            "authors": [
+                20
+            ],
+            "genres": [
+                21
+            ],
+            "themes": [
+                21
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 21,
+        "fields": {
+            "title": "Ulises",
+            "ISBN": 9780141182803,
+            "publisher": 14,
+            "publication_date": "1922-02-02",
+            "synopsis": "Novela modernista que narra un día en la vida de Leopold Bloom, un publicista judío en Dublín, el 16 de junio de 1904. La novela está estructurada en 18 episodios, cada uno con un estilo literario único, y parodia diversos géneros. A través de monólogos internos y narraciones detalladas, Joyce explora los pensamientos y experiencias de Bloom, así como de otros personajes como Stephen Dedalus y Molly Bloom. Los temas abarcan la identidad, la sexualidad, la religión y la vida cotidiana. 'Ulises' es famoso por su innovadora técnica de flujo de conciencia y su profundo análisis de la psique humana, redefiniendo la narrativa literaria del siglo XX.",
+            "cover": "testing_data/cover_ulises.jpg",
+            "stock": 23,
+            "price": 33.45,
+            "style": "bolsillo",
+            "authors": [
+                21
+            ],
+            "genres": [
+                22
+            ],
+            "themes": [
+                22,
+                23
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 22,
+        "fields": {
+            "title": "Fahrenheit 451",
+            "ISBN": 9781451673319,
+            "publisher": 5,
+            "publication_date": "1953-10-19",
+            "synopsis": "Novela distópica que se desarrolla en un futuro donde los libros están prohibidos y los bomberos queman cualquier libro encontrado. El protagonista, Guy Montag, es un bombero que comienza a cuestionar su papel y la sociedad en la que vive. Influenciado por su vecina Clarisse y su propia insatisfacción, Montag empieza a leer libros en secreto, descubriendo nuevas ideas y emociones. Su transformación lo lleva a enfrentarse al sistema opresivo, huyendo para unirse a un grupo de rebeldes que memorizan libros para preservar su contenido. La novela explora temas de censura, conformismo y el poder transformador de la literatura.",
+            "cover": "testing_data/cover_451.jpg",
+            "stock": 24,
+            "price": 16.99,
+            "style": "blanda",
+            "authors": [
+                22
+            ],
+            "genres": [
+                23
+            ],
+            "themes": [
+                24
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 23,
+        "fields": {
+            "title": "La metamorfosis",
+            "ISBN": 9780393347098,
+            "publisher": 2,
+            "publication_date": "1915-01-01",
+            "synopsis": "La historia de Gregor Samsa, un vendedor que un día despierta transformado en un enorme insecto. Incapaz de comunicarse y forzado a adaptarse a su nueva condición, Gregor se enfrenta al rechazo y la incomprensión de su familia. A medida que su transformación se vuelve una carga insostenible para todos, su relación con sus familiares se deteriora. La novela aborda temas de alienación, identidad y el absurdo de la existencia humana. Finalmente, Gregor muere, y su familia, aliviada, comienza a buscar nuevas oportunidades, simbolizando el alivio y la indiferencia ante el sufrimiento ajeno.",
+            "cover": "testing_data/cover_metamorfosis.jpg",
+            "stock": 12,
+            "price": 15.00,
+            "style": "blanda",
+            "authors": [
+                23
+            ],
+            "genres": [
+                24
+            ],
+            "themes": [
+                25
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 24,
+        "fields": {
+            "title": "La Isla del Tesoro",
+            "ISBN": 9780192840345,
+            "publisher": 9,
+            "publication_date": "1883-01-01",
+            "synopsis": "Novela de aventuras que sigue al joven Jim Hawkins, quien descubre un mapa del tesoro en la posada de sus padres. Junto a sus amigos, el doctor Livesey y el caballero Trelawney, Jim se embarca en el barco Hispaniola en busca del tesoro del pirata Flint. Durante el viaje, descubren que gran parte de la tripulación, liderada por el astuto y carismático Long John Silver, son piratas que también buscan el tesoro. La novela está llena de acción, traición y camaradería mientras Jim y sus amigos luchan contra los piratas. Al final, logran recuperar el tesoro y regresar a casa, con Jim habiendo aprendido valiosas lecciones sobre la valentía y la moralidad.",
+            "cover": "testing_data/cover_isla.jpg",
+            "stock": 15,
+            "price": 18.45,
+            "style": "bolsillo",
+            "authors": [
+                24,
+                25
+            ],
+            "genres": [
+                25
+            ],
+            "themes": [
+                26
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 25,
+        "fields": {
+            "title": "El retrato de Dorian Gray",
+            "ISBN": 9780141439570,
+            "publisher": 12,
+            "publication_date": "1890-01-01",
+            "synopsis": "Hedonismo, moralidad y la corrupción del alma. La historia sigue a Dorian Gray, un joven de extraordinaria belleza, que desea permanecer eternamente joven después de ver su retrato pintado por el artista Basil Hallward. Influenciado por el decadente Lord Henry Wotton, Dorian se entrega a una vida de excesos y perversidad, mientras su retrato envejece y muestra los efectos de sus actos inmorales. A lo largo de los años, el retrato se vuelve cada vez más grotesco, reflejando la degradación de su alma. Al final, atormentado por su conciencia, Dorian intenta destruir el retrato, pero en su lugar se mata a sí mismo, encontrando su verdadero rostro envejecido y corrompido, mientras el retrato recupera su belleza original.",
+            "cover": "testing_data/cover_dorian.jpg",
+            "stock": 6,
+            "price": 16.75,
+            "style": "dura",
+            "authors": [
+                1
+            ],
+            "genres": [
+                26
+            ],
+            "themes": [
+                27
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 26,
+        "fields": {
+            "title": "Los viajes de Gulliver",
+            "ISBN": 9780192833828,
+            "publisher": 8,
+            "publication_date": "1726-01-01",
+            "synopsis": "Sátira que narra las extraordinarias aventuras de Lemuel Gulliver, un médico y marinero. A lo largo de sus viajes, Gulliver visita varias tierras fantásticas que reflejan y critican aspectos de la sociedad humana: Lilliput: Un país habitado por personas diminutas, donde las luchas políticas y la corrupción parecen ridículas por su pequeñez. Brobdingnag: Una tierra de gigantes, donde Gulliver se siente vulnerable y su perspectiva sobre la humanidad cambia al ser observado como una curiosidad. Laputa: Una isla flotante de científicos y filósofos que parodia la obsesión con la ciencia y la impracticabilidad de la teoría sin aplicación práctica. País de los Houyhnhnms: Un lugar gobernado por caballos racionales que representan la razón pura, en contraste con los Yahoos, humanos salvajes y brutales, que simbolizan la parte más baja de la humanidad. A través de estas aventuras, Swift critica la política, la ciencia, la sociedad y la naturaleza humana, ofreciendo una profunda reflexión sobre las debilidades y absurdidades de su tiempo.",
+            "cover": "testing_data/cover_viajes.jpg",
+            "stock": 20,
+            "price": 20.95,
+            "style": "blanda",
+            "authors": [
+                2,
+                3
+            ],
+            "genres": [
+                27
+            ],
+            "themes": [
+                28
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 27,
+        "fields": {
+            "title": "El Aleph",
+            "ISBN": 9780307950911,
+            "publisher": 11,
+            "publication_date": "1945-01-01",
+            "synopsis": "El Aleph de Jorge Luis Borges es una colección de relatos cortos que exploran temas metafísicos, filosóficos y literarios. El cuento que da título a la colección, 'El Aleph', es una historia donde el narrador, una versión ficticia de Borges, descubre un punto en el espacio que contiene todos los otros puntos, permitiendo ver simultáneamente todo lo que existe en el universo. Este Aleph se encuentra en el sótano de la casa de Carlos Argentino Daneri, un poeta mediocre. A través de esta y otras historias, Borges juega con conceptos de infinitud, el tiempo, la memoria y la naturaleza de la realidad, desafiando las percepciones tradicionales y la comprensión humana del mundo.",
+            "cover": "testing_data/cover_aleph.jpg",
+            "stock": 5,
+            "price": 15.75,
+            "style": "dura",
+            "authors": [
+                4
+            ],
+            "genres": [
+                28
+            ],
+            "themes": [
+                29
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 28,
+        "fields": {
+            "title": "El Túnel",
+            "ISBN": 9780141183848,
+            "publisher": 4,
+            "publication_date": "1948-01-01",
+            "synopsis": "Novela existencialista que narra la historia de Juan Pablo Castel, un pintor obsesionado con María, una mujer que ha visto en una de sus exposiciones. Castel se sumerge en una espiral de celos y paranoia mientras intenta acercarse a María, quien resulta estar casada con un hombre ciego. La obsesión de Castel lo lleva a actos extremos, culminando en el asesinato de María. A lo largo de la novela, Castel reflexiona sobre la soledad, la incomunicación y la alienación, viendo su vida como un túnel oscuro y sin salida. La obra ofrece una profunda exploración de la psicología humana y la desesperación existencial.",
+            "cover": "testing_data/cover_tunel.jpg",
+            "stock": 9,
+            "price": 16.45,
+            "style": "blanda",
+            "authors": [
+                5,
+                6
+            ],
+            "genres": [
+                29,
+                30
+            ],
+            "themes": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 29,
+        "fields": {
+            "title": "La ciudad y los perros",
+            "ISBN": 9780374533403,
+            "publisher": 7,
+            "publication_date": "1963-01-01",
+            "synopsis": "La vida de los cadetes en el Colegio Militar Leoncio Prado en Lima, Perú. La historia sigue a varios personajes, incluyendo a Alberto 'el Poeta', Ricardo 'el Esclavo' y el líder de los cadetes, el 'Jaguar'. La trama se centra en la brutalidad, la violencia y la corrupción dentro del colegio, reflejando las tensiones sociales y políticas del Perú de la época. La muerte de Ricardo y la posterior investigación sacan a la luz las prácticas abusivas y la falta de moral en la institución. La novela, con su estructura no lineal y múltiples perspectivas, critica la rigidez y la deshumanización del sistema militar, así como las profundas desigualdades sociales.",
+            "cover": "testing_data/cover_ciudadyperros.jpg",
+            "stock": 18,
+            "price": 19.50,
+            "style": "dura",
+            "authors": [
+                7
+            ],
+            "genres": [
+                1
+            ],
+            "themes": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 30,
+        "fields": {
+            "title": "Rayuela",
+            "ISBN": 9780394752845,
+            "publisher": 3,
+            "publication_date": "1963-01-01",
+            "synopsis": "Novela experimental que desafía las convenciones narrativas tradicionales. La obra presenta dos formas de ser leída: de manera lineal, siguiendo la secuencia de capítulos del 1 al 56, o siguiendo el 'tablero de dirección', que propone un orden no lineal para la lectura de los capítulos. La trama sigue la vida de Horacio Oliveira, un intelectual argentino, y su relación tumultuosa con la joven Maga, así como sus encuentros con un grupo de amigos en París. A través de una prosa poética y llena de juegos lingüísticos, Cortázar explora temas de amor, soledad, identidad y la búsqueda de sentido en la vida. La novela desafía al lector a participar activamente en la construcción del significado, convirtiéndose en una experiencia única y personal para cada lector.",
+            "cover": "testing_data/cover_rayuela.jpg",
+            "stock": 7,
+            "price": 16.25,
+            "style": "blanda",
+            "authors": [
+                8,
+                9
+            ],
+            "genres": [
+                2
+            ],
+            "themes": [
+                3
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 31,
+        "fields": {
+            "title": "Pedro Páramo",
+            "ISBN": 9780802133908,
+            "publisher": 5,
+            "publication_date": "1955-01-01",
+            "synopsis": "Novela corta que narra la historia de Juan Preciado, quien viaja a Comala, un pueblo misterioso en México, para cumplir la promesa que le hizo a su madre en su lecho de muerte: encontrar a su padre, Pedro Páramo. Al llegar, Juan descubre un pueblo habitado por espíritus y recuerdos del pasado, donde los vivos y los muertos se entrelazan en una narrativa fragmentada y enigmática. A través de una serie de flashbacks y monólogos interiores, se revela la historia de Pedro Páramo, un hombre poderoso y despiadado que dominó el pueblo y destruyó vidas en su búsqueda obsesiva de poder y amor.",
+            "cover": "testing_data/cover_pedroparamo.jpg",
+            "stock": 6,
+            "price": 15.50,
+            "style": "bolsillo",
+            "authors": [
+                10
+            ],
+            "genres": [
+                3
+            ],
+            "themes": [
+                4,
+                5
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 32,
+        "fields": {
+            "title": "El otoño del patriarca",
+            "ISBN": 9780060882860,
+            "publisher": 6,
+            "publication_date": "1975-01-01",
+            "synopsis": "La vida de un dictador caribeño sin nombre, basado en varios dictadores latinoamericanos, a lo largo de su reinado y declive. La narrativa, con un estilo característico de realismo mágico, presenta una estructura fragmentada y caleidoscópica, sin párrafos ni puntuación convencional, que refleja la mente delirante y autocrática del patriarca. A través de una serie de episodios surrealistas, García Márquez explora temas como el abuso de poder, la corrupción, la soledad del liderazgo y la decadencia del régimen. La novela desafía las convenciones literarias y políticas, ofreciendo una crítica poderosa de la tiranía y la opresión en América Latina.",
+            "cover": "testing_data/cover_patriarca.jpg",
+            "stock": 14,
+            "price": 18.75,
+            "style": "blanda",
+            "authors": [
+                11
+            ],
+            "genres": [
+                4
+            ],
+            "themes": [
+                6
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 33,
+        "fields": {
+            "title": "La tregua",
+            "ISBN": 9780822102311,
+            "publisher": 12,
+            "publication_date": "1960-01-01",
+            "synopsis": "La vida de Martín Santomé, un hombre de mediana edad que trabaja en una oficina burocrática en Montevideo, Uruguay. La historia se desarrolla a través del diario personal de Santomé, donde relata sus pensamientos más íntimos y sus experiencias diarias. La trama se centra en la relación amorosa que Santomé comienza con Laura Avellaneda, una joven empleada de la oficina. A medida que su romance florece, Santomé se enfrenta a la soledad, el paso del tiempo y las expectativas sociales. La novela explora temas de amor, deseo, familia y la búsqueda de la felicidad en la vida cotidiana. Con un estilo sencillo pero emotivo, Benedetti captura la esencia de la experiencia humana y ofrece una reflexión conmovedora sobre el amor y el significado de la vida.",
+            "cover": "testing_data/cover_tregua.jpg",
+            "stock": 22,
+            "price": 22.50,
+            "style": "dura",
+            "authors": [
+                12
+            ],
+            "genres": [
+                5,
+                6
+            ],
+            "themes": [
+                7
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 34,
+        "fields": {
+            "title": "El Principito",
+            "ISBN": 9780156012195,
+            "publisher": 9,
+            "publication_date": "1943-04-06",
+            "synopsis": "Novela corta que narra el encuentro entre un aviador perdido en el desierto del Sahara y un pequeño príncipe proveniente de un pequeño asteroide. A través de su conversación, el Principito comparte sus experiencias y reflexiones sobre la vida, el amor y la amistad. A medida que el relato avanza, el Principito visita varios planetas habitados por adultos que representan diferentes aspectos de la sociedad y sus fallas. La novela explora temas de la inocencia, la imaginación, la importancia de las relaciones humanas y la búsqueda de significado en la vida. Con su prosa poética y sus ilustraciones encantadoras, El Principito ha cautivado a lectores de todas las edades y se ha convertido en un clásico de la literatura universal.",
+            "cover": "testing_data/cover_principito.jpg",
+            "stock": 25,
+            "price": 21.00,
+            "style": "bolsillo",
+            "authors": [
+                13
+            ],
+            "genres": [
+                7
+            ],
+            "themes": [
+                8
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 35,
+        "fields": {
+            "title": "El Amor en los Tiempos del Cólera",
+            "ISBN": 9780307389735,
+            "publisher": 11,
+            "publication_date": "1985-01-01",
+            "synopsis": "La vida de Fermina Daza, Florentino Ariza y el doctor Juvenal Urbino en la ciudad caribeña de Cartagena, Colombia, a lo largo de varias décadas. La trama se desarrolla en un entorno marcado por la epidemia de cólera y abarca temas como el amor, el deseo, el honor y el paso del tiempo. Fermina Daza y Florentino Ariza se enamoran en su juventud, pero Fermina finalmente se casa con el doctor Urbino. A pesar de este matrimonio, Florentino mantiene su amor por Fermina durante cincuenta años, mientras ella y su esposo enfrentan desafíos en su relación. La novela explora la naturaleza compleja y a menudo irracional del amor, así como la capacidad de perdón y redención a lo largo de la vida. Con su prosa lírica y su profundo análisis de la condición humana, El Amor en los Tiempos del Cólera es una obra maestra de la literatura latinoamericana.",
+            "cover": "testing_data/cover_amorcolera.jpg",
+            "stock": 8,
+            "price": 23.75,
+            "style": "blanda",
+            "authors": [
+                14,
+                15
+            ],
+            "genres": [
+                8
+            ],
+            "themes": [
+                9
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 36,
+        "fields": {
+            "title": "El coronel no tiene quien le escriba",
+            "ISBN": 9780307474720,
+            "publisher": 4,
+            "publication_date": "1961-01-01",
+            "synopsis": "Novela corta que sigue la vida de un coronel retirado y su esposa en un pueblo costero en Colombia. La historia se centra en la espera del coronel por una pensión prometida por el gobierno, una espera que se prolonga durante años. En medio de la pobreza y la desesperación, el coronel y su esposa luchan por sobrevivir, vendiendo sus posesiones y enfrentando la indiferencia del mundo que los rodea. A través de una prosa lírica y una profunda introspección psicológica, García Márquez retrata la dignidad y la resiliencia del ser humano frente a la adversidad. La novela es una reflexión conmovedora sobre la esperanza, la persistencia y la dignidad en tiempos de dificultad.",
+            "cover": "testing_data/cover_coronel.jpg",
+            "stock": 7,
+            "price": 19.50,
+            "style": "dura",
+            "authors": [
+                16
+            ],
+            "genres": [
+                9
+            ],
+            "themes": [
+                10,
+                11
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 37,
+        "fields": {
+            "title": "Pantaleón y las visitadoras",
+            "ISBN": 9788432207458,
+            "publisher": 10,
+            "publication_date": "1973-01-01",
+            "synopsis": "Novela cómica que narra la historia de Pantaleón Pantoja, un capitán del ejército peruano encargado de establecer un servicio de visitadoras (prostitutas) para satisfacer las necesidades sexuales de los soldados en las zonas más remotas de la Amazonía. Pantaleón, un hombre recto y meticuloso, se ve atrapado en una serie de situaciones cómicas y absurdas mientras intenta cumplir su misión de la manera más eficiente posible. Sin embargo, sus esfuerzos son obstaculizados por la burocracia militar, los celos de su esposa y la resistencia de los lugareños. La novela satiriza la corrupción, la hipocresía y la incompetencia del poder militar y político en América Latina, mientras que también aborda temas de deseo sexual, identidad y moralidad. Con su estilo irónico y su ingenio narrativo, Pantaleón y las Visitadoras es una obra emblemática del realismo social y la sátira política en la literatura latinoamericana.",
+            "cover": "testing_data/cover_pantaleon.jpg",
+            "stock": 16,
+            "price": 18.95,
+            "style": "blanda",
+            "authors": [
+                17
+            ],
+            "genres": [
+                10
+            ],
+            "themes": [
+                12
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 38,
+        "fields": {
+            "title": "La casa de los espíritus",
+            "ISBN": 9780553273915,
+            "publisher": 3,
+            "publication_date": "1982-01-01",
+            "synopsis": "Sigue la saga de la familia Trueba a lo largo de varias generaciones en un país latinoamericano no especificado. La historia está marcada por la presencia de eventos sobrenaturales y la lucha entre el bien y el mal, representados por los 'espíritus' que rodean a la familia. La narrativa abarca temas de amor, poder, política y revolución, reflejando los cambios sociales y políticos en el país a lo largo del tiempo. La matriarca de la familia, Clara, posee habilidades paranormales y actúa como un vínculo entre el mundo real y el espiritual. A través de la narración de varias generaciones, Allende ofrece una reflexión profunda sobre la historia, la identidad y el destino de una nación y su gente.",
+            "cover": "testing_data/cover_espiritus.jpg",
+            "stock": 18,
+            "price": 26.00,
+            "style": "dura",
+            "authors": [
+                18
+            ],
+            "genres": [
+                11
+            ],
+            "themes": [
+                13
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 39,
+        "fields": {
+            "title": "Los detectives salvajes",
+            "ISBN": 9788439720874,
+            "publisher": 7,
+            "publication_date": "1998-01-01",
+            "synopsis": "Un grupo de poetas jóvenes conocidos como los 'infrarrealistas', especialmente dos de ellos: Arturo Belano y Ulises Lima. La historia se desarrolla en un estilo fragmentario y en constante movimiento, con narrativas entrelazadas que llevan a los personajes desde la Ciudad de México hasta Europa, África y América Latina. A medida que los personajes persiguen a la misteriosa poeta desaparecida, Cesárea Tinajero, se encuentran con una serie de personajes excéntricos y peligrosos, y se ven envueltos en eventos tumultuosos y a menudo violentos. La novela es una exploración de la poesía, la literatura y la vida bohemia, así como un comentario sobre la historia reciente de América Latina y la búsqueda incansable de la identidad y el significado en un mundo cambiante y caótico.",
+            "cover": "testing_data/cover_detectives.jpg",
+            "stock": 15,
+            "price": 22.95,
+            "style": "blanda",
+            "authors": [
+                19
+            ],
+            "genres": [
+                12
+            ],
+            "themes": [
+                14
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 40,
+        "fields": {
+            "title": "2666",
+            "ISBN": 9780312429218,
+            "publisher": 14,
+            "publication_date": "2004-01-01",
+            "synopsis": "Novela monumental que consta de cinco partes interrelacionadas, que abarcan desde la crítica literaria hasta el thriller policial, y se desarrolla en diversos lugares como México, Europa y África. La primera parte, 'La parte de los críticos', sigue a un grupo de académicos obsesionados con la obra de un enigmático autor alemán. La segunda parte, 'La parte de Amalfitano', narra la historia de un profesor universitario chileno y su lucha contra la locura en una ciudad mexicana. La tercera parte, 'La parte de Fate', sigue a un periodista afroamericano en su investigación sobre una serie de asesinatos de mujeres en una ciudad fronteriza mexicana. La cuarta parte, 'La parte de los crímenes', se centra en los asesinatos en serie de mujeres en la ciudad de Santa Teresa, basados en los feminicidios reales que ocurrieron en Ciudad Juárez. La quinta parte, 'La parte de Archimboldi', revela la vida del misterioso escritor alemán cuya obra obsesiona a los críticos en la primera parte. A través de estas partes, Bolaño explora temas como la literatura, la violencia, la identidad y la búsqueda de significado en un mundo caótico y oscuro. 2666 es una obra magistral que desafía las convenciones narrativas y ofrece una visión profunda y perturbadora de la condición humana.",
+            "cover": "testing_data/cover_2666.jpg",
+            "stock": 14,
+            "price": 27.50,
+            "style": "dura",
+            "authors": [
+                20
+            ],
+            "genres": [
+                13
+            ],
+            "themes": [
+                15
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 41,
+        "fields": {
+            "title": "Conversación en La Catedral",
+            "ISBN": 9780060732806,
+            "publisher": 6,
+            "publication_date": "1969-01-01",
+            "synopsis": "Un bar de Lima llamado La Catedral, donde dos personajes, Santiago Zavala y Ambrosio, mantienen una conversación que abarca desde el pasado hasta el presente de Perú. A través de esta conversación, se exploran temas como la corrupción política, la violencia, la traición y la desilusión. La narrativa está marcada por un estilo experimental y fragmentario, con cambios constantes entre el diálogo y los recuerdos de los personajes, lo que refleja la atmósfera caótica y opresiva de la sociedad peruana en ese momento. La novela es una exploración profunda de la historia y la política de Perú, así como un retrato de la lucha individual por la libertad y la dignidad en un mundo dominado por la corrupción y la violencia.",
+            "cover": "testing_data/cover_catedral.jpg",
+            "stock": 9,
+            "price": 20.95,
+            "style": "blanda",
+            "authors": [
+                21
+            ],
+            "genres": [
+                14,
+                15
+            ],
+            "themes": [
+                16
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 42,
+        "fields": {
+            "title": "Santa María de las Flores Negras",
+            "ISBN": 9788466620077,
+            "publisher": 8,
+            "publication_date": "2002-01-01",
+            "synopsis": "Ambientada en la Ciudad de México durante la Revolución Mexicana, la historia sigue a varios personajes cuyas vidas se entrelazan debido a un conjunto de misteriosas circunstancias. La trama se desarrolla alrededor de un asesinato en la opulenta hacienda de Santa María de las Flores Negras. Los personajes principales incluyen al propietario de la hacienda, Don Diego Oliva, su esposa Doña María, su hijo Diego y su amante, así como el abogado Octavio Guerra y su asistente, el periodista Lope Trevisán. A medida que se desenmascaran secretos y se revelan los verdaderos motivos detrás del crimen, la novela ofrece un retrato vívido de la sociedad mexicana de la época, con sus tensiones sociales, políticas y económicas. 'Santa María de las Flores Negras' es una historia de intriga y misterio que ofrece una visión profunda y evocadora de un período tumultuoso en la historia de México.",
+            "cover": "testing_data/cover_floresnegras.jpg",
+            "stock": 10,
+            "price": 17.95,
+            "style": "dura",
+            "authors": [
+                22,
+                23
+            ],
+            "genres": [
+                16
+            ],
+            "themes": [
+                17
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 43,
+        "fields": {
+            "title": "El Lobo Estepario",
+            "ISBN": 9780141186126,
+            "publisher": 11,
+            "publication_date": "1927-01-01",
+            "synopsis": "El Lobo Estepario es una novela escrita por Hermann Hesse que explora los temas del aislamiento, la alienación y la búsqueda de identidad en la sociedad moderna. La historia sigue a Harry Haller, un hombre atormentado y solitario que se considera a sí mismo un 'lobo estepario', un ser dividido entre su naturaleza humana y su lado salvaje. Haller se encuentra en un estado de conflicto interno constante, luchando con sus demonios internos y su alienación de la sociedad burguesa que lo rodea. La novela presenta un estilo narrativo complejo, con elementos de realismo y fantasía entrelazados. A través de los escritos del protagonista y sus encuentros con personajes como Hermínia, María y el profesor Pablo, Hesse explora la dualidad del ser humano, así como la búsqueda espiritual y la necesidad de conexión en un mundo cada vez más alienante.",
+            "cover": "testing_data/cover_estepario.jpg",
+            "stock": 5,
+            "price": 15.25,
+            "style": "blanda",
+            "authors": [
+                24
+            ],
+            "genres": [
+                17
+            ],
+            "themes": [
+                18
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 44,
+        "fields": {
+            "title": "En el camino",
+            "ISBN": 9780140042597,
+            "publisher": 1,
+            "publication_date": "1957-01-01",
+            "synopsis": "La novela está impregnada de un espíritu de libertad, exploración y búsqueda de significado en la vida. Los personajes principales, Sal y Dean, buscan emociones intensas y nuevas experiencias, a menudo involucrándose en actividades como el jazz, el sexo, el alcohol y el uso de drogas. A través de una prosa espontánea y frenética, Kerouac captura el ritmo acelerado de la carretera y la efervescencia de la cultura contracultural de la época. 'En el camino' es considerada una obra clave del movimiento literario conocido como la Generación Beat y ha inspirado a numerosos lectores con su espíritu de aventura y su exploración de la libertad y la rebeldía.",
+            "cover": "testing_data/cover_camino.jpg",
+            "stock": 11,
+            "price": 18.50,
+            "style": "dura",
+            "authors": [
+                25
+            ],
+            "genres": [
+                18
+            ],
+            "themes": [
+                19
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 45,
+        "fields": {
+            "title": "Cumbres Borrascosas",
+            "ISBN": 9780141439556,
+            "publisher": 2,
+            "publication_date": "1847-01-01",
+            "synopsis": "Cumbres Borrascosas es una novela escrita por Emily Brontë que cuenta la historia de amor apasionada y tormentosa entre Heathcliff y Catherine Earnshaw, ambientada en el sombrío y salvaje páramo de Yorkshire, Inglaterra. La trama se desarrolla en torno a la relación entre estos dos personajes y cómo su amor está marcado por la venganza, la obsesión y la tragedia. Heathcliff, un joven misterioso y atormentado, es adoptado por la familia Earnshaw y se enamora perdidamente de Catherine, la hija de la casa. Sin embargo, su amor se ve obstaculizado por las diferencias sociales y la crueldad de quienes los rodean. Catherine se casa con otro hombre, Edgar Linton, y esto desencadena una serie de eventos destructivos que afectan a todos los personajes involucrados. La novela es conocida por su intensidad emocional, su atmósfera gótica y su exploración de temas como el amor, la venganza, la pasión y el destino. A través de su narrativa compleja y su rica caracterización, Brontë ofrece una visión penetrante de la naturaleza humana y de las fuerzas destructivas que pueden surgir del amor y el deseo.",
+            "cover": "testing_data/cover_cumbres.jpg",
+            "stock": 23,
+            "price": 21.50,
+            "style": "dura",
+            "authors": [
+                1
+            ],
+            "genres": [
+                19,
+                20
+            ],
+            "themes": [
+                20
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 46,
+        "fields": {
+            "title": "El Guardián entre el Centeno",
+            "ISBN": 9780316769488,
+            "publisher": 12,
+            "publication_date": "1951-01-01",
+            "synopsis": "El Guardián entre el Centeno de J.D. Salinger sigue a Holden Caulfield, un joven rebelde expulsado de la escuela. En Nueva York, lucha con la alienación y la hipocresía, buscando autenticidad en un mundo superficial. En su viaje, enfrenta desafíos emocionales que lo llevan a un hospital. A través de su voz, Salinger explora la adolescencia y la búsqueda de identidad.",
+            "cover": "testing_data/cover_centeno.jpg",
+            "stock": 21,
+            "price": 24.95,
+            "style": "blanda",
+            "authors": [
+                2
+            ],
+            "genres": [
+                21
+            ],
+            "themes": [
+                21
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 47,
+        "fields": {
+            "title": "Lolita",
+            "ISBN": 9780679723165,
+            "publisher": 13,
+            "publication_date": "1955-01-01",
+            "synopsis": "Novela que narra la obsesión enfermiza de Humbert Humbert, un profesor de literatura, por Dolores Haze, una niña de doce años a la que apoda 'Lolita'. Humbert se convierte en el padrastro de Lolita después de casarse con su madre, y la historia sigue sus viajes por Estados Unidos mientras Humbert manipula y controla a Lolita para satisfacer sus deseos sexuales. Nabokov utiliza una prosa exquisita y juegos lingüísticos para explorar temas de deseo, obsesión, perversión y moralidad. La novela es una crítica mordaz de la cultura y la moralidad estadounidenses, así como una profunda reflexión sobre la naturaleza del amor y la depravación humana.",
+            "cover": "testing_data/cover_lolita.jpg",
+            "stock": 14,
+            "price": 26.00,
+            "style": "bolsillo",
+            "authors": [
+                3,
+                4
+            ],
+            "genres": [
+                22
+            ],
+            "themes": [
+                22
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 48,
+        "fields": {
+            "title": "Anna Karenina",
+            "ISBN": 9780143035008,
+            "publisher": 15,
+            "publication_date": "1877-01-01",
+            "synopsis": "Novela que sigue las vidas entrelazadas de varios personajes en la Rusia del siglo XIX, centrándose principalmente en Anna Karenina, una mujer casada que se embarca en un apasionado y trágico romance con el oficial de caballería, el Conde Vronsky. La historia explora temas de amor, matrimonio, moralidad, y las tensiones entre la felicidad personal y las expectativas sociales. A través de una prosa magistral y una profundidad psicológica, Tolstói ofrece una visión conmovedora y compleja de la naturaleza humana y de la sociedad rusa de su tiempo.",
+            "cover": "testing_data/cover_anak.jpg",
+            "stock": 8,
+            "price": 19.95,
+            "style": "dura",
+            "authors": [
+                5
+            ],
+            "genres": [
+                23,
+                24
+            ],
+            "themes": [
+                23
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 49,
+        "fields": {
+            "title": "El ruido y la furia",
+            "ISBN": 9780679732242,
+            "publisher": 6,
+            "publication_date": "1929-01-01",
+            "synopsis": "Novela que presenta la historia de la familia Compson, una familia sureña en declive, desde cuatro perspectivas diferentes: los hermanos Benjy, Quentin y Jason Compson, y la sirvienta negra Dilsey. La narrativa, fragmentada y no lineal, abarca eventos como el declive económico y moral de la familia, así como la trágica historia de Caddy Compson, la única hija mujer. A través de la voz de los personajes, Faulkner explora temas como el tiempo, la memoria, la decadencia familiar y racial, y la lucha contra el destino. La novela es una obra maestra modernista que desafía las convenciones narrativas y ofrece una visión compleja y conmovedora de la condición humana.",
+            "cover": "testing_data/cover_ruido.jpg",
+            "stock": 20,
+            "price": 22.00,
+            "style": "blanda",
+            "authors": [
+                6
+            ],
+            "genres": [
+                24
+            ],
+            "themes": [
+                24
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 50,
+        "fields": {
+            "title": "El tambor de hojalata",
+            "ISBN": 9780394712436,
+            "publisher": 9,
+            "publication_date": "1959-01-01",
+            "synopsis": "La vida de Oskar Matzerath, un niño que decide dejar de crecer a los tres años y que se comunica principalmente a través de un tambor. La historia se desarrolla en la Alemania nazi y la posguerra, y Oskar narra sus experiencias y las de su familia desde su peculiar perspectiva. A través de Oskar, Grass explora temas como la culpabilidad alemana, la identidad nacional y la naturaleza destructiva del nazismo. La novela es una meditación profunda sobre la historia y la memoria, y ha sido aclamada como una de las obras más importantes de la literatura alemana del siglo XX.",
+            "cover": "testing_data/cover_tambor.jpg",
+            "stock": 25,
+            "price": 19.00,
+            "style": "bolsillo",
+            "authors": [
+                7
+            ],
+            "genres": [
+                25
+            ],
+            "themes": [
+                25
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 51,
+        "fields": {
+            "title": "La historia interminable",
+            "ISBN": 9780140074314,
+            "publisher": 14,
+            "publication_date": "1979-01-01",
+            "synopsis": "La historia interminable de Michael Ende es una novela de fantasía que sigue las aventuras de Bastián Baltasar Bux, un niño solitario que encuentra un misterioso libro en una librería antigua. A medida que Bastián lee el libro, se sumerge en el mundo de Fantasía, un reino mágico que está siendo devorado por la Nada, una fuerza oscura que borra todo a su paso. Bastián descubre que él mismo es un personaje en la historia y que tiene el poder de salvar a Fantasía. A lo largo de su viaje, Bastián conoce a una variedad de criaturas y seres mágicos, incluido Atreyu, un joven guerrero que busca la cura para la Emperatriz Infantil, la gobernante de Fantasía. Juntos, enfrentan numerosos desafíos y peligros mientras intentan detener la expansión de la Nada y restaurar el equilibrio en el reino. La novela es una celebración de la imaginación y la creatividad, así como una reflexión sobre el poder de las historias para inspirar y transformar. A través de su narrativa cautivadora y su rica mitología, La historia interminable ha cautivado a lectores de todas las edades desde su publicación.",
+            "cover": "testing_data/cover_interminable.jpg",
+            "stock": 23,
+            "price": 21.00,
+            "style": "blanda",
+            "authors": [
+                8,
+                9
+            ],
+            "genres": [
+                26
+            ],
+            "themes": [
+                26
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 52,
+        "fields": {
+            "title": "Harry Potter y la Cámara Secreta",
+            "ISBN": 9780307389711,
+            "publisher": 3,
+            "publication_date": "1985-01-01",
+            "synopsis": "El joven mago Harry regresa a Hogwarts para su segundo año y descubre una misteriosa cámara que guarda un peligroso secreto. Con la ayuda de sus amigos Ron y Hermione, enfrenta a una serpiente gigante y a la oscura verdad detrás de los ataques que amenazan a los estudiantes nacidos de muggles.",
+            "cover": "testing_data/cover_harrypotter2.jpg",
+            "stock": 12,
+            "price": 20.50,
+            "style": "dura",
+            "authors": [
+                10
+            ],
+            "genres": [
+                27,
+                28
+            ],
+            "themes": [
+                27
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 53,
+        "fields": {
+            "title": "La sombra del viento",
+            "ISBN": 9780143034902,
+            "publisher": 11,
+            "publication_date": "2001-01-01",
+            "synopsis": "Novela ambientada en la Barcelona de la posguerra civil española. Daniel Sempere, un joven librero, descubre un libro misterioso llamado 'La Sombra del Viento' de Julián Carax. A medida que investiga la vida del autor, Daniel se sumerge en un intrincado laberinto de secretos, traiciones y amores prohibidos. La novela es una oda al poder de los libros y la literatura para transformar vidas, mientras explora temas de amor, redención y la lucha entre el bien y el mal.",
+            "cover": "testing_data/cover_sombraviento.jpg",
+            "stock": 19,
+            "price": 18.00,
+            "style": "dura",
+            "authors": [
+                11
+            ],
+            "genres": [
+                29
+            ],
+            "themes": [
+                28
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 54,
+        "fields": {
+            "title": "Drácula",
+            "ISBN": 9780141439846,
+            "publisher": 7,
+            "publication_date": "1897-05-26",
+            "synopsis": "'Drácula' de Bram Stoker es una novela epistolar que sigue la historia del Conde Drácula, un vampiro sediento de sangre que busca expandir su influencia desde Transilvania hasta la Inglaterra victoriana. El libro detalla los esfuerzos de un grupo de personajes, incluyendo al profesor Van Helsing y al joven abogado Jonathan Harker, para detener los oscuros planes de Drácula. A través de cartas, diarios y artículos de periódico, la narrativa teje una trama de terror gótico, suspense y superstición mientras los personajes luchan contra las fuerzas del mal y la corrupción. 'Drácula' es una obra clásica que ha influido en la cultura popular y ha dejado una marca indeleble en el género del horror.",
+            "cover": "testing_data/cover_dracula.jpg",
+            "stock": 13,
+            "price": 18.99,
+            "style": "blanda",
+            "authors": [
+                1
+            ],
+            "genres": [
+                1
+            ],
+            "themes": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 55,
+        "fields": {
+            "title": "Moby Dick",
+            "ISBN": 9780142437247,
+            "publisher": 6,
+            "publication_date": "1851-10-18",
+            "synopsis": "Epopeya marítima que narra la obsesiva búsqueda del capitán Ahab por vengarse de Moby Dick, una gran ballena blanca que le arrancó una pierna. A bordo del ballenero Pequod, Ahab lidera a su tripulación en una expedición peligrosa y emocionante por los océanos del mundo. La novela es una exploración profunda de temas como la obsesión, la locura, la naturaleza humana y la lucha contra fuerzas más grandes que uno mismo. A través de su prosa épica y su simbolismo intrincado, 'Moby Dick' es una obra maestra literaria que sigue cautivando a los lectores con su poderoso relato.",
+            "cover": "testing_data/cover_modydick.jpg",
+            "stock": 20,
+            "price": 21.50,
+            "style": "dura",
+            "authors": [
+                2,
+                3
+            ],
+            "genres": [
+                2
+            ],
+            "themes": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 56,
+        "fields": {
+            "title": "Jane Eyre",
+            "ISBN": 9780141441146,
+            "publisher": 3,
+            "publication_date": "1847-10-16",
+            "synopsis": "Jane Eyre, una joven huérfana que es maltratada por su familia adoptiva. Jane se convierte en institutriz en Thornfield Hall, donde se enamora del enigmático señor Rochester. Sin embargo, su romance se ve obstaculizado por secretos oscuros que acechan en la mansión. La novela es una exploración profunda de la independencia femenina, la moralidad y el amor verdadero en la Inglaterra del siglo XIX. A través de la voz firme y valiente de Jane, Brontë ofrece una perspectiva conmovedora y atemporal sobre la lucha por la autoafirmación y la felicidad en un mundo dominado por las convenciones sociales.",
+            "cover": "testing_data/cover_eyre.jpg",
+            "stock": 15,
+            "price": 22.75,
+            "style": "dura",
+            "authors": [
+                4
+            ],
+            "genres": [
+                3
+            ],
+            "themes": [
+                3
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 57,
+        "fields": {
+            "title": "El Conde de Montecristo",
+            "ISBN": 9780140449266,
+            "publisher": 8,
+            "publication_date": "1844-01-01",
+            "synopsis": "Novela de aventuras que sigue la historia de Edmundo Dantés, un joven marinero injustamente encarcelado por un complot en el que no tuvo parte. Tras escapar de prisión y descubrir un tesoro en la isla de Montecristo, Dantés se transforma en el misterioso y vengativo Conde de Montecristo. Utilizando su vasta riqueza y astucia, Dantés lleva a cabo una elaborada venganza contra aquellos que lo traicionaron, mientras lucha con sus propios dilemas morales y emocionales. La novela es una emocionante saga de intriga, traición, amor y redención que ha cautivado a los lectores durante generaciones.",
+            "cover": "testing_data/cover_montecristo.jpg",
+            "stock": 8,
+            "price": 19.50,
+            "style": "blanda",
+            "authors": [
+                5
+            ],
+            "genres": [
+                4
+            ],
+            "themes": [
+                4,
+                5
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 58,
+        "fields": {
+            "title": "Los Miserables",
+            "ISBN": 9780140444308,
+            "publisher": 12,
+            "publication_date": "1862-01-01",
+            "synopsis": "Novela épica que sigue las vidas de varios personajes en la Francia del siglo XIX, con un enfoque principal en Jean Valjean, un exconvicto que busca redención, y el implacable inspector Javert, quien lo persigue incansablemente. La historia aborda temas de justicia, redención, amor y sacrificio en un contexto de pobreza, injusticia social y revolución. A través de su narrativa apasionada y sus personajes inolvidables, Hugo crea una poderosa obra que ha conmovido a lectores de todas las edades y épocas.",
+            "cover": "testing_data/cover_miserables.jpg",
+            "stock": 17,
+            "price": 24.50,
+            "style": "dura",
+            "authors": [
+                6
+            ],
+            "genres": [
+                5
+            ],
+            "themes": [
+                6
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 59,
+        "fields": {
+            "title": "La Celestina",
+            "ISBN": 9788483102052,
+            "publisher": 10,
+            "publication_date": "1499-01-01",
+            "synopsis": "La trama gira en torno a la relación entre Calisto y Melibea, dos jóvenes amantes cuyo romance es facilitado por la astuta y manipuladora Celestina, una alcahueta o 'entremetida'. La historia se desarrolla en un mundo marcado por la pasión, el deseo y la intriga, y ofrece una mirada profunda a la sociedad española del siglo XV. A través de su compleja trama y sus personajes carismáticos, 'La Celestina' es una obra maestra que ha cautivado a lectores durante siglos.",
+            "cover": "testing_data/cover_celestina.jpg",
+            "stock": 10,
+            "price": 16.75,
+            "style": "bolsillo",
+            "authors": [
+                7,
+                8
+            ],
+            "genres": [
+                6,
+                7
+            ],
+            "themes": [
+                7
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 60,
+        "fields": {
+            "title": "La Ilíada",
+            "ISBN": 9780140275360,
+            "publisher": 15,
+            "publication_date": "1750-01-01",
+            "synopsis": "Narra los acontecimientos finales de la Guerra de Troya. La historia se centra en el conflicto entre los griegos y los troyanos, desencadenado por el rapto de Helena, esposa de Menelao, por parte del príncipe troyano Paris. Los principales personajes incluyen a los héroes griegos Aquiles y Héctor, cuyo enfrentamiento es el punto focal de la obra. A lo largo del poema, se exploran temas como el honor, la gloria, la ira divina y la condición humana en un contexto de guerra y tragedia. 'La Ilíada' es considerada una de las obras más importantes de la literatura occidental y ha tenido una profunda influencia en la cultura y la literatura a lo largo de los siglos.",
+            "cover": "testing_data/cover_iliada.jpg",
+            "stock": 11,
+            "price": 20.00,
+            "style": "dura",
+            "authors": [
+                9
+            ],
+            "genres": [
+                8
+            ],
+            "themes": [
+                8
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 61,
+        "fields": {
+            "title": "El retrato de una dama",
+            "ISBN": 9780141441268,
+            "publisher": 2,
+            "publication_date": "1881-10-01",
+            "synopsis": "Novela escrita por Henry James que narra la historia de Isabel Archer, una joven estadounidense que hereda una gran fortuna y es libre para buscar su propio camino en la vida. La trama sigue a Isabel mientras viaja por Europa y se ve envuelta en una serie de relaciones complicadas, especialmente con el manipulador Gilbert Osmond y su intrigante hermana, Madame Merle. A medida que Isabel lucha por mantener su independencia y encontrar la felicidad, la novela explora temas como la libertad, el matrimonio, la responsabilidad y las consecuencias de las decisiones personales. 'El retrato de una dama' es considerada una de las obras maestras de James y una de las mejores novelas de la literatura inglesa del siglo XIX.",
+            "cover": "testing_data/cover_dama.jpg",
+            "stock": 12,
+            "price": 18.45,
+            "style": "blanda",
+            "authors": [
+                10
+            ],
+            "genres": [
+                9
+            ],
+            "themes": [
+                9
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 62,
+        "fields": {
+            "title": "El viejo y el mar",
+            "ISBN": 9780684801223,
+            "publisher": 13,
+            "publication_date": "1952-09-01",
+            "synopsis": "Novela corta escrita por Ernest Hemingway que narra la historia de Santiago, un pescador anciano y experimentado, que lucha contra un pez gigante en las aguas del Golfo de México. Durante varios días, Santiago lucha por capturar al pez, enfrentándose a desafíos físicos y emocionales mientras se adentra en una batalla épica de hombre contra naturaleza. A través de la narrativa, Hemingway explora temas como la lucha humana contra la adversidad, la dignidad en la derrota y la conexión entre el hombre y el mar.",
+            "cover": "testing_data/cover_viejomar.jpg",
+            "stock": 16,
+            "price": 19.00,
+            "style": "dura",
+            "authors": [
+                11
+            ],
+            "genres": [
+                10
+            ],
+            "themes": [
+                10,
+                11
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 63,
+        "fields": {
+            "title": "Harry Potter y el Prisionero de Azkaban",
+            "ISBN": 9780316769489,
+            "publisher": 1,
+            "publication_date": "1951-07-16",
+            "synopsis": "Harry regresa a Hogwarts para su tercer año escolar, donde descubre que Sirius Black, un peligroso criminal, ha escapado de la prisión de Azkaban y está buscándolo. Con la ayuda de nuevos aliados y la verdad sobre su pasado, Harry enfrenta desafíos que ponen a prueba su coraje y lealtad, mientras descubre secretos que cambiarán su destino.",
+            "cover": "testing_data/cover_harrypotter3.jpg",
+            "stock": 23,
+            "price": 21.50,
+            "style": "bolsillo",
+            "authors": [
+                12
+            ],
+            "genres": [
+                11,
+                12
+            ],
+            "themes": [
+                12
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 64,
+        "fields": {
+            "title": "Crónica de una muerte anunciada",
+            "ISBN": 9780307389734,
+            "publisher": 4,
+            "publication_date": "1981-01-01",
+            "synopsis": "La historia de Santiago Nasar, un joven que es asesinado en un pequeño pueblo latinoamericano. La trama se centra en los eventos que llevaron a su muerte, que fue anunciada previamente pero no pudo ser evitada. A través de la voz del narrador, se revelan los detalles de los acontecimientos y se explora la complejidad de la sociedad y las relaciones humanas en el pueblo. La novela es una reflexión sobre temas como el honor, la culpa, la venganza y la inevitabilidad del destino. Con su estilo característico y su estructura narrativa única, García Márquez crea una obra magistral que cautiva al lector desde la primera página.",
+            "cover": "testing_data/cover_anunciada.jpg",
+            "stock": 14,
+            "price": 20.95,
+            "style": "blanda",
+            "authors": [
+                13
+            ],
+            "genres": [
+                13
+            ],
+            "themes": [
+                13
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 65,
+        "fields": {
+            "title": "El alquimista",
+            "ISBN": 9780061122415,
+            "publisher": 14,
+            "publication_date": "1988-01-01",
+            "synopsis": "Santiago, un joven pastor andaluz que sueña con encontrar un tesoro escondido en las pirámides de Egipto. A lo largo de su viaje, Santiago se encuentra con personajes místicos y aprende lecciones sobre el destino, la perseverancia y la importancia de seguir sus sueños. La novela es una parábola sobre el viaje espiritual y la búsqueda de significado en la vida, y ha sido aclamada por su mensaje inspirador y su estilo de escritura simple pero profundo.",
+            "cover": "testing_data/cover_alquimista.jpg",
+            "stock": 9,
+            "price": 17.50,
+            "style": "bolsillo",
+            "authors": [
+                14
+            ],
+            "genres": [
+                14
+            ],
+            "themes": [
+                14,
+                15
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 66,
+        "fields": {
+            "title": "Siddhartha",
+            "ISBN": 9780142437186,
+            "publisher": 5,
+            "publication_date": "1922-01-01",
+            "synopsis": "Siddhartha, un joven brahmán que busca la iluminación espiritual. A lo largo de su viaje, Siddhartha se encuentra con diferentes enseñanzas y experiencias, incluyendo el ascetismo y la búsqueda del placer sensorial. Finalmente, encuentra la paz interior y la sabiduría al alcanzar la comprensión de sí mismo y del universo. La novela es una exploración de la búsqueda de significado y verdad en la vida, y ha sido aclamada por su profunda espiritualidad y su estilo poético.",
+            "cover": "testing_data/cover_siddhartha.jpg",
+            "stock": 17,
+            "price": 16.75,
+            "style": "dura",
+            "authors": [
+                15
+            ],
+            "genres": [
+                15
+            ],
+            "themes": [
+                16
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 67,
+        "fields": {
+            "title": "El extranjero",
+            "ISBN": 9780679720201,
+            "publisher": 9,
+            "publication_date": "1942-01-01",
+            "synopsis": "La historia de Meursault, un hombre aparentemente indiferente ante la vida y sus convenciones sociales. Después de cometer un acto de violencia aparentemente sin motivos, Meursault es llevado a juicio y enfrenta las consecuencias de sus acciones. La novela es una exploración existencialista de la alienación, la moralidad y la búsqueda de significado en un mundo absurdo y sin sentido. A través de la voz inquebrantablemente honesta de Meursault, Camus desafía al lector a reflexionar sobre la naturaleza de la vida y la muerte, y el papel del individuo en un universo indiferente.",
+            "cover": "testing_data/cover_extranjero.jpg",
+            "stock": 8,
+            "price": 18.50,
+            "style": "dura",
+            "authors": [
+                16
+            ],
+            "genres": [
+                16
+            ],
+            "themes": [
+                17
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 68,
+        "fields": {
+            "title": "La peste",
+            "ISBN": 9780141185139,
+            "publisher": 11,
+            "publication_date": "1947-01-01",
+            "synopsis": "La historia de la ciudad argelina de Orán, que es golpeada por una plaga de peste bubónica. La narrativa sigue a varios personajes mientras enfrentan el horror y la desesperación causados por la enfermedad, y cómo responden a la crisis de manera individual y colectiva. A través de la peste, Camus explora temas como la lucha humana contra el sufrimiento, la solidaridad, el absurdo de la existencia y la búsqueda de significado en medio de la adversidad. La novela es una reflexión profunda sobre la condición humana y ha sido aclamada por su poderosa representación de la resistencia y la esperanza en tiempos de crisis.",
+            "cover": "testing_data/cover_peste.jpg",
+            "stock": 22,
+            "price": 19.95,
+            "style": "blanda",
+            "authors": [
+                17
+            ],
+            "genres": [
+                17,
+                18
+            ],
+            "themes": [
+                18
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 69,
+        "fields": {
+            "title": "Rebelión en la granja",
+            "ISBN": 9780451526342,
+            "publisher": 2,
+            "publication_date": "1945-08-17",
+            "synopsis": "Satiriza la Revolución Rusa y el ascenso del comunismo en la Unión Soviética. La trama sigue a los animales de la Granja Manor, liderados por los cerdos Snowball y Napoleón, quienes se rebelan contra su dueño humano y establecen un gobierno propio. Sin embargo, con el tiempo, Napoleón se vuelve autoritario y opresivo, traicionando los ideales de igualdad y libertad por los que luchaban los animales. A través de la alegoría de la granja, Orwell critica el abuso de poder, la corrupción y la manipulación política, y ofrece una advertencia sobre los peligros del totalitarismo y la falta de vigilancia ciudadana.",
+            "cover": "testing_data/cover_granja.jpg",
+            "stock": 18,
+            "price": 17.25,
+            "style": "bolsillo",
+            "authors": [
+                18
+            ],
+            "genres": [
+                19
+            ],
+            "themes": [
+                19
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 70,
+        "fields": {
+            "title": "Cuentos de Canterbury",
+            "ISBN": 9780140422347,
+            "publisher": 8,
+            "publication_date": "1400-01-01",
+            "synopsis": "La trama sigue a un grupo de peregrinos que viajan juntos desde Londres hasta el santuario de Santo Tomás Becket en Canterbury. Para pasar el tiempo, cada peregrino cuenta dos historias durante el viaje de ida y otras dos durante el regreso. Estas historias abarcan una amplia gama de temas y géneros, desde el romance y la comedia hasta la sátira y el misterio. A través de las historias, Chaucer ofrece una visión vívida de la sociedad medieval inglesa y una reflexión sobre la condición humana.",
+            "cover": "testing_data/cover_canterbury.jpg",
+            "stock": 11,
+            "price": 22.50,
+            "style": "blanda",
+            "authors": [
+                19,
+                20
+            ],
+            "genres": [
+                20,
+                21
+            ],
+            "themes": [
+                20
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 71,
+        "fields": {
+            "title": "Las aventuras de Tom Sawyer",
+            "ISBN": 9780143039563,
+            "publisher": 7,
+            "publication_date": "1876-01-01",
+            "synopsis": "Tom Sawyer, un niño travieso que vive en un pueblo a orillas del río Mississippi durante la década de 1840. La trama sigue a Tom y a su amigo Huckleberry Finn mientras se embarcan en diversas aventuras, como buscar tesoros, fingir su propia muerte y presenciar un asesinato. A través de las travesuras de Tom, Twain ofrece una mirada lúdica pero a menudo crítica de la vida en la América rural del siglo XIX, explorando temas como la inocencia, la amistad y la justicia.",
+            "cover": "testing_data/cover_sawyer.jpg",
+            "stock": 10,
+            "price": 16.00,
+            "style": "dura",
+            "authors": [
+                21
+            ],
+            "genres": [
+                22
+            ],
+            "themes": [
+                21
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 72,
+        "fields": {
+            "title": "Las aventuras de Huckleberry Finn",
+            "ISBN": 9780486280615,
+            "publisher": 10,
+            "publication_date": "1884-12-10",
+            "synopsis": "Huckleberry Finn, un chico rebelde que escapa de su hogar abusivo y se une a Jim, un esclavo fugitivo, en un viaje por el río Mississippi. A lo largo de su viaje, Huck y Jim se enfrentan a una serie de desafíos y encuentran personajes peculiares mientras buscan la libertad y la redención. La novela es una sátira mordaz de la sociedad sureña y la hipocresía racial, y aborda temas como la moralidad, la amistad y la búsqueda de identidad en un mundo dividido por la esclavitud y el prejuicio. ",
+            "cover": "testing_data/cover_finn.jpg",
+            "stock": 19,
+            "price": 23.75,
+            "style": "blanda",
+            "authors": [
+                22
+            ],
+            "genres": [
+                23
+            ],
+            "themes": [
+                22,
+                23
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 73,
+        "fields": {
+            "title": "El idiota",
+            "ISBN": 9780140447927,
+            "publisher": 2,
+            "publication_date": "1869-01-01",
+            "synopsis": "La historia sigue a un joven príncipe, Mischkin, que regresa a Rusia después de pasar varios años en un sanatorio suizo para tratar su epilepsia. Mischkin es ingenuo, honesto y bondadoso, pero su pureza choca con la corrupción y la hipocresía de la sociedad rusa de la época. La novela explora temas como la moralidad, la redención y el sentido de la vida, mientras Mischkin navega por relaciones complicadas y eventos trágicos que lo llevan a cuestionar su propia naturaleza y el mundo que lo rodea.",
+            "cover": "testing_data/cover_idiota.jpg",
+            "stock": 18,
+            "price": 19.75,
+            "style": "blanda",
+            "authors": [
+                18
+            ],
+            "genres": [
+                13,
+                14
+            ],
+            "themes": [
+                9
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 74,
+        "fields": {
+            "title": "El Planeta del Tesoro",
+            "ISBN": 9780192834825,
+            "publisher": 14,
+            "publication_date": "1883-01-01",
+            "synopsis": "Jim Hawkins, quien descubre un mapa del tesoro que perteneció al pirata Billy Bones. Jim se une a una expedición en busca del tesoro y zarpa hacia un planeta lejano llamado 'El Planeta del Tesoro'. A bordo del barco, Jim se enfrenta a piratas, motines y peligrosas criaturas mientras lucha por encontrar el tesoro y sobrevivir a la traición y la codicia. La novela es una emocionante aventura llena de intriga, acción y emoción, y ha sido adaptada en numerosas ocasiones para el cine, la televisión y el teatro.",
+            "cover": "testing_data/cover_planeta.jpg",
+            "stock": 20,
+            "price": 21.00,
+            "style": "blanda",
+            "authors": [
+                24
+            ],
+            "genres": [
+                25,
+                26
+            ],
+            "themes": [
+                25
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 75,
+        "fields": {
+            "title": "Harry Potter y el Cáliz de Fuego",
+            "ISBN": 9780156012196,
+            "publisher": 1,
+            "publication_date": "1943-04-06",
+            "synopsis": "Harry es seleccionado inesperadamente como uno de los campeones del Torneo de los Tres Magos, un peligroso concurso entre tres prestigiosas escuelas de magia. Mientras lucha por sobrevivir a las mortales pruebas del torneo, descubre una conspiración oscura que amenaza con desatar el caos en el mundo mágico. Con la ayuda de sus amigos y la valentía inquebrantable, Harry se enfrenta a desafíos que ponen a prueba su coraje y determinación.",
+            "cover": "testing_data/cover_harrypotter4.jpg",
+            "stock": 15,
+            "price": 18.25,
+            "style": "bolsillo",
+            "authors": [
+                25
+            ],
+            "genres": [
+                27
+            ],
+            "themes": [
+                26
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 76,
+        "fields": {
+            "title": "La montaña mágica",
+            "ISBN": 9780141186808,
+            "publisher": 12,
+            "publication_date": "1924-01-01",
+            "synopsis": "Ambientada en un sanatorio en los Alpes suizos, sigue a Hans Castorp, un joven ingeniero, que visita a su primo enfermo. Sin embargo, termina quedándose durante siete años debido a una enfermedad menor. Durante su estancia, Castorp se ve inmerso en las complejas interacciones sociales y filosóficas de los pacientes y el personal médico. La novela es una exploración profunda de temas como el tiempo, la muerte, la enfermedad y la naturaleza humana, y se considera una obra maestra de la literatura alemana del siglo XX.",
+            "cover": "testing_data/cover_magica.jpg",
+            "stock": 13,
+            "price": 22.95,
+            "style": "dura",
+            "authors": [
+                1
+            ],
+            "genres": [
+                28
+            ],
+            "themes": [
+                27
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 77,
+        "fields": {
+            "title": "Los desposeídos",
+            "ISBN": 9780060512753,
+            "publisher": 9,
+            "publication_date": "1974-01-01",
+            "synopsis": "La historia sigue a Shevek, un físico de un planeta llamado Anarres, que se embarca en un viaje a Urras, un mundo capitalista, en busca de nuevos conocimientos científicos. La novela explora temas como la utopía, la anarquía, la sociedad y la libertad a través del contraste entre los dos mundos y las experiencias de Shevek. Le Guin utiliza la historia para examinar las estructuras políticas y sociales, así como para reflexionar sobre las posibilidades de una sociedad más justa e igualitaria.",
+            "cover": "testing_data/cover_desposeidos.jpg",
+            "stock": 22,
+            "price": 24.75,
+            "style": "dura",
+            "authors": [
+                2
+            ],
+            "genres": [
+                29
+            ],
+            "themes": [
+                28,
+                29
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 78,
+        "fields": {
+            "title": "La carretera",
+            "ISBN": 9780307387892,
+            "publisher": 6,
+            "publication_date": "2006-01-01",
+            "synopsis": "Una novela distópica escrita por Cormac McCarthy. La historia sigue a un padre y su hijo que viajan por un paisaje devastado y desolado en busca de un lugar seguro para vivir después de un cataclismo global no especificado. En su viaje, enfrentan numerosos peligros, incluyendo la escasez de alimentos, el frío extremo y otros sobrevivientes que se han vuelto violentos y caníbales. La novela explora temas como la supervivencia, la moralidad y el amor paternal en un mundo desprovisto de esperanza y civilización.",
+            "cover": "testing_data/cover_carretera.jpg",
+            "stock": 12,
+            "price": 19.75,
+            "style": "blanda",
+            "authors": [
+                3
+            ],
+            "genres": [
+                1,
+                2
+            ],
+            "themes": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 79,
+        "fields": {
+            "title": "Las olas",
+            "ISBN": 9780156028714,
+            "publisher": 4,
+            "publication_date": "1931-01-01",
+            "synopsis": "Considerada una de las obras más innovadoras de la literatura modernista, sigue la vida de seis personajes desde su infancia hasta su vejez. La historia está narrada en fragmentos que representan los pensamientos y las percepciones internas de cada personaje, mientras reflexionan sobre el paso del tiempo, la identidad, la amistad y el significado de la vida. A través de un estilo experimental y poético, Woolf captura la complejidad de la experiencia humana y la fluidez de la conciencia individual.",
+            "cover": "testing_data/cover_olas.jpg",
+            "stock": 19,
+            "price": 17.75,
+            "style": "bolsillo",
+            "authors": [
+                4
+            ],
+            "genres": [
+                3
+            ],
+            "themes": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 80,
+        "fields": {
+            "title": "La señora Dalloway",
+            "ISBN": 9780156628709,
+            "publisher": 15,
+            "publication_date": "1925-01-01",
+            "synopsis": "Un día en la vida de Clarissa Dalloway, una mujer de la alta sociedad londinense, mientras se prepara para una fiesta en su casa. A lo largo de la novela, se exploran los pensamientos y las percepciones internas de Clarissa, así como las de otros personajes cuyas vidas están entrelazadas con la suya. A través de una narrativa fluida y fragmentada, Woolf examina temas como la memoria, el tiempo, la identidad y la alienación en la sociedad moderna. 'La señora Dalloway' es considerada una de las obras más importantes del modernismo literario y un hito en la historia de la narrativa experimental.",
+            "cover": "testing_data/cover_dalloway.jpg",
+            "stock": 25,
+            "price": 21.00,
+            "style": "dura",
+            "authors": [
+                5
+            ],
+            "genres": [
+                4,
+                5
+            ],
+            "themes": [
+                3
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 81,
+        "fields": {
+            "title": "El gran Meaulnes",
+            "ISBN": 9780141441893,
+            "publisher": 3,
+            "publication_date": "1913-01-01",
+            "synopsis": "Sigue la historia de Augustin Meaulnes, un joven que se pierde en el campo y llega a una misteriosa finca donde se celebra una fiesta. Allí conoce a Yvonne, de quien se enamora instantáneamente, y se embarca en una búsqueda para encontrarla después de que ella desaparece. La novela explora temas como la nostalgia, la juventud perdida y el anhelo del amor idealizado, y se considera una obra maestra de la literatura francesa del siglo XX.",
+            "cover": "testing_data/cover_meaulnes.jpg",
+            "stock": 10,
+            "price": 22.50,
+            "style": "blanda",
+            "authors": [
+                6,
+                7
+            ],
+            "genres": [
+                6
+            ],
+            "themes": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 82,
+        "fields": {
+            "title": "El libro de la selva",
+            "ISBN": 9780142437285,
+            "publisher": 12,
+            "publication_date": "1894-01-01",
+            "synopsis": "El libro está ambientado en la India colonial británica y sigue las aventuras de Mowgli, un niño criado por lobos en la selva, y otros personajes como Baloo el oso y Bagheera la pantera negra. A través de las historias de Mowgli y sus encuentros con diversos animales y personajes, Kipling explora temas como la identidad, la naturaleza humana, la ley de la jungla y el equilibrio entre la civilización y la vida salvaje. 'El Libro de la Selva' ha sido adaptado en numerosas ocasiones en películas, series de televisión y obras de teatro, y sigue siendo una obra clásica de la literatura infantil y juvenil.",
+            "cover": "testing_data/cover_selva.jpg",
+            "stock": 9,
+            "price": 16.75,
+            "style": "dura",
+            "authors": [
+                8
+            ],
+            "genres": [
+                7
+            ],
+            "themes": [
+                5,
+                6
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 83,
+        "fields": {
+            "title": "Harry Potter y la Orden del Fénix",
+            "ISBN": 9780141182672,
+            "publisher": 11,
+            "publication_date": "1957-01-01",
+            "synopsis": "Harry enfrenta la incredulidad del mundo mágico sobre el regreso de Lord Voldemort mientras forma una resistencia clandestina, la Orden del Fénix, para enfrentarse al mal. Mientras tanto, lucha contra la opresión del Ministerio de Magia y el ascenso de Dolores Umbridge en Hogwarts, mientras descubre secretos sobre el pasado de Voldemort que podrían cambiar el curso de la guerra.",
+            "cover": "testing_data/cover_harrypotter5.jpg",
+            "stock": 21,
+            "price": 22.75,
+            "style": "blanda",
+            "authors": [
+                9
+            ],
+            "genres": [
+                8
+            ],
+            "themes": [
+                7
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 84,
+        "fields": {
+            "title": "El cuervo y otros poemas",
+            "ISBN": 9780142437483,
+            "publisher": 7,
+            "publication_date": "1845-01-01",
+            "synopsis": "Colección de poesía escrita por Edgar Allan Poe, publicada por primera vez en 1845. El poema más destacado de la colección es 'El cuervo', que narra la visita de un cuervo a un hombre solitario y angustiado que lamenta la pérdida de su amada Leonora. A través de su lúgubre y melancólica atmósfera, 'El cuervo' explora temas como el duelo, la pérdida y la obsesión. La colección también incluye otros poemas de Poe, como 'Annabel Lee', 'Ulalume' y 'El campanero'. Estos poemas a menudo presentan elementos góticos, oscuros y macabros que son característicos del estilo literario de Poe. 'El cuervo y otros poemas' es considerado uno de los trabajos más influyentes de Poe y ha dejado una marca duradera en la literatura estadounidense.",
+            "cover": "testing_data/cover_cuervo.jpg",
+            "stock": 14,
+            "price": 19.50,
+            "style": "dura",
+            "authors": [
+                10
+            ],
+            "genres": [
+                9
+            ],
+            "themes": [
+                8
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 85,
+        "fields": {
+            "title": "El gato negro y otros relatos",
+            "ISBN": 9780142437803,
+            "publisher": 13,
+            "publication_date": "1843-01-01",
+            "synopsis": "La escalofriante historia de un hombre perturbado por la presencia de un gato negro que parece traer consigo desgracias y tragedias. Otros cuentos exploran temas como la locura, la culpa, el terror y lo sobrenatural, todos ellos característicos del estilo literario gótico y macabro de Poe.",
+            "cover": "testing_data/cover_gatonegro.jpg",
+            "stock": 16,
+            "price": 20.25,
+            "style": "blanda",
+            "authors": [
+                11,
+                12
+            ],
+            "genres": [
+                10
+            ],
+            "themes": [
+                9
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 86,
+        "fields": {
+            "title": "Las aventuras de Sherlock Holmes",
+            "ISBN": 9780142437537,
+            "publisher": 6,
+            "publication_date": "1892-01-01",
+            "synopsis": "Algunas de las historias más famosas protagonizadas por el icónico detective Sherlock Holmes y su fiel amigo el Dr. John Watson. Cada cuento sigue a Holmes mientras resuelve casos intrigantes y misteriosos utilizando su ingenio deductivo y su astucia. Algunos de los relatos más conocidos incluyen 'Escándalo en Bohemia', 'La Liga de los Pelirrojos', 'El problema final' y 'Las cinco pepitas de naranja'. La colección es considerada una obra maestra del género detectivesco y ha dejado un impacto duradero en la literatura de misterio.",
+            "cover": "testing_data/cover_holmes.jpg",
+            "stock": 7,
+            "price": 18.95,
+            "style": "bolsillo",
+            "authors": [
+                13
+            ],
+            "genres": [
+                11,
+                12
+            ],
+            "themes": [
+                10
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 87,
+        "fields": {
+            "title": "Harry Potter y el Misterio del Príncipe",
+            "ISBN": 9780141439555,
+            "publisher": 2,
+            "publication_date": "1847-01-01",
+            "synopsis": "Harry regresa a Hogwarts para su sexto año y descubre un antiguo libro de hechizos perteneciente al misterioso Príncipe Mestizo. Mientras investiga el pasado de Voldemort con la ayuda de Dumbledore, se enfrenta a la creciente oscuridad que se cierne sobre el mundo mágico. Además, Harry se enfrenta a las complejidades del amor y la amistad mientras la guerra contra las fuerzas de la oscuridad se intensifica.",
+            "cover": "testing_data/cover_harrypotter6.jpg",
+            "stock": 23,
+            "price": 24.50,
+            "style": "dura",
+            "authors": [
+                14
+            ],
+            "genres": [
+                13
+            ],
+            "themes": [
+                11
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 88,
+        "fields": {
+            "title": "Las hermanas Brontë: Una biografía",
+            "ISBN": 9780060930749,
+            "publisher": 4,
+            "publication_date": "1994-01-01",
+            "synopsis": "Charlotte ofrece una mirada detallada a la vida de las tres hermanas, desde su infancia en Haworth hasta sus logros como escritoras. Además, explora la relación entre ellas, su proceso creativo y las luchas que enfrentaron en una época en la que las mujeres tenían limitadas oportunidades para destacar en el mundo literario. La biografía es una fuente invaluable para comprender mejor la vida y obra de las hermanas Brontë, así como el contexto histórico en el que vivieron.",
+            "cover": "testing_data/cover_bronte.jpg",
+            "stock": 13,
+            "price": 20.75,
+            "style": "blanda",
+            "authors": [
+                15
+            ],
+            "genres": [
+                14,
+                15
+            ],
+            "themes": [
+                12
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 89,
+        "fields": {
+            "title": "Una habitación propia",
+            "ISBN": 9780156787332,
+            "publisher": 15,
+            "publication_date": "1929-01-01",
+            "synopsis": "Ensayo escrito por Virginia Woolf y publicado en 1929. En este texto, Woolf aborda las limitaciones y desafíos que enfrentan las mujeres como escritoras debido a la falta de independencia económica y de espacios propios para la creación literaria. A través de una exploración histórica y cultural, así como de experiencias personales, Woolf argumenta a favor de la necesidad de que las mujeres tengan libertad financiera y un espacio físico privado para poder desarrollar su talento y creatividad en igualdad de condiciones con los hombres. 'Una habitación propia' se ha convertido en un texto fundamental del feminismo y ha inspirado a generaciones de mujeres a reclamar su lugar en el mundo de la literatura y el arte.",
+            "cover": "testing_data/cover_habitacion.jpg",
+            "stock": 11,
+            "price": 16.75,
+            "style": "bolsillo",
+            "authors": [
+                16
+            ],
+            "genres": [
+                16
+            ],
+            "themes": [
+                13
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 90,
+        "fields": {
+            "title": "Harry Potter y las Reliquias de la Muerte",
+            "ISBN": 9780192833821,
+            "publisher": 3,
+            "publication_date": "1726-01-01",
+            "synopsis": "Harry, Ron y Hermione emprenden una peligrosa misión para destruir los Horrocruxes de Voldemort y poner fin a su reinado de terror. Enfrentándose a desafíos mortales y sacrificios dolorosos, buscan las tres reliquias legendarias que podrían otorgarles ventaja en su lucha contra las fuerzas oscuras. Con la ayuda de aliados inesperados y la determinación inquebrantable, Harry se prepara para el enfrentamiento final que definirá el destino del mundo mágico.",
+            "cover": "testing_data/cover_harrypotter7.jpg",
+            "stock": 15,
+            "price": 18.25,
+            "style": "bolsillo",
+            "authors": [
+                17,
+                18
+            ],
+            "genres": [
+                17
+            ],
+            "themes": [
+                14
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 91,
+        "fields": {
+            "title": "Frankenstein",
+            "ISBN": 9780141439471,
+            "publisher": 1,
+            "publication_date": "1818-01-01",
+            "synopsis": "La historia sigue a Victor Frankenstein, un joven científico obsesionado con la idea de crear vida artificialmente. Después de años de experimentación, logra dar vida a una criatura monstruosa. Sin embargo, al ver el aspecto repulsivo de su creación, Victor la abandona, desencadenando una serie de eventos trágicos. La novela explora temas como la ambición desmedida, la responsabilidad científica, la soledad, el rechazo y la búsqueda de identidad. A través de la narrativa de varios personajes, incluido el propio monstruo, Shelley cuestiona las implicaciones éticas y morales de la ciencia y la tecnología, así como la naturaleza humana.",
+            "cover": "testing_data/cover_frank.jpg",
+            "stock": 21,
+            "price": 21.50,
+            "style": "dura",
+            "authors": [
+                19
+            ],
+            "genres": [
+                18,
+                19
+            ],
+            "themes": [
+                15
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 92,
+        "fields": {
+            "title": "La letra escarlata",
+            "ISBN": 9780142437261,
+            "publisher": 8,
+            "publication_date": "1850-01-01",
+            "synopsis": "La historia está ambientada en la puritana Nueva Inglaterra del siglo XVII y sigue a Hester Prynne, una mujer condenada por adulterio que es obligada a llevar una letra 'A' escarlata cosida en su vestido como marca de su pecado. A lo largo de la novela, Hester lucha por reconstruir su vida en medio del escrutinio y el juicio de la sociedad puritana. A medida que pasa el tiempo, se ve obligada a enfrentarse a las consecuencias de sus acciones y a lidiar con el padre de su hijo ilegítimo, el reverendo Dimmesdale, y el misterioso extranjero conocido como Roger Chillingworth. 'La letra escarlata' explora temas como el pecado, la redención, la hipocresía, la justicia y la moralidad, y ofrece una crítica mordaz a la rigidez de la sociedad puritana. La novela es considerada una de las obras maestras de la literatura estadounidense y ha tenido un impacto duradero en la literatura y la cultura popular.",
+            "cover": "testing_data/cover_escarlata.jpg",
+            "stock": 18,
+            "price": 22.00,
+            "style": "dura",
+            "authors": [
+                20
+            ],
+            "genres": [
+                20
+            ],
+            "themes": [
+                16
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 93,
+        "fields": {
+            "title": "El fantasma de la ópera",
+            "ISBN": 9780142437353,
+            "publisher": 14,
+            "publication_date": "1910-01-01",
+            "synopsis": "Novela gótica escrita por el autor francés Gaston Leroux, publicada por primera vez en 1910. La historia se desarrolla en la Ópera Garnier de París y sigue la vida de Christine Daaé, una joven cantante de ópera, y su relación con el enigmático y misterioso Fantasma que reside en los oscuros pasajes subterráneos del teatro. El Fantasma, obsesionado con Christine, la guía en su ascenso al estrellato mientras manipula y aterroriza a los habitantes de la ópera. A medida que la historia avanza, se desvelan secretos oscuros sobre el pasado del Fantasma y sus motivaciones, mientras Christine se debate entre el amor y el temor por este personaje enigmático. 'El fantasma de la ópera' es una novela que combina elementos de misterio, romance y terror, y ha sido adaptada en numerosas ocasiones en películas, obras de teatro, musicales y otros medios. Es una obra clásica que ha dejado un impacto duradero en la cultura popular y sigue siendo apreciada por su atmósfera evocadora y sus personajes memorables.",
+            "cover": "testing_data/cover_opera.jpg",
+            "stock": 9,
+            "price": 16.50,
+            "style": "blanda",
+            "authors": [
+                21
+            ],
+            "genres": [
+                21
+            ],
+            "themes": [
+                17,
+                18
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 94,
+        "fields": {
+            "title": "El Temor de un Hombre Sabio",
+            "ISBN": 9780143035000,
+            "publisher": 7,
+            "publication_date": "1877-01-01",
+            "synopsis": "Kvothe continúa su narración de su vida, revelando más sobre sus aventuras en la Universidad y sus viajes por el mundo. Se adentra en el misterio detrás de los Chandrian y busca respuestas sobre el asesinato de sus padres. Además, se enamora y enfrenta desafíos cada vez más peligrosos que ponen a prueba su ingenio y habilidades mágicas.",
+            "cover": "testing_data/cover_temor.jpg",
+            "stock": 12,
+            "price": 20.95,
+            "style": "bolsillo",
+            "authors": [
+                1
+            ],
+            "genres": [
+                12
+            ],
+            "themes": [
+                8, 23
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 95,
+        "fields": {
+            "title": "El hombre invisible",
+            "ISBN": 9780141439983,
+            "publisher": 12,
+            "publication_date": "1897-01-01",
+            "synopsis": "La historia sigue a un científico llamado Griffin, quien descubre una fórmula para volverse invisible. A medida que explora los beneficios y las consecuencias de su invisibilidad, se vuelve cada vez más desequilibrado y comienza a cometer actos de terror y violencia. Griffin se ve obligado a huir y se refugia en una pequeña aldea inglesa, donde desata una ola de caos y miedo. A través de la narrativa, Wells explora temas como la ética científica, la alienación social, el poder y la responsabilidad.",
+            "cover": "testing_data/cover_invisible.jpg",
+            "stock": 22,
+            "price": 24.75,
+            "style": "dura",
+            "authors": [
+                23
+            ],
+            "genres": [
+                24
+            ],
+            "themes": [
+                20
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 96,
+        "fields": {
+            "title": "La máquina del tiempo",
+            "ISBN": 9780141439563,
+            "publisher": 7,
+            "publication_date": "1895-01-01",
+            "synopsis": "La historia sigue a un inventor y científico conocido como 'El Viajero en el Tiempo' que construye una máquina capaz de viajar a través del tiempo. Utilizando esta invención, el Viajero en el Tiempo se aventura al futuro distante, donde encuentra una sociedad dividida en dos clases, los Eloi, seres apacibles y frágiles que viven en la superficie, y los Morlocks, seres subterráneos y brutales que los explotan. A través de la narrativa de la novela, Wells explora temas como la evolución, la decadencia de la civilización, la desigualdad social y el destino de la humanidad. 'La máquina del tiempo' es considerada una de las primeras obras de ciencia ficción y ha dejado un impacto duradero en la literatura y la cultura popular. Ha sido adaptada en numerosas películas, programas de televisión y obras de teatro, y sigue siendo una obra influyente en el género de la ciencia ficción.",
+            "cover": "testing_data/cover_tiempo.jpg",
+            "stock": 19,
+            "price": 20.25,
+            "style": "blanda",
+            "authors": [
+                24,
+                25
+            ],
+            "genres": [
+                25
+            ],
+            "themes": [
+                21
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 97,
+        "fields": {
+            "title": "La guerra de los mundos",
+            "ISBN": 9780141439976,
+            "publisher": 10,
+            "publication_date": "1898-01-01",
+            "synopsis": "La historia sigue a un narrador anónimo que presencia la invasión de la Tierra por parte de marcianos. Estos seres extraterrestres, con tecnología avanzada y máquinas de guerra tripuladas, causan caos y destrucción a medida que avanzan sobre la humanidad. A lo largo de la novela, el narrador describe el pánico y la desesperación de la población frente a la amenaza alienígena, así como sus intentos de sobrevivir y resistir la invasión. A través de esta narrativa, Wells explora temas como la superioridad tecnológica, la fragilidad de la civilización humana y la resistencia frente a la adversidad.",
+            "cover": "testing_data/cover_mundos.jpg",
+            "stock": 12,
+            "price": 18.75,
+            "style": "blanda",
+            "authors": [
+                1
+            ],
+            "genres": [
+                26
+            ],
+            "themes": [
+                22,
+                23
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 98,
+        "fields": {
+            "title": "20.000 leguas de viaje submarino",
+            "ISBN": 9780141439730,
+            "publisher": 4,
+            "publication_date": "1870-01-01",
+            "synopsis": "La historia sigue las aventuras del profesor Pierre Aronnax, su fiel ayudante Conseil y el arponero canadiense Ned Land, quienes son capturados por el misterioso capitán Nemo a bordo del submarino Nautilus. A lo largo de la novela, el Nautilus viaja por los océanos del mundo, explorando lugares desconocidos y enfrentando peligros, como criaturas marinas, naufragios y tormentas. La narrativa ofrece una mirada detallada a la vida submarina y a las maravillas y misterios del océano.",
+            "cover": "testing_data/cover_submarino.jpg",
+            "stock": 8,
+            "price": 18.50,
+            "style": "dura",
+            "authors": [
+                2
+            ],
+            "genres": [
+                27
+            ],
+            "themes": [
+                24
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 99,
+        "fields": {
+            "title": "La vuelta al mundo en ochenta días",
+            "ISBN": 9780141439723,
+            "publisher": 6,
+            "publication_date": "1873-01-01",
+            "synopsis": "La historia sigue al caballero inglés Phileas Fogg y su leal criado francés, Jean Passepartout, quienes realizan una apuesta en la que Fogg afirma que puede dar la vuelta al mundo en ochenta días. Con esta premisa, el dúo emprende un viaje lleno de aventuras y obstáculos a través de distintos medios de transporte y países, mientras son perseguidos por un detective que sospecha de las actividades de Fogg. A lo largo de la novela, Verne ofrece una visión detallada de los lugares exóticos que visitan los personajes, así como de los desafíos y peligros que enfrentan en su travesía.",
+            "cover": "testing_data/cover_80dias.jpg",
+            "stock": 9,
+            "price": 17.25,
+            "style": "bolsillo",
+            "authors": [
+                3,
+                4
+            ],
+            "genres": [
+                28
+            ],
+            "themes": [
+                25
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 100,
+        "fields": {
+            "title": "La Música del Silencio",
+            "ISBN": 9780192833864,
+            "publisher": 1,
+            "publication_date": "1726-01-01",
+            "synopsis": "Auri, un personaje misterioso que vive en los túneles subterráneos de la Universidad, mientras ella pasa por una serie de eventos introspectivos y mágicos. Explora su mundo interior, sus miedos y sus esperanzas, mientras busca la manera de encontrar su lugar en el mundo. La novela ofrece una perspectiva única sobre el universo de Rothfuss y la mente de uno de sus personajes más enigmáticos.",
+            "cover": "testing_data/cover_silencio.jpg",
+            "stock": 20,
+            "price": 20.00,
+            "style": "dura",
+            "authors": [
+                5
+            ],
+            "genres": [
+                29
+            ],
+            "themes": [
+                26
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 101,
+        "fields": {
+            "title": "El misterio de Edwin Drood",
+            "ISBN": 9780141439869,
+            "publisher": 13,
+            "publication_date": "1870-01-01",
+            "synopsis": "Novela escrita por Charles Dickens, aunque quedó inconclusa debido a la muerte del autor en 1870. La historia sigue a Edwin Drood, un joven que desaparece misteriosamente, y a John Jasper, su tío y principal sospechoso de su desaparición. La trama se desarrolla en la ciudad ficticia de Cloisterham, donde Jasper, un opio adicto y maestro de música, está profundamente enamorado de Rosa Bud, prometida de Edwin. A medida que se desarrolla la narrativa, surgen intrigas, sospechas y tensiones entre los personajes, y se plantean varios misterios por resolver. Debido a la muerte de Dickens, el final de la historia nunca fue revelado, lo que ha generado numerosas teorías y especulaciones sobre el destino de los personajes y la resolución del misterio. 'El misterio de Edwin Drood' es una obra inacabada, pero sigue siendo objeto de estudio y debate entre los críticos y los aficionados a la literatura de Dickens.",
+            "cover": "testing_data/cover_drood.jpg",
+            "stock": 23,
+            "price": 24.75,
+            "style": "dura",
+            "authors": [
+                6
+            ],
+            "genres": [
+                1
+            ],
+            "themes": [
+                27
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 102,
+        "fields": {
+            "title": "Cuento de Navidad",
+            "ISBN": 9780141439821,
+            "publisher": 2,
+            "publication_date": "1843-01-01",
+            "synopsis": "La historia sigue a Ebenezer Scrooge, un anciano avaro y miserable que desprecia el espíritu navideño y a quienes lo rodean. En la víspera de Navidad, Scrooge recibe la visita de tres fantasmas: el Fantasma de las Navidades Pasadas, el Fantasma de las Navidades Presentes y el Fantasma de las Navidades Futuras. Estos fantasmas le muestran a Scrooge su vida pasada, su presente solitario y amargado, y las consecuencias de su actitud egoísta en el futuro. A medida que Scrooge experimenta estas visiones, comienza a comprender el verdadero significado de la Navidad y se arrepiente de sus acciones pasadas. Al despertar, Scrooge se redime y decide cambiar su vida, mostrando generosidad y bondad hacia los demás.",
+            "cover": "testing_data/cover_navidad.jpg",
+            "stock": 17,
+            "price": 22.25,
+            "style": "blanda",
+            "authors": [
+                7
+            ],
+            "genres": [
+                2,
+                3
+            ],
+            "themes": [
+                28
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 103,
+        "fields": {
+            "title": "David Copperfield",
+            "ISBN": 9780141439814,
+            "publisher": 8,
+            "publication_date": "1850-01-01",
+            "synopsis": "La historia sigue la vida y las experiencias de David Copperfield, un joven huérfano que enfrenta numerosos desafíos y adversidades a lo largo de su vida. La novela está escrita en forma de autobiografía, con David narrando su propia historia desde su infancia hasta la adultez. A lo largo de la narrativa, David enfrenta la crueldad de su padrastro, la opresión en la escuela, la pérdida de seres queridos y los desafíos de encontrar su lugar en el mundo. Sin embargo, también experimenta amistad, amor y éxito a medida que lucha por superar los obstáculos que se le presentan.",
+            "cover": "testing_data/cover_mago.jpg",
+            "stock": 21,
+            "price": 23.50,
+            "style": "dura",
+            "authors": [
+                8,
+                9
+            ],
+            "genres": [
+                4
+            ],
+            "themes": [
+                29
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 104,
+        "fields": {
+            "title": "Oliver Twist",
+            "ISBN": 9780141439746,
+            "publisher": 11,
+            "publication_date": "1837-01-01",
+            "synopsis": "La historia sigue la vida de Oliver Twist, un niño huérfano que crece en la pobreza y la adversidad en la Inglaterra del siglo XIX. Después de escapar del trabajo infantil en un orfanato, Oliver se encuentra con una banda de ladrones dirigida por el despiadado Fagin y el astuto Bill Sikes. A lo largo de la novela, Oliver experimenta la bondad y la crueldad de la sociedad mientras lucha por encontrar un lugar donde pertenecer y ser amado. La historia está llena de giros emocionantes, intrigas y personajes memorables, incluyendo al simpático Artful Dodger y la amable señora Maylie.",
+            "cover": "testing_data/cover_twist.jpg",
+            "stock": 8,
+            "price": 19.75,
+            "style": "bolsillo",
+            "authors": [
+                10
+            ],
+            "genres": [
+                5
+            ],
+            "themes": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 105,
+        "fields": {
+            "title": "Grandes esperanzas",
+            "ISBN": 9780141439561,
+            "publisher": 15,
+            "publication_date": "1861-01-01",
+            "synopsis": "La historia sigue la vida de Pip, un huérfano criado por su hermana y su esposo, el herrero Joe Gargery, en un pueblo del campo inglés. La vida de Pip da un giro inesperado cuando recibe una gran fortuna de un benefactor desconocido y es enviado a Londres para convertirse en un caballero. A medida que Pip se adapta a su nueva vida y aspira a convertirse en un caballero respetado, se ve envuelto en una serie de eventos y relaciones complicadas, incluida su amistad con el misterioso recluso Abel Magwitch, quien resulta ser su benefactor. La novela está llena de intriga, secretos, amor no correspondido y la búsqueda de identidad.",
+            "cover": "testing_data/cover_esperanzas.jpg",
+            "stock": 16,
+            "price": 22.00,
+            "style": "dura",
+            "authors": [
+                11
+            ],
+            "genres": [
+                6,
+                7
+            ],
+            "themes": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 106,
+        "fields": {
+            "title": "Historia de dos ciudades",
+            "ISBN": 9780141439622,
+            "publisher": 5,
+            "publication_date": "1859-01-01",
+            "synopsis": "La historia está ambientada en Londres y París durante la Revolución Francesa y sigue las vidas entrelazadas de varios personajes durante este periodo turbulento de la historia. La narrativa se centra en Charles Darnay, un noble francés que vive en Londres y renuncia a su título aristocrático, y Sydney Carton, un abogado inglés alcohólico y desilusionado. La historia explora sus vidas y relaciones, así como su participación en los eventos de la Revolución Francesa. 'La historia de dos ciudades' es conocida por su famosa frase inicial: 'Fue el mejor de los tiempos, fue el peor de los tiempos...'. La novela aborda temas como la redención, el sacrificio, la venganza y la lucha por la justicia. Ha sido aclamada por su narrativa emocionante, su rica caracterización y su vívida descripción de la época histórica. La novela sigue siendo una obra influyente y es considerada una de las mejores obras de Dickens.",
+            "cover": "testing_data/cover_dosciudades.jpg",
+            "stock": 19,
+            "price": 21.50,
+            "style": "blanda",
+            "authors": [
+                12
+            ],
+            "genres": [
+                8
+            ],
+            "themes": [
+                3
+            ]
+        }
+    }
+]

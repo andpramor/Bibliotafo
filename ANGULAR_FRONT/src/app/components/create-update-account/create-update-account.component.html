@@ -1,0 +1,134 @@
+<div class="grid justify-content-center">
+    <div class="col-12 md:col-8 lg:col-6">
+        <div class="formgrid grid m-3 p-5 surface-50 border-round">
+            <p-toast class="custom-toast"/>
+            <div class="col-12 my-5 text-color font-bold">FOTO DE PERFIL</div>
+            <div class="field col-12 md:col-6">
+                <input 
+                    class="w-full"
+                    id="disabled-input" 
+                    type="text"
+                    pInputText 
+                    [disabled]="true" 
+                    placeholder="Mejor cuadrada"
+                    [(ngModel)]="profile_picture_name" 
+                />
+            </div>
+            <div class="field col-12 md:col-6">
+                <p-fileUpload 
+                *ngIf="!profile_picture"
+                mode="basic" 
+                name="profile_picture" 
+                chooseIcon="pi pi-upload" 
+                accept="image/*" maxFileSize="50000000" 
+                (onSelect)="onFileUpload($event)" 
+                [auto]="true" 
+                chooseLabel="Elegir"
+                />
+                <p-button
+                    *ngIf="profile_picture"
+                    pRipple 
+                    icon="pi pi-trash" 
+                    severity="info" 
+                    [rounded]="false" 
+                    [outlined]="true" 
+                    label="Limpiar"
+                    (click)="cleanPic()"
+                    class="col-4" />
+            </div>
+            <div class="col-12 my-5 text-color font-bold">DATOS PERSONALES</div>
+            <p-floatLabel class="field mt-3 col-12 md:col-6">
+                <input pInputText id="username" [(ngModel)]="myUser.username" class="w-full"/>
+                <label for="username">Nombre de usuario</label>
+            </p-floatLabel>
+            <p-floatLabel class="field mt-3 col-12 md:col-6">
+                <input pInputText id="email" [(ngModel)]="myUser.email" class="w-full"/>
+                <label for="email">Correo electrónico</label>
+            </p-floatLabel>
+            <p-floatLabel class="field mt-3 col-12 md:col-6">
+                <input pInputText id="first_name" [(ngModel)]="myUser.first_name" class="w-full"/>
+                <label for="first_name">Nombre completo</label>
+            </p-floatLabel>
+            <p-floatLabel class="field mt-3 col-12 md:col-6">
+                <input pInputText id="dni" [(ngModel)]="myUser.dni" class="w-full"/>
+                <label for="dni">DNI</label>
+            </p-floatLabel>
+            <p-floatLabel class="field mt-3 col-12">
+                <input pInputText id="address" [(ngModel)]="myUser.address" class="w-full"/>
+                <label for="address">Dirección</label>
+            </p-floatLabel>
+            <div *ngIf="!logedIn || use == 'work' " class="col-12 my-5 text-color font-bold">Contraseña</div>
+            <p-floatLabel *ngIf="!logedIn || use == 'work' " class="field col">
+                <p-password
+                    id="password"
+                    [(ngModel)]="myUser.password"
+                    [toggleMask]="true"
+                    promptLabel="Elige una contraseña"
+                    weakLabel="Débil" 
+                    mediumLabel="Normal" 
+                    strongLabel="Fuerte" 
+                    class="w-full"/>
+                <label for="password">Contraseña</label>
+            </p-floatLabel>
+            <div *ngIf="logedIn && use == 'own' " class="col-12 my-5 text-color font-bold">Actualizar contraseña</div>
+            <p-floatLabel *ngIf="logedIn && use == 'own' " class="field col">
+                <p-password
+                    id="new_password"
+                    [(ngModel)]="new_password"
+                    [toggleMask]="true"
+                    promptLabel="Nueva contraseña"
+                    weakLabel="Débil" 
+                    mediumLabel="Normal" 
+                    strongLabel="Fuerte"
+                    class="w-full"/>
+                <label for="new_password">Nueva contraseña</label>
+            </p-floatLabel>
+            <p-floatLabel *ngIf="logedIn && use == 'own' " class="field col">
+                <p-password
+                    id="new_password"
+                    [(ngModel)]="new_password2"
+                    [toggleMask]="true"
+                    promptLabel="Repite la contraseña"
+                    weakLabel="Débil" 
+                    mediumLabel="Normal" 
+                    strongLabel="Fuerte"
+                    class="w-full"/>
+                <label for="new_password2">Repetir contraseña</label>
+            </p-floatLabel>
+            <div *ngIf="use == 'work' " class="col-12 my-5 text-color font-bold">Rol</div>
+            <div *ngIf="use == 'work' " class="field col">
+                <p-selectButton 
+                [options]="workOptions" 
+                [(ngModel)]="workValue" 
+                optionLabel="label" 
+                optionValue="value" />
+            </div>
+            <div class="col-12 my-5">
+                <button 
+                    *ngIf="!logedIn"
+                    pButton 
+                    pRipple 
+                    label="Registrarme" 
+                    class="p-button-success"
+                    (click)="register()">
+                </button>
+                <button 
+                    *ngIf="logedIn && use == 'own' "
+                    pButton 
+                    pRipple 
+                    label="Guardar cambios" 
+                    class="p-button-success"
+                    (click)="update()">
+                </button>
+                <button 
+                    *ngIf="use == 'work' "
+                    pButton 
+                    pRipple 
+                    label="Crear" 
+                    class="p-button-success"
+                    (click)="register_work()">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

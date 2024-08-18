@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	{{ book.title }}
+{% endblock title%}
+
+{% block content %}
+    <p>
+        <b>Título: </b>{{ book.title }}
+    </p>
+
+    <p>
+        <b>ISBN: </b>{{ book.ISBN }}
+    </p>
+
+    <p>
+        {% if book.cover %}
+            <img src="{{ book.cover.url }}" width="300px" alt="Portada">
+        {% endif %}
+    </p>
+
+    <p><b>Autores: </b>
+    {% for author in book.authors.all %}
+        {{ author.author_name }}{% if not forloop.last %},{% else %}.{% endif %}
+    {% endfor %}
+    </p>
+
+    <p><b>Sinopsis: </b>
+    {{ book.synopsis }}
+    </p>
+    
+    <p><b>Géneros: </b>
+    {% for genre in book.genres.all %}
+        {{ genre.genre_name }}{% if not forloop.last %},{% else %}.{% endif %}
+    {% endfor %}
+    </p>
+    
+    <p><b>Temas: </b>
+    {% for theme in book.themes.all %}
+        {{ theme.theme_name }}{% if not forloop.last %},{% else %}.{% endif %}
+    {% endfor %}
+    </p>
+
+    {% if user.rol == 'manager' %}
+    <p>Botones de Manager:</p>
+    <p>
+        <a href="{% url 'updateBook' pk=book.pk %}"><button>Editar libro</button></a>
+        <a href="{% url 'deleteBook' pk=book.pk %}"><button>Eliminar libro</button></a>
+    </p>
+    {% endif %}
+
+    <p>
+        <a href="{% url 'books' %}"><button>Volver al catálogo</button></a>
+    </p>
+{% endblock content %}

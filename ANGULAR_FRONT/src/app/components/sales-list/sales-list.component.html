@@ -1,0 +1,53 @@
+<div class="card">
+    <p-table
+        #dt
+        [value]="sales"
+        [rows]="10"
+        [paginator]="true"
+        (onPage)="onPageChange()"
+        [globalFilterFields]="['sale_date']"
+        [tableStyle]="{ 'min-width': '7rem' }"
+        [rowHover]="true"
+        dataKey="id"
+        currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} transacciones"
+        [showCurrentPageReport]="true"
+    >
+        <ng-template pTemplate="caption">
+            <div class="flex align-items-center justify-content-between">
+                <h5 class="m-0" *ngIf="userRol == 'manager' || userRol == 'staff'">VENTAS</h5>
+                <h5 class="m-0" *ngIf="userRol == 'client'">HISTORIAL DE COMPRAS</h5>
+                <span class="p-input-icon-left">
+                    <i class="pi pi-search"></i>
+                    <input
+                        pInputText 
+                        type="text" 
+                        (input)="onGlobalFilter($event, dt)" 
+                        placeholder="Buscar..." />
+                </span>
+            </div>
+        </ng-template>
+
+        <ng-template pTemplate="header">
+            <tr>
+                <th pSortableColumn="sale_date">
+                    Fecha <p-sortIcon field="sale_date" />
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-sale>
+            <tr>
+                <td class="text-color font-bold cursor-pointer" [routerLink]="['/transaccion/', sale.id]">
+                    {{getFormattedDate(sale.sale_date)}}
+                </td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="summary">
+            <div *ngIf="userRol == 'manager' || userRol == 'staff' " class="flex align-items-center justify-content-between">
+                Hay un total de {{ sales ? sales.length : 0 }} ventas.
+            </div>
+            <div *ngIf="userRol == 'client' " class="flex align-items-center justify-content-between">
+                Hay un total de {{ sales ? sales.length : 0 }} compras.
+            </div>
+        </ng-template>
+    </p-table>
+</div>

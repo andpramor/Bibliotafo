@@ -1,0 +1,1502 @@
+[
+    {
+        "model": "shop.saleitem",
+        "pk": 1,
+        "fields": {
+            "sale": 1,
+            "book": 1,
+            "units": 1,
+            "cost": "18.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 2,
+        "fields": {
+            "sale": 1,
+            "book": 9,
+            "units": 2,
+            "cost": "39.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 3,
+        "fields": {
+            "sale": 2,
+            "book": 5,
+            "units": 1,
+            "cost": "22.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 4,
+        "fields": {
+            "sale": 3,
+            "book": 12,
+            "units": 1,
+            "cost": "16.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 5,
+        "fields": {
+            "sale": 4,
+            "book": 23,
+            "units": 2,
+            "cost": "48.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 6,
+        "fields": {
+            "sale": 5,
+            "book": 7,
+            "units": 1,
+            "cost": "19.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 7,
+        "fields": {
+            "sale": 5,
+            "book": 14,
+            "units": 1,
+            "cost": "25.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 8,
+        "fields": {
+            "sale": 6,
+            "book": 8,
+            "units": 1,
+            "cost": "17.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 9,
+        "fields": {
+            "sale": 7,
+            "book": 18,
+            "units": 3,
+            "cost": "90.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 10,
+        "fields": {
+            "sale": 8,
+            "book": 2,
+            "units": 1,
+            "cost": "15.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 11,
+        "fields": {
+            "sale": 9,
+            "book": 29,
+            "units": 2,
+            "cost": "50.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 12,
+        "fields": {
+            "sale": 10,
+            "book": 33,
+            "units": 1,
+            "cost": "24.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 13,
+        "fields": {
+            "sale": 11,
+            "book": 20,
+            "units": 1,
+            "cost": "21.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 14,
+        "fields": {
+            "sale": 12,
+            "book": 40,
+            "units": 2,
+            "cost": "44.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 15,
+        "fields": {
+            "sale": 13,
+            "book": 15,
+            "units": 1,
+            "cost": "18.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 16,
+        "fields": {
+            "sale": 14,
+            "book": 45,
+            "units": 1,
+            "cost": "30.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 17,
+        "fields": {
+            "sale": 15,
+            "book": 22,
+            "units": 1,
+            "cost": "19.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 18,
+        "fields": {
+            "sale": 16,
+            "book": 38,
+            "units": 3,
+            "cost": "75.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 19,
+        "fields": {
+            "sale": 17,
+            "book": 11,
+            "units": 1,
+            "cost": "23.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 20,
+        "fields": {
+            "sale": 18,
+            "book": 9,
+            "units": 1,
+            "cost": "28.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 21,
+        "fields": {
+            "sale": 19,
+            "book": 35,
+            "units": 1,
+            "cost": "22.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 22,
+        "fields": {
+            "sale": 20,
+            "book": 13,
+            "units": 2,
+            "cost": "47.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 23,
+        "fields": {
+            "sale": 21,
+            "book": 27,
+            "units": 1,
+            "cost": "16.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 24,
+        "fields": {
+            "sale": 22,
+            "book": 41,
+            "units": 1,
+            "cost": "18.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 25,
+        "fields": {
+            "sale": 23,
+            "book": 5,
+            "units": 1,
+            "cost": "25.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 26,
+        "fields": {
+            "sale": 24,
+            "book": 6,
+            "units": 2,
+            "cost": "36.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 27,
+        "fields": {
+            "sale": 25,
+            "book": 17,
+            "units": 1,
+            "cost": "24.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 28,
+        "fields": {
+            "sale": 26,
+            "book": 14,
+            "units": 1,
+            "cost": "19.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 29,
+        "fields": {
+            "sale": 27,
+            "book": 31,
+            "units": 1,
+            "cost": "29.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 30,
+        "fields": {
+            "sale": 28,
+            "book": 10,
+            "units": 1,
+            "cost": "27.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 31,
+        "fields": {
+            "sale": 29,
+            "book": 16,
+            "units": 1,
+            "cost": "18.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 32,
+        "fields": {
+            "sale": 30,
+            "book": 21,
+            "units": 2,
+            "cost": "39.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 33,
+        "fields": {
+            "sale": 31,
+            "book": 3,
+            "units": 1,
+            "cost": "15.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 34,
+        "fields": {
+            "sale": 32,
+            "book": 28,
+            "units": 1,
+            "cost": "26.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 35,
+        "fields": {
+            "sale": 33,
+            "book": 4,
+            "units": 3,
+            "cost": "81.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 36,
+        "fields": {
+            "sale": 34,
+            "book": 19,
+            "units": 1,
+            "cost": "21.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 37,
+        "fields": {
+            "sale": 35,
+            "book": 30,
+            "units": 1,
+            "cost": "23.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 38,
+        "fields": {
+            "sale": 36,
+            "book": 44,
+            "units": 2,
+            "cost": "50.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 39,
+        "fields": {
+            "sale": 37,
+            "book": 25,
+            "units": 1,
+            "cost": "24.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 40,
+        "fields": {
+            "sale": 38,
+            "book": 34,
+            "units": 1,
+            "cost": "17.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 41,
+        "fields": {
+            "sale": 39,
+            "book": 24,
+            "units": 1,
+            "cost": "16.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 42,
+        "fields": {
+            "sale": 40,
+            "book": 46,
+            "units": 2,
+            "cost": "52.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 43,
+        "fields": {
+            "sale": 41,
+            "book": 43,
+            "units": 1,
+            "cost": "20.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 44,
+        "fields": {
+            "sale": 42,
+            "book": 42,
+            "units": 1,
+            "cost": "26.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 45,
+        "fields": {
+            "sale": 43,
+            "book": 39,
+            "units": 1,
+            "cost": "27.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 46,
+        "fields": {
+            "sale": 44,
+            "book": 32,
+            "units": 1,
+            "cost": "22.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 47,
+        "fields": {
+            "sale": 45,
+            "book": 36,
+            "units": 2,
+            "cost": "44.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 48,
+        "fields": {
+            "sale": 46,
+            "book": 50,
+            "units": 1,
+            "cost": "29.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 49,
+        "fields": {
+            "sale": 47,
+            "book": 49,
+            "units": 1,
+            "cost": "18.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 50,
+        "fields": {
+            "sale": 48,
+            "book": 48,
+            "units": 3,
+            "cost": "72.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 51,
+        "fields": {
+            "sale": 49,
+            "book": 37,
+            "units": 1,
+            "cost": "21.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 52,
+        "fields": {
+            "sale": 50,
+            "book": 26,
+            "units": 1,
+            "cost": "23.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 53,
+        "fields": {
+            "sale": 51,
+            "book": 47,
+            "units": 1,
+            "cost": "20.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 54,
+        "fields": {
+            "sale": 52,
+            "book": 51,
+            "units": 2,
+            "cost": "48.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 55,
+        "fields": {
+            "sale": 53,
+            "book": 52,
+            "units": 1,
+            "cost": "16.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 56,
+        "fields": {
+            "sale": 54,
+            "book": 53,
+            "units": 1,
+            "cost": "27.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 57,
+        "fields": {
+            "sale": 55,
+            "book": 54,
+            "units": 2,
+            "cost": "40.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 58,
+        "fields": {
+            "sale": 56,
+            "book": 55,
+            "units": 1,
+            "cost": "18.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 59,
+        "fields": {
+            "sale": 57,
+            "book": 56,
+            "units": 1,
+            "cost": "26.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 60,
+        "fields": {
+            "sale": 58,
+            "book": 57,
+            "units": 1,
+            "cost": "22.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 61,
+        "fields": {
+            "sale": 59,
+            "book": 58,
+            "units": 3,
+            "cost": "81.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 62,
+        "fields": {
+            "sale": 60,
+            "book": 59,
+            "units": 1,
+            "cost": "19.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 63,
+        "fields": {
+            "sale": 61,
+            "book": 60,
+            "units": 2,
+            "cost": "45.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 64,
+        "fields": {
+            "sale": 62,
+            "book": 61,
+            "units": 1,
+            "cost": "24.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 65,
+        "fields": {
+            "sale": 63,
+            "book": 62,
+            "units": 1,
+            "cost": "18.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 66,
+        "fields": {
+            "sale": 64,
+            "book": 63,
+            "units": 2,
+            "cost": "40.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 67,
+        "fields": {
+            "sale": 65,
+            "book": 64,
+            "units": 1,
+            "cost": "29.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 68,
+        "fields": {
+            "sale": 66,
+            "book": 65,
+            "units": 1,
+            "cost": "25.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 69,
+        "fields": {
+            "sale": 67,
+            "book": 66,
+            "units": 1,
+            "cost": "22.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 70,
+        "fields": {
+            "sale": 68,
+            "book": 67,
+            "units": 3,
+            "cost": "72.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 71,
+        "fields": {
+            "sale": 69,
+            "book": 68,
+            "units": 1,
+            "cost": "18.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 72,
+        "fields": {
+            "sale": 70,
+            "book": 69,
+            "units": 2,
+            "cost": "46.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 73,
+        "fields": {
+            "sale": 71,
+            "book": 70,
+            "units": 1,
+            "cost": "27.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 74,
+        "fields": {
+            "sale": 72,
+            "book": 71,
+            "units": 1,
+            "cost": "19.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 75,
+        "fields": {
+            "sale": 73,
+            "book": 72,
+            "units": 1,
+            "cost": "23.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 76,
+        "fields": {
+            "sale": 74,
+            "book": 73,
+            "units": 2,
+            "cost": "48.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 77,
+        "fields": {
+            "sale": 75,
+            "book": 74,
+            "units": 1,
+            "cost": "20.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 78,
+        "fields": {
+            "sale": 76,
+            "book": 75,
+            "units": 1,
+            "cost": "26.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 79,
+        "fields": {
+            "sale": 77,
+            "book": 76,
+            "units": 1,
+            "cost": "28.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 80,
+        "fields": {
+            "sale": 78,
+            "book": 77,
+            "units": 3,
+            "cost": "81.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 81,
+        "fields": {
+            "sale": 79,
+            "book": 78,
+            "units": 1,
+            "cost": "15.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 82,
+        "fields": {
+            "sale": 80,
+            "book": 79,
+            "units": 2,
+            "cost": "38.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 83,
+        "fields": {
+            "sale": 81,
+            "book": 80,
+            "units": 1,
+            "cost": "25.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 84,
+        "fields": {
+            "sale": 82,
+            "book": 81,
+            "units": 1,
+            "cost": "19.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 85,
+        "fields": {
+            "sale": 83,
+            "book": 82,
+            "units": 1,
+            "cost": "27.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 86,
+        "fields": {
+            "sale": 84,
+            "book": 83,
+            "units": 2,
+            "cost": "45.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 87,
+        "fields": {
+            "sale": 85,
+            "book": 84,
+            "units": 1,
+            "cost": "26.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 88,
+        "fields": {
+            "sale": 86,
+            "book": 85,
+            "units": 1,
+            "cost": "23.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 89,
+        "fields": {
+            "sale": 87,
+            "book": 86,
+            "units": 3,
+            "cost": "75.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 90,
+        "fields": {
+            "sale": 88,
+            "book": 87,
+            "units": 1,
+            "cost": "17.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 91,
+        "fields": {
+            "sale": 89,
+            "book": 88,
+            "units": 1,
+            "cost": "29.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 92,
+        "fields": {
+            "sale": 90,
+            "book": 89,
+            "units": 1,
+            "cost": "21.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 93,
+        "fields": {
+            "sale": 91,
+            "book": 90,
+            "units": 2,
+            "cost": "50.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 94,
+        "fields": {
+            "sale": 92,
+            "book": 91,
+            "units": 1,
+            "cost": "24.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 95,
+        "fields": {
+            "sale": 93,
+            "book": 92,
+            "units": 2,
+            "cost": "40.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 96,
+        "fields": {
+            "sale": 94,
+            "book": 93,
+            "units": 1,
+            "cost": "23.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 97,
+        "fields": {
+            "sale": 95,
+            "book": 94,
+            "units": 1,
+            "cost": "19.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 98,
+        "fields": {
+            "sale": 96,
+            "book": 95,
+            "units": 1,
+            "cost": "28.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 99,
+        "fields": {
+            "sale": 97,
+            "book": 96,
+            "units": 3,
+            "cost": "81.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 100,
+        "fields": {
+            "sale": 98,
+            "book": 97,
+            "units": 2,
+            "cost": "47.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 101,
+        "fields": {
+            "sale": 99,
+            "book": 98,
+            "units": 1,
+            "cost": "18.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 102,
+        "fields": {
+            "sale": 100,
+            "book": 99,
+            "units": 2,
+            "cost": "40.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 103,
+        "fields": {
+            "sale": 101,
+            "book": 100,
+            "units": 1,
+            "cost": "27.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 104,
+        "fields": {
+            "sale": 102,
+            "book": 101,
+            "units": 1,
+            "cost": "20.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 105,
+        "fields": {
+            "sale": 103,
+            "book": 102,
+            "units": 2,
+            "cost": "50.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 106,
+        "fields": {
+            "sale": 104,
+            "book": 103,
+            "units": 1,
+            "cost": "23.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 107,
+        "fields": {
+            "sale": 105,
+            "book": 104,
+            "units": 1,
+            "cost": "19.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 108,
+        "fields": {
+            "sale": 106,
+            "book": 105,
+            "units": 3,
+            "cost": "72.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 109,
+        "fields": {
+            "sale": 107,
+            "book": 106,
+            "units": 1,
+            "cost": "22.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 110,
+        "fields": {
+            "sale": 108,
+            "book": 1,
+            "units": 1,
+            "cost": "18.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 111,
+        "fields": {
+            "sale": 109,
+            "book": 9,
+            "units": 2,
+            "cost": "39.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 112,
+        "fields": {
+            "sale": 110,
+            "book": 5,
+            "units": 1,
+            "cost": "22.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 113,
+        "fields": {
+            "sale": 111,
+            "book": 12,
+            "units": 1,
+            "cost": "16.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 114,
+        "fields": {
+            "sale": 111,
+            "book": 23,
+            "units": 2,
+            "cost": "48.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 115,
+        "fields": {
+            "sale": 2,
+            "book": 6,
+            "units": 2,
+            "cost": "44.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 116,
+        "fields": {
+            "sale": 5,
+            "book": 10,
+            "units": 1,
+            "cost": "26.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 117,
+        "fields": {
+            "sale": 10,
+            "book": 11,
+            "units": 1,
+            "cost": "19.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 118,
+        "fields": {
+            "sale": 15,
+            "book": 14,
+            "units": 3,
+            "cost": "75.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 119,
+        "fields": {
+            "sale": 20,
+            "book": 17,
+            "units": 1,
+            "cost": "23.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 120,
+        "fields": {
+            "sale": 25,
+            "book": 18,
+            "units": 2,
+            "cost": "46.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 121,
+        "fields": {
+            "sale": 30,
+            "book": 19,
+            "units": 1,
+            "cost": "27.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 122,
+        "fields": {
+            "sale": 35,
+            "book": 20,
+            "units": 1,
+            "cost": "20.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 123,
+        "fields": {
+            "sale": 40,
+            "book": 22,
+            "units": 1,
+            "cost": "24.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 124,
+        "fields": {
+            "sale": 45,
+            "book": 24,
+            "units": 2,
+            "cost": "48.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 125,
+        "fields": {
+            "sale": 50,
+            "book": 26,
+            "units": 1,
+            "cost": "26.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 126,
+        "fields": {
+            "sale": 55,
+            "book": 28,
+            "units": 1,
+            "cost": "25.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 127,
+        "fields": {
+            "sale": 60,
+            "book": 29,
+            "units": 1,
+            "cost": "22.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 128,
+        "fields": {
+            "sale": 65,
+            "book": 31,
+            "units": 3,
+            "cost": "69.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 129,
+        "fields": {
+            "sale": 70,
+            "book": 33,
+            "units": 1,
+            "cost": "25.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 130,
+        "fields": {
+            "sale": 75,
+            "book": 35,
+            "units": 1,
+            "cost": "23.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 131,
+        "fields": {
+            "sale": 80,
+            "book": 37,
+            "units": 2,
+            "cost": "44.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 132,
+        "fields": {
+            "sale": 85,
+            "book": 39,
+            "units": 1,
+            "cost": "21.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 133,
+        "fields": {
+            "sale": 90,
+            "book": 41,
+            "units": 1,
+            "cost": "27.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 134,
+        "fields": {
+            "sale": 95,
+            "book": 42,
+            "units": 1,
+            "cost": "19.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 135,
+        "fields": {
+            "sale": 100,
+            "book": 44,
+            "units": 3,
+            "cost": "72.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 136,
+        "fields": {
+            "sale": 105,
+            "book": 46,
+            "units": 1,
+            "cost": "18.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 137,
+        "fields": {
+            "sale": 110,
+            "book": 48,
+            "units": 2,
+            "cost": "50.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 138,
+        "fields": {
+            "sale": 111,
+            "book": 49,
+            "units": 1,
+            "cost": "21.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 139,
+        "fields": {
+            "sale": 8,
+            "book": 15,
+            "units": 1,
+            "cost": "17.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 140,
+        "fields": {
+            "sale": 17,
+            "book": 25,
+            "units": 2,
+            "cost": "46.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 141,
+        "fields": {
+            "sale": 22,
+            "book": 30,
+            "units": 1,
+            "cost": "26.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 142,
+        "fields": {
+            "sale": 33,
+            "book": 38,
+            "units": 1,
+            "cost": "19.50"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 143,
+        "fields": {
+            "sale": 46,
+            "book": 40,
+            "units": 2,
+            "cost": "45.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 144,
+        "fields": {
+            "sale": 53,
+            "book": 43,
+            "units": 1,
+            "cost": "23.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 145,
+        "fields": {
+            "sale": 63,
+            "book": 45,
+            "units": 1,
+            "cost": "18.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 146,
+        "fields": {
+            "sale": 72,
+            "book": 50,
+            "units": 2,
+            "cost": "48.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 147,
+        "fields": {
+            "sale": 93,
+            "book": 32,
+            "units": 1,
+            "cost": "22.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 148,
+        "fields": {
+            "sale": 94,
+            "book": 36,
+            "units": 1,
+            "cost": "25.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 149,
+        "fields": {
+            "sale": 97,
+            "book": 47,
+            "units": 3,
+            "cost": "69.00"
+        }
+    },
+    {
+        "model": "shop.saleitem",
+        "pk": 150,
+        "fields": {
+            "sale": 106,
+            "book": 52,
+            "units": 1,
+            "cost": "26.00"
+        }
+    }
+]

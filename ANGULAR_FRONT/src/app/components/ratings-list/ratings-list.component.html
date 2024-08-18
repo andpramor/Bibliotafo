@@ -1,0 +1,15 @@
+<h1 class="text-center">Valoraciones de <span class="underline cursor-pointer" [routerLink]="['/usuario/'+ratings[0].user]">{{ratings[0].username}}</span></h1>
+
+<div class="grid justify-content-around m-0">
+    <div *ngFor="let rating of ratings" class="col-8 md:col-4 lg:col-2 border-round m-3 flex flex-column justify-content-center align-items-center">
+        <a class="cover-container shadow-4 mb-3" [routerLink]="['/libro/', rating.book]">
+            <img src="{{base_url + 'media/' + rating.cover}}" alt="{{rating.book_title}}" class="cover">
+        </a>
+        <div class="surface-50 p-1 border-round">
+            <p-rating
+                [(ngModel)]="rating.given_rating"
+                [readonly]="true"
+                [cancel]="false" />
+        </div>
+    </div>
+</div>

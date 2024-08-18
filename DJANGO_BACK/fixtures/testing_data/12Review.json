@@ -1,0 +1,389 @@
+[
+    {
+        "model": "social.review",
+        "pk": 1,
+        "fields": {
+            "book": 1,
+            "user": 4,
+            "comment": "Este libro es genial, me ha cambiado la vida. ¡No puedo recomendarlo más!"
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 2,
+        "fields": {
+            "book": 2,
+            "user": 7,
+            "comment": "Una obra impresionante, llena de enseñanzas valiosas. Muy recomendable."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 3,
+        "fields": {
+            "book": 3,
+            "user": 10,
+            "comment": "El contenido de este libro es muy enriquecedor. Lo disfruté mucho."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 4,
+        "fields": {
+            "book": 4,
+            "user": 13,
+            "comment": "Me sorprendió gratamente. Una lectura que vale la pena."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 5,
+        "fields": {
+            "book": 5,
+            "user": 21,
+            "comment": "Interesante y bien escrito, aunque esperaba más profundidad en algunos temas."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 6,
+        "fields": {
+            "book": 6,
+            "user": 22,
+            "comment": "Un libro fascinante de principio a fin. Lo recomendaría sin dudar."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 7,
+        "fields": {
+            "book": 7,
+            "user": 23,
+            "comment": "Aunque tiene partes lentas, en general es una buena lectura."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 8,
+        "fields": {
+            "book": 8,
+            "user": 24,
+            "comment": "Un libro con muchas ideas interesantes. Me gustó bastante."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 9,
+        "fields": {
+            "book": 9,
+            "user": 25,
+            "comment": "Una lectura obligatoria para cualquier amante de la literatura."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 10,
+        "fields": {
+            "book": 10,
+            "user": 26,
+            "comment": "Esperaba más, pero no deja de ser un libro interesante y bien escrito."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 11,
+        "fields": {
+            "book": 11,
+            "user": 27,
+            "comment": "Increíble de principio a fin. Me encantó cada capítulo."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 12,
+        "fields": {
+            "book": 12,
+            "user": 28,
+            "comment": "Una obra maestra. Cada página es una joya literaria."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 13,
+        "fields": {
+            "book": 13,
+            "user": 29,
+            "comment": "El libro es bueno, pero algunas partes son un poco aburridas."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 14,
+        "fields": {
+            "book": 14,
+            "user": 30,
+            "comment": "Muy inspirador y lleno de ideas frescas. Definitivamente lo recomiendo."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 15,
+        "fields": {
+            "book": 15,
+            "user": 4,
+            "comment": "No es lo que esperaba, pero tiene momentos interesantes."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 16,
+        "fields": {
+            "book": 16,
+            "user": 7,
+            "comment": "Una lectura muy amena y enriquecedora. Lo disfruté mucho."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 17,
+        "fields": {
+            "book": 17,
+            "user": 10,
+            "comment": "Un libro extraordinario, lleno de sabiduría y enseñanzas."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 18,
+        "fields": {
+            "book": 18,
+            "user": 13,
+            "comment": "Me ha dejado pensando mucho. Una lectura muy recomendable."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 19,
+        "fields": {
+            "book": 19,
+            "user": 21,
+            "comment": "Un libro fascinante que me enganchó desde el primer momento."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 20,
+        "fields": {
+            "book": 20,
+            "user": 22,
+            "comment": "Excelente libro, muy bien escrito y con una trama atrapante."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 21,
+        "fields": {
+            "book": 21,
+            "user": 23,
+            "comment": "No me gustó tanto como esperaba, pero tiene puntos rescatables."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 22,
+        "fields": {
+            "book": 22,
+            "user": 24,
+            "comment": "Un libro que me ha sorprendido gratamente. Muy recomendable."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 23,
+        "fields": {
+            "book": 23,
+            "user": 25,
+            "comment": "Lectura amena y educativa. Disfruté cada página."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 24,
+        "fields": {
+            "book": 24,
+            "user": 26,
+            "comment": "Un libro excelente, aunque algunas partes fueron un poco lentas."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 25,
+        "fields": {
+            "book": 25,
+            "user": 27,
+            "comment": "Una historia que atrapa desde el inicio. Muy buen libro."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 26,
+        "fields": {
+            "book": 26,
+            "user": 28,
+            "comment": "Aunque tenía altas expectativas, no me defraudó en absoluto."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 27,
+        "fields": {
+            "book": 27,
+            "user": 29,
+            "comment": "Un libro profundo y bien escrito. Lo recomiendo mucho."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 28,
+        "fields": {
+            "book": 28,
+            "user": 30,
+            "comment": "Cada página de este libro es una aventura. Me encantó."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 29,
+        "fields": {
+            "book": 29,
+            "user": 4,
+            "comment": "Una obra maestra, definitivamente un libro para releer."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 30,
+        "fields": {
+            "book": 30,
+            "user": 7,
+            "comment": "Una lectura muy inspiradora y motivadora. Lo recomiendo."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 31,
+        "fields": {
+            "book": 31,
+            "user": 10,
+            "comment": "Un libro bien estructurado y con un mensaje poderoso."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 32,
+        "fields": {
+            "book": 32,
+            "user": 13,
+            "comment": "Muy interesante, aunque algunos capítulos se me hicieron pesados."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 33,
+        "fields": {
+            "book": 33,
+            "user": 21,
+            "comment": "Lectura obligatoria para cualquier amante de los libros."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 34,
+        "fields": {
+            "book": 34,
+            "user": 22,
+            "comment": "Un libro entretenido y bien escrito. Lo disfruté mucho."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 35,
+        "fields": {
+            "book": 35,
+            "user": 23,
+            "comment": "Aunque el inicio fue lento, el desarrollo fue excelente."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 36,
+        "fields": {
+            "book": 36,
+            "user": 24,
+            "comment": "Un libro que te hace pensar y reflexionar. Muy bueno."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 37,
+        "fields": {
+            "book": 37,
+            "user": 25,
+            "comment": "Me atrapó desde el principio. Una lectura muy recomendable."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 38,
+        "fields": {
+            "book": 38,
+            "user": 26,
+            "comment": "Una trama muy bien desarrollada y personajes entrañables."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 39,
+        "fields": {
+            "book": 39,
+            "user": 27,
+            "comment": "Un libro lleno de emociones y sorpresas. Muy recomendable."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 40,
+        "fields": {
+            "book": 40,
+            "user": 28,
+            "comment": "Cada capítulo de este libro es una joya. Me encantó."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 41,
+        "fields": {
+            "book": 41,
+            "user": 29,
+            "comment": "Un libro que todos deberían leer al menos una vez en su vida."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 42,
+        "fields": {
+            "book": 31,
+            "user": 29,
+            "comment": "Un libro que todos deberían leer al menos una vez en su vida."
+        }
+    },
+    {
+        "model": "social.review",
+        "pk": 43,
+        "fields": {
+            "book": 31,
+            "user": 28,
+            "comment": "Cada capítulo de este libro es una joya. Me encantó."
+        }
+    }
+]

@@ -1,0 +1,192 @@
+<div class="card">
+    <p-toast class="custom-toast"/>
+    <p-toolbar *ngIf="sale_items && sale_items.length != 0" styleClass="mb-4 gap-2"> <!-- Borrado bulk -->
+        <ng-template pTemplate="left">
+            <p-button 
+                pRipple 
+                severity="danger" 
+                label="Borrar seleccionados"
+                icon="pi pi-trash" 
+                (click)="deleteSelectedItems()" 
+                [disabled]="!selectedItems || !selectedItems.length" />
+        </ng-template>
+    </p-toolbar>
+
+    <p-table
+        #dt
+        [value]="sale_items"
+        [rows]="10"
+        [paginator]="true"
+        (onPage)="onPageChange()"
+        [tableStyle]="{ 'min-width': '7rem' }"
+        [(selection)]="selectedItems"
+        [rowHover]="true"
+        dataKey="id"
+        currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} libros"
+        [showCurrentPageReport]="true"
+    >
+        <ng-template pTemplate="caption">
+            <div class="flex align-items-center justify-content-between">
+                <h5 class="m-0">EN EL CARRITO</h5>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="header">
+            <tr>
+                <th style="width: 4rem">
+                    <p-tableHeaderCheckbox />
+                </th>
+                <th>
+                    Portada
+                </th>
+                <th pSortableColumn="book_title" style="min-width:10rem">
+                    Título <p-sortIcon field="book_title" />
+                </th>
+                <th pSortableColumn="units" style="min-width:5rem" class="fromMd">
+                    Unidades <p-sortIcon field="units" />
+                </th>
+                <th style="min-width:5rem" class="fromMd">
+                    Coste total
+                </th>
+                <th style="width: 10rem"></th><!-- Editar y borrar -->
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-item>
+            <tr>
+                <td>
+                    <p-tableCheckbox [value]="item" />
+                </td>
+                <td>
+                    <div class="cover-container shadow-4">
+                        <img 
+                        *ngIf="item.cover"
+                        [src]="base_url + item.cover" 
+                        [alt]="item.book_title"
+                        class="cover"
+                        />
+                        <img 
+                        *ngIf="!item.cover"
+                        src="assets/defaultCover.png"
+                        [alt]="item.book_title"
+                        class="cover"
+                        />
+                    </div>
+                </td>
+                <td>
+                    {{item.book_title}}
+                </td>
+                <td>
+                    {{item.units}}
+                </td>
+                <td>
+                    {{ item.cost | number:'1.2-2' }}€
+                </td>
+                <td style="white-space: nowrap;"> <!-- Editar y borrar -->
+                    <p-button 
+                        pRipple 
+                        icon="pi pi-pencil" 
+                        class="mr-2" 
+                        [rounded]="true" 
+                        [outlined]="true" 
+                        severity="success" 
+                        (click)="editItem(item)" />
+                    <p-button 
+                        pRipple 
+                        icon="pi pi-trash" 
+                        severity="danger" 
+                        [rounded]="true" 
+                        [outlined]="true" 
+                        (click)="deleteItem(item)" />
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+
+    <div *ngIf="sale_items && sale_items.length != 0 && userRol == 'manager' || sale_items && sale_items.length != 0 && userRol == 'staff'" class="mt-4 surface-50 border-round p-5">
+        <p-dropdown 
+            [options]="clients"
+            [(ngModel)]="selectedClient"
+            optionLabel="email"
+            [filter]="true"
+            filterBy="email"
+            [showClear]="true"
+            placeholder="Introduce el correo del cliente"
+            (onChange)="onClientChange()">
+                <ng-template let-client pTemplate="item">
+                    <div class="flex align-items-center gap-2">
+                        <div>{{ client.email }}</div>
+                    </div>
+                </ng-template>
+        </p-dropdown>
+    </div>
+
+    <p-toolbar *ngIf="sale_items && sale_items.length != 0" styleClass="mt-4 gap-2"> <!-- Borrado bulk -->
+        <span class="text-color">Total: {{total_cost | number:'1.2-2' }}€</span>
+        <ng-template pTemplate="right">
+            <p-button 
+                *ngIf="userRol == 'client' "
+                pRipple 
+                severity="success" 
+                label="Comprar"
+                icon="pi pi-verified" 
+                (click)="buy()" 
+                class="mr-3" />
+            <p-button 
+                *ngIf="userRol == 'staff' || userRol == 'manager' "
+                pRipple 
+                severity="success" 
+                label="Vender"
+                icon="pi pi-verified" 
+                (click)="buy()" 
+                class="mr-3" />
+            <p-button 
+                pRipple 
+                severity="danger" 
+                label="Descartar"
+                icon="pi pi-trash" 
+                (click)="deleteAllItems()" />
+            </ng-template>
+    </p-toolbar>
+
+    <p-dialog 
+        [(visible)]="itemDialog" 
+        [style]="{ 'width': '90vw', 'max-width': '600px',  'height': '30dvh', 'min-height': '300px' }"
+        header="Añadir al carrito" 
+        position="top"
+        [modal]="true" 
+        styleClass="p-fluid">
+        <ng-template pTemplate="content">
+            <img src="assets/favicon.ico" height="33" class="block mx-auto">
+            <div class="flex-auto mr-3">
+                <label for="unidades">Unidades <small>(stock: {{book_stock}})</small></label>
+                <p-inputNumber 
+                    inputId="unidades" 
+                    [(ngModel)]="saleItem.units"
+                    (ngModelChange)="updateCost()"
+                    value="1"
+                    [min]="1"
+                    [max]="book_stock"
+                    class="mt-3" /> 
+            </div>
+            <div class="flex-auto mt-3 text-color">
+                Coste total: {{saleItem.cost | number:'1.2-2' }}€.
+            </div>
+        </ng-template>
+
+        <ng-template pTemplate="footer">
+            <p-button 
+                pRipple 
+                label="Cancelar" 
+                icon="pi pi-times" 
+                [text]="true" 
+                (click)="close()" />
+            <p-button 
+                pRipple 
+                label="Confirmar" 
+                icon="pi pi-check" 
+                [text]="true" 
+                (click)="updateItem()" />
+        </ng-template>
+    </p-dialog>
+
+    <p-confirmDialog [style]="{ width: '450px','max-width':'90vw' }" position="top"/>
+</div>

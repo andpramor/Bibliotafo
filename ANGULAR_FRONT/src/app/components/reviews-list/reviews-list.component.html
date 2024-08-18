@@ -1,0 +1,86 @@
+<p-toast class="custom-toast"/>
+<!-- Título -->
+<h1 *ngIf="!book_view" class="text-center">Reseñas de <span class="underline cursor-pointer" [routerLink]="['/usuario/'+reviews[0].user]">{{reviews[0].username}}</span></h1>
+<h1 *ngIf="book_view" class="text-center">Reseñas de <span class="underline cursor-pointer" [routerLink]="['/libro/'+reviews[0].book]">{{reviews[0].book_title}}</span></h1>
+
+<!-- Reseñas -->
+<div class="grid justify-content-around m-0">
+    <!-- Own review -->
+    <div *ngIf="book_view && !own_review" class="col-12 md:col-5 border-round surface-50 my-3 p-3 shadow-4">
+        <div class="text-color font-bold mb-3">¿Tú también lo has leído?</div>
+        <textarea 
+            rows="3"
+            class="w-full"
+            placeholder="Cuéntanos qué te pareció."
+            pInputTextarea 
+            [(ngModel)]="new_review.comment"
+            [autoResize]="true">
+        </textarea>
+        <div class="col-12 text-right mt-3">
+            <p-button
+            size="small"
+            severity="info"
+            icon="pi pi-check-circle"
+            label="Publicar reseña"
+            (click)="publishReview(new_review)"/>
+        </div>
+    </div>
+
+    <div *ngFor="let review of reviews" class="col-12 md:col-5 border-round surface-50 my-3 p-3" [ngClass]="{'shadow-4': review.user==active_user}">
+        <!-- VISTA LIBRO -->
+        <div *ngIf="book_view" class="grid justify-content-center">
+            <div class="flex align-items-center justify-content-center surface-100 col-7 md:col-10 border-round shadow-3 cursor-pointer my-3" [routerLink]="['/usuario/'+review.user]">
+                <p-avatar
+                    size="large"
+                    *ngIf="review.photo"
+                    image="{{base_url + 'media/' + review.photo}}" shape="circle"
+                    ariaLabel="menu, profile pic"
+                    class="mr-3"/>
+                <span class="font-bold">{{review.username}}</span>
+            </div>
+        </div>
+        <div *ngIf="book_view" class="grid">
+            <div class="col-12">
+                <div class="mt-3">
+                    <i>{{review.comment}}</i>
+                </div>
+            </div>
+            <div *ngIf="review.user == active_user" class="col-12 text-right mt-3">
+                <p-button
+                size="small"
+                severity="danger"
+                icon="pi pi-times"
+                label="Eliminar reseña"
+                (click)="delReview(review)"/>
+            </div>
+        </div>
+        
+        <!-- VISTA USUARIO -->
+        <div *ngIf="!book_view" class="grid">
+            <div class="col-4">
+                <a class="cover-container shadow-4" [routerLink]="['/libro/', review.book]">
+                    <img src="{{base_url + 'media/' + review.cover}}" alt="{{review.book_title}}" class="cover">
+                </a>
+            </div>
+            <div class="col-8 surface-200 border-round flex flex-column">
+                <div>
+                    <b>{{review.book_title}}</b>
+                </div>
+                <div class="mt-3">
+                    <i>{{review.comment}}</i>
+                </div>
+                <div *ngIf="review.user == active_user" class="mt-auto flex justify-content-end">
+                    <p-button
+                    size="small"
+                    severity="danger"
+                    icon="pi pi-times"
+                    label="Eliminar reseña"
+                    (click)="delReview(review)"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<p-confirmDialog [style]="{ width: '450px', 'max-width':'90vw' }" position="top"/>

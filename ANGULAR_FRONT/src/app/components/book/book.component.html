@@ -1,0 +1,192 @@
+<p-toast class="custom-toast"/>
+<div class="surface-50 border-round p-5">
+    <div class="grid justify-content-center">
+        <div class="col-12 my-5">
+            <div class="grid justify-content-center">
+                <!-- portada -->
+                <h1 class="block lg:hidden">{{ book.title }}</h1>
+                <div class="col-12 lg:col-4 flex justify-content-center lg:justify-content-end">
+                    <div class="cover-container shadow-4">
+                        <img 
+                        *ngIf="book.cover"
+                        [src]="base_url + book.cover" 
+                        [alt]="book.title"
+                        class="cover"
+                        />
+                        <img 
+                        *ngIf="!book.cover"
+                        src="assets/defaultCover.png"
+                        [alt]="book.title"
+                        class="cover"
+                        />
+                    </div>
+                </div>
+
+                <div *ngIf="userRol" class="block lg:hidden mt-4 text-center">
+                    <p-button label="Añadir al carrito" [raised]="true" severity="help" (onClick)="openSale()" class="mx-2"  icon="pi pi-shopping-cart"/>
+                </div>
+                <div *ngIf="userRol == 'client' && !isFavourite" class="block lg:hidden mt-4 text-center">
+                    <p-button label="Añadir favorito" [raised]="true" severity="success" (onClick)="addFav()" class="mx-2"  icon="pi pi-heart" [outlined]="true"/>
+                </div>
+                <div *ngIf="userRol == 'client' && isFavourite" class="block lg:hidden mt-4 text-center">
+                    <p-button label="Eliminar favorito" [raised]="true" severity="danger" (onClick)="delFav()" class="ml-2"  icon="pi pi-times" [outlined]="true"/>
+                </div>
+
+                <!-- info -->
+                <div class="col-12 lg:col-8 flex flex-column justify-content-center lg:justify-content-start mt-3 md:mt-0 pl-3">
+                    <h1 class="my-0 hidden lg:block">{{ book.title }}</h1>
+                    <div class="text-md mt-1">{{book.price | currency: 'EUR'}}, {{ getFormattedStyle(book.style) }}.</div>
+                    <div *ngIf="userRol" class="mt-3 hidden lg:inline">
+                        <p-button label="Añadir al carrito" [raised]="true" severity="help" (onClick)="openSale()" class="mr-2"  icon="pi pi-shopping-cart"/>
+                        <p-button *ngIf="userRol == 'client' && !isFavourite" label="Añadir favorito" [raised]="true" severity="success" (onClick)="addFav()" class="ml-2"  icon="pi pi-heart" [outlined]="true"/>
+                        <p-button *ngIf="userRol == 'client' && isFavourite" label="Eliminar favorito" [raised]="true" severity="danger" (onClick)="delFav()" class="ml-2"  icon="pi pi-times" [outlined]="true"/>
+                    </div>
+                    <div class="font-italic mt-3">{{ book.synopsis }}</div>
+                    <div class="text-sm mt-3">Publicado el {{getFormattedDate(book.publication_date)}}.</div>
+                    <div class="text-sm mt-3">ISBN {{ book.ISBN }}.</div>
+                    <div class="text-sm mt-3">Editorial: <span class="font-bold">{{ book.publishername }}</span></div>
+                    <div class="mt-3">
+                        <span class="font-bold">Géneros:</span>
+                        <span *ngFor="let genre of book.genrenames" class="mt-2 pl-2">
+                            {{genre.genre_name}}
+                        </span>
+                    </div>
+                    <div class="mt-3">
+                        <div class="font-bold">Los temas que se tratan en <i>{{book.title}}</i>:</div>
+                        <ul class="m-0">
+                            <li *ngFor="let theme of book.themenames" class="mt-2 pl-2">
+                                {{theme.theme_name}}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-3">
+                        <div class="font-bold">¿Qué opinan nuestros usuarios?</div>
+                        <div class="flex align-items-center my-3">
+                            <p-rating
+                                [(ngModel)]="book.avg_rating"
+                                [readonly]="true"
+                                [cancel]="false" />
+                            <span class="text-color ml-3">({{book.times_rated}}</span>
+                            <span *ngIf="book.times_rated == 1" class="text-color ml-1">valoración)</span>
+                            <span *ngIf="book.times_rated != 1" class="text-color ml-1">valoraciones)</span>
+                        </div>
+                        <p-button
+                            label="Ver reseñas"
+                            [raised]="true"
+                            severity="primary"
+                            icon="pi pi-comment"
+                            [outlined]="true"
+                            [routerLink]="['/comentarios/libro/', book.id]" />
+                        <!-- TODO: mostrar valorar sólo si no lo has valorado, si no, mostrar borrar valoración (valor) -->
+                        <p-button
+                            *ngIf="!rating"
+                            label="Valorar"
+                            [raised]="true"
+                            severity="primary"
+                            icon="pi pi-star"
+                            [outlined]="true"
+                            class="ml-3"
+                            (click)="openRate()" />
+                        <p-button
+                            *ngIf="rating"
+                            label="Borrar valoración"
+                            [raised]="true"
+                            severity="danger"
+                            icon="pi pi-times"
+                            [outlined]="true"
+                            class="ml-3"
+                            (click)="deleteRate()" />
+                    </div>
+                    <h2 class="text-center">Autores</h2>
+                    <div class="grid grid-nogutter justify-content-around">
+                        <div *ngFor="let author of book.authornames; let first = first" class="col-12 sm:col-5 shadow-4 border-round my-3 p-3 enlace hover:surface-100 text-center" [routerLink]="['/autor/', author.id]">
+                            {{author.author_name}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p-dialog 
+    [(visible)]="saleDialog" 
+    [style]="{ 'width': '90vw', 'max-width': '600px', 'height': '30dvh', 'min-height': '300px' }"
+    header="Añadir al carrito" 
+    position="top"
+    [modal]="true" 
+    styleClass="p-fluid mt-5">
+        <ng-template pTemplate="content">
+            <img src="assets/favicon.ico" height="33" class="block mx-auto">
+            <div *ngIf="book.stock > 0" class="flex-auto mr-3">
+                <label for="unidades">Unidades <small>(stock: {{book.stock}})</small></label>
+                <p-inputNumber 
+                    inputId="unidades" 
+                    [(ngModel)]="saleItem.units"
+                    value="1"
+                    [min]="1"
+                    [max]="book.stock"
+                    class="mt-3" /> 
+            </div>
+            <div *ngIf="book.stock == 0" class="flex-auto mr-3 text-color font-bold text-center mt-5">
+                Lo sentimos, no queda stock.
+            </div>
+        </ng-template>
+
+        <ng-template pTemplate="footer">
+            <p-button 
+                *ngIf="book.stock > 0"
+                pRipple 
+                label="Cancelar" 
+                icon="pi pi-times" 
+                [text]="true" 
+                (click)="close()" />
+            <p-button 
+                *ngIf="book.stock > 0"
+                pRipple 
+                label="Añadir" 
+                icon="pi pi-check" 
+                [text]="true" 
+                (click)="addItem()" />
+            <p-button 
+                *ngIf="book.stock == 0"
+                pRipple 
+                label="De acuerdo" 
+                icon="pi pi-times" 
+                [text]="true" 
+                (click)="close()" />
+        </ng-template>
+</p-dialog>
+
+<p-dialog 
+    [(visible)]="ratingDialog" 
+    [style]="{ 'width': '90vw', 'max-width': '600px',  'height': '30dvh', 'min-height': '300px' }"
+    header="Valorar" 
+    position="top"
+    [modal]="true" 
+    styleClass="p-fluid">
+        <ng-template pTemplate="content">
+            <img src="assets/favicon.ico" height="33" class="block mx-auto">
+            <div class="flex-auto mr-3">
+                <p-rating
+                    [(ngModel)]="new_rating" />
+            </div>
+        </ng-template>
+
+        <ng-template pTemplate="footer">
+            <p-button 
+                pRipple 
+                label="Cancelar" 
+                icon="pi pi-times" 
+                [text]="true" 
+                (click)="close()" />
+            <p-button 
+                pRipple 
+                label="Añadir" 
+                icon="pi pi-check" 
+                [text]="true" 
+                (click)="rate()" />
+        </ng-template>
+</p-dialog>
+
+<p-confirmDialog [style]="{ width: '450px','max-width':'90vw' }" position="top"/>

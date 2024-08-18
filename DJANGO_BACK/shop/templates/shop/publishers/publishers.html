@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Editoriales
+{% endblock title%}
+
+{% block content %}
+    <h1 class="text-center">Editoriales</h1>
+    <div class="row justify-content-center">
+        <a href="{% url 'createPublisher' %}"><button class="btn btn-primary">Nueva editorial</button></a>
+        <div class="col-12 col-lg-6">
+            <table class="table table-primary table-striped">
+                <thead>
+                    <tr class="table-dark">
+                        <th>Editorial</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for publisher in object_list %}
+                        <tr>
+                            <td>
+                                {{ publisher.publisher_name }}
+                            </td>
+                            <td>
+                                <a href="{% url 'updatePublisher' publisher.pk %}"><button class="btn btn-warning">Editar</button></a>
+                                <a href="{% url 'deletePublisher' publisher.pk %}"><button class="btn btn-danger">Eliminar</button></a>
+                            </td>
+                        </tr>
+                    {% empty %}
+                        <tr>
+                            <td colspan="2" class="text-center">Aún no hay editoriales.</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <a href="{% url 'home' %}"><button class="btn btn-primary">Volver a inicio</button></a>
+    <!-- Paginación -->
+    {% if object_list %}
+        <div class="w-100 text-center text-primary">
+            {% if page_obj.has_previous %}
+                <a href="{% url 'publishers' %}?page=1" class="text-decoration-none">
+                    <i class="bi bi-arrow-left-square-fill me-1" alt="Ir a la primera página"></i>
+                </a>
+                <a href="{% url 'publishers' %}?page={{ page_obj.previous_page_number }}" class="text-decoration-none">
+                    <i class="bi bi-arrow-left-square me-1" alt="Ir a la página anterior"></i>
+                </a>
+            {% endif %}
+                <span class="text-black">Página {{ page_obj.number }} / {{ page_obj.paginator.num_pages }}</span>
+            {% if page_obj.has_next %}
+                <a href="{% url 'publishers' %}?page={{ page_obj.next_page_number }}" class="text-decoration-none">
+                    <i class="bi bi-arrow-right-square ms-1" alt="Ir a la página siguiente"></i>
+                </a>
+                <a href="{% url 'publishers' %}?page={{ page_obj.paginator.num_pages }}" class="text-decoration-none">
+                    <i class="bi bi-arrow-right-square-fill me-1" alt="Ir a la última página"></i>
+                </a>
+            {% endif %}
+        </div>
+    {% endif %}
+{% endblock content %}

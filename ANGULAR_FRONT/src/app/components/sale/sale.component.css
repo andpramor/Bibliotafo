@@ -1,0 +1,12 @@
+.cover-container {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover {
+    aspect-ratio: 0.65;
+    width: 100%;
+    object-fit: cover;
+}

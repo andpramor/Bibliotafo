@@ -1,0 +1,362 @@
+[
+    {
+        "model": "social.friendship",
+        "pk": 1,
+        "fields": {
+            "friend1": 4,
+            "friend2": 7,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 2,
+        "fields": {
+            "friend1": 4,
+            "friend2": 10,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 3,
+        "fields": {
+            "friend1": 4,
+            "friend2": 13,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 4,
+        "fields": {
+            "friend1": 4,
+            "friend2": 21,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 5,
+        "fields": {
+            "friend1": 7,
+            "friend2": 10,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 6,
+        "fields": {
+            "friend1": 7,
+            "friend2": 22,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 7,
+        "fields": {
+            "friend1": 7,
+            "friend2": 23,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 8,
+        "fields": {
+            "friend1": 10,
+            "friend2": 24,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 9,
+        "fields": {
+            "friend1": 10,
+            "friend2": 25,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 10,
+        "fields": {
+            "friend1": 10,
+            "friend2": 26,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 11,
+        "fields": {
+            "friend1": 13,
+            "friend2": 27,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 12,
+        "fields": {
+            "friend1": 13,
+            "friend2": 28,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 13,
+        "fields": {
+            "friend1": 13,
+            "friend2": 29,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 14,
+        "fields": {
+            "friend1": 21,
+            "friend2": 30,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 15,
+        "fields": {
+            "friend1": 21,
+            "friend2": 22,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 16,
+        "fields": {
+            "friend1": 23,
+            "friend2": 24,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 17,
+        "fields": {
+            "friend1": 25,
+            "friend2": 26,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 18,
+        "fields": {
+            "friend1": 27,
+            "friend2": 28,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 19,
+        "fields": {
+            "friend1": 29,
+            "friend2": 30,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 20,
+        "fields": {
+            "friend1": 4,
+            "friend2": 24,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 21,
+        "fields": {
+            "friend1": 7,
+            "friend2": 25,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 22,
+        "fields": {
+            "friend1": 10,
+            "friend2": 27,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 23,
+        "fields": {
+            "friend1": 13,
+            "friend2": 30,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 24,
+        "fields": {
+            "friend1": 21,
+            "friend2": 23,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 25,
+        "fields": {
+            "friend1": 22,
+            "friend2": 24,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 26,
+        "fields": {
+            "friend1": 26,
+            "friend2": 28,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 27,
+        "fields": {
+            "friend1": 25,
+            "friend2": 29,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 28,
+        "fields": {
+            "friend1": 4,
+            "friend2": 26,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 29,
+        "fields": {
+            "friend1": 7,
+            "friend2": 29,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 30,
+        "fields": {
+            "friend1": 10,
+            "friend2": 21,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 31,
+        "fields": {
+            "friend1": 13,
+            "friend2": 22,
+            "state": true
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 32,
+        "fields": {
+            "friend1": 4,
+            "friend2": 22,
+            "state": false
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 33,
+        "fields": {
+            "friend1": 4,
+            "friend2": 23,
+            "state": false
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 34,
+        "fields": {
+            "friend1": 25,
+            "friend2": 4,
+            "state": false
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 35,
+        "fields": {
+            "friend1": 27,
+            "friend2": 4,
+            "state": false
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 36,
+        "fields": {
+            "friend1": 7,
+            "friend2": 24,
+            "state": false
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 37,
+        "fields": {
+            "friend1": 7,
+            "friend2": 26,
+            "state": false
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 38,
+        "fields": {
+            "friend1": 27,
+            "friend2": 7,
+            "state": false
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 39,
+        "fields": {
+            "friend1": 28,
+            "friend2": 7,
+            "state": false
+        }
+    },
+    {
+        "model": "social.friendship",
+        "pk": 40,
+        "fields": {
+            "friend1": 30,
+            "friend2": 7,
+            "state": false
+        }
+    }
+]

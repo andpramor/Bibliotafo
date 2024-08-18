@@ -1,0 +1,422 @@
+[
+    {
+        "model": "accounts.myuser",
+        "pk": 1,
+        "fields": {
+            "username": "admin",
+            "email": "admin@admin.admin",
+            "password": "pbkdf2_sha256$600000$nELDiS8gN8BtL79sE3Y3av$8HrSvo4BAFzj8VGQtv5h6vcJhYePzTUEDz7DqI+0mug=",
+            "is_superuser": true,
+            "is_staff": true,
+            "is_active": true,
+            "rol": "manager",
+            "profile_picture": "testing_data/admin.png"
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 2,
+        "fields": {
+            "username": "maria_m",
+            "password": "pbkdf2_sha256$600000$CSqVNXtZQOQH0zGJV15Dpe$imAhCIR+1yX1SKiz48VYK8SuxSNdWl5WiJkvMFxcIQM=",
+            "email": "maria_m@example.com",
+            "rol": "manager",
+            "profile_picture": "profile_staff.png",
+            "dni": "11111111A",
+            "address": "Vía Flaminia, s/n",
+            "phone": 954121212
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 3,
+        "fields": {
+            "username": "maria_s",
+            "password": "pbkdf2_sha256$600000$CSqVNXtZQOQH0zGJV15Dpe$imAhCIR+1yX1SKiz48VYK8SuxSNdWl5WiJkvMFxcIQM=",
+            "email": "maria_s@example.com",
+            "rol": "staff",
+            "profile_picture": "profile_staff.png",
+            "dni": "11111111B",
+            "address": "Vía Flaminia, s/n",
+            "phone": 954121212
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 4,
+        "fields": {
+            "username": "maria_c",
+            "password": "pbkdf2_sha256$600000$CSqVNXtZQOQH0zGJV15Dpe$imAhCIR+1yX1SKiz48VYK8SuxSNdWl5WiJkvMFxcIQM=",
+            "email": "maria_c@example.com",
+            "rol": "client",
+            "profile_picture": "testing_data/user_maria.jpg",
+            "dni": "11111111C",
+            "address": "Vía Flaminia, s/n",
+            "phone": 954121212
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 5,
+        "fields": {
+            "username": "david_m",
+            "password": "pbkdf2_sha256$600000$nub7bJOxrQzSVr5uxtDe5w$V7h72XSIfVRsvK9gHr8tDN69T91fNegS1X1W3YC/eu4=",
+            "email": "david_m@example.com",
+            "rol": "manager",
+            "profile_picture": "profile_staff.png",
+            "dni": "22222222A",
+            "address": "Vía Flaminia, s/n",
+            "phone": 954121212
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 6,
+        "fields": {
+            "username": "david_s",
+            "password": "pbkdf2_sha256$600000$nub7bJOxrQzSVr5uxtDe5w$V7h72XSIfVRsvK9gHr8tDN69T91fNegS1X1W3YC/eu4=",
+            "email": "david_s@example.com",
+            "rol": "staff",
+            "profile_picture": "profile_staff.png",
+            "dni": "22222222B",
+            "address": "Vía Flaminia, s/n",
+            "phone": 954121212
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 7,
+        "fields": {
+            "username": "david_c",
+            "password": "pbkdf2_sha256$600000$nub7bJOxrQzSVr5uxtDe5w$V7h72XSIfVRsvK9gHr8tDN69T91fNegS1X1W3YC/eu4=",
+            "email": "david_c@example.com",
+            "rol": "client",
+            "profile_picture": "testing_data/user_david.jpg",
+            "dni": "22222222C",
+            "address": "Vía Flaminia, s/n",
+            "phone": 954121212
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 8,
+        "fields": {
+            "username": "jignacio_m",
+            "password": "pbkdf2_sha256$600000$9KJHXlSWLznDse32YlquTK$fXW+RvUqn6x2rQvmIb91e0v2Ywt/jaOeCYgMTFoBQXk=",
+            "email": "jignacio_m@example.com",
+            "rol": "manager",
+            "profile_picture": "profile_staff.png",
+            "dni": "33333333A",
+            "address": "Vía Flaminia, s/n",
+            "phone": 954121212
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 9,
+        "fields": {
+            "username": "jignacio_s",
+            "password": "pbkdf2_sha256$600000$9KJHXlSWLznDse32YlquTK$fXW+RvUqn6x2rQvmIb91e0v2Ywt/jaOeCYgMTFoBQXk=",
+            "email": "jignacio_s@example.com",
+            "rol": "staff",
+            "profile_picture": "profile_staff.png",
+            "dni": "33333333B",
+            "address": "Vía Flaminia, s/n",
+            "phone": 954121212
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 10,
+        "fields": {
+            "username": "jignacio_c",
+            "password": "pbkdf2_sha256$600000$9KJHXlSWLznDse32YlquTK$fXW+RvUqn6x2rQvmIb91e0v2Ywt/jaOeCYgMTFoBQXk=",
+            "email": "jignacio_c@example.com",
+            "rol": "client",
+            "profile_picture": "testing_data/user_jignacio.jpg",
+            "dni": "33333333C",
+            "address": "Vía Flaminia, s/n",
+            "phone": 954121212
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 11,
+        "fields": {
+            "username": "jantonio_m",
+            "password": "pbkdf2_sha256$600000$lMppppBTWYrE1J7RCs9Ux6$45xJ0pR2y+sGcQCc2DHaihDHhdvTUEVpJ19q/s5WMtc=",
+            "email": "jantonio_m@example.com",
+            "rol": "manager",
+            "profile_picture": "profile_staff.png",
+            "dni": "44444444A",
+            "address": "Vía Flaminia, s/n",
+            "phone": 954121212
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 12,
+        "fields": {
+            "username": "jantonio_s",
+            "password": "pbkdf2_sha256$600000$lMppppBTWYrE1J7RCs9Ux6$45xJ0pR2y+sGcQCc2DHaihDHhdvTUEVpJ19q/s5WMtc=",
+            "email": "jantonio_s@example.com",
+            "rol": "staff",
+            "profile_picture": "profile_staff.png",
+            "dni": "44444444B",
+            "address": "Vía Flaminia, s/n",
+            "phone": 954121212
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 13,
+        "fields": {
+            "username": "jantonio_c",
+            "password": "pbkdf2_sha256$600000$lMppppBTWYrE1J7RCs9Ux6$45xJ0pR2y+sGcQCc2DHaihDHhdvTUEVpJ19q/s5WMtc=",
+            "email": "jantonio_c@example.com",
+            "rol": "client",
+            "profile_picture": "testing_data/user_jantonio.jpg",
+            "dni": "44444444C",
+            "address": "Vía Flaminia, s/n",
+            "phone": 954121212
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 14,
+        "fields": {
+            "username": "ventaonline",
+            "password": "pbkdf2_sha256$600000$UnsuNDPSAL244MCIHdbVMQ$AW4xvJ2Y9QOr5FA19MDNUqiUmBWnkjmPnwcBHo75hwA=",
+            "email": "venta_online@example.com",
+            "rol": "staff",
+            "profile_picture": "profile_staff.png",
+            "dni": "55555555A",
+            "address": "None",
+            "phone": 100000000
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 15,
+        "fields": {
+            "username": "clientedepaso",
+            "password": "pbkdf2_sha256$600000$bqkGEH4ZAJHxT06EakqmO0$YKvKivzfsubqjWUsbMypPOKMZm3vC5ioMp3Q4xVWJm0=",
+            "email": "cliente_de_paso@example.com",
+            "rol": "client",
+            "profile_picture": "profile_staff.png",
+            "dni": "66666666A",
+            "address": "None",
+            "phone": 100000000
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 16,
+        "fields": {
+            "username": "trabajadorcarlosmartinez",
+            "password": "pbkdf2_sha256$600000$l6UkMLS7ZpT6QQShtheExr$9FnTWHFBVXbPz5wcbqnC1WcACGwhPwyQjN6Pqtyhfks=",
+            "email": "carlos_martinez@example.com",
+            "rol": "staff",
+            "profile_picture": "profile_staff.png",
+            "dni": "77777777C",
+            "address": "Avenida Real 45, Barcelona",
+            "phone": 600000002
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 17,
+        "fields": {
+            "username": "trabajadorlaurafernandez",
+            "password": "pbkdf2_sha256$600000$l6UkMLS7ZpT6QQShtheExr$9FnTWHFBVXbPz5wcbqnC1WcACGwhPwyQjN6Pqtyhfks=",
+            "email": "laura_fernandez@example.com",
+            "rol": "staff",
+            "profile_picture": "profile_staff.png",
+            "dni": "88888888D",
+            "address": "Plaza Mayor 9, Sevilla",
+            "phone": 600000003
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 18,
+        "fields": {
+            "username": "trabajadorjuangarcia",
+            "password": "pbkdf2_sha256$600000$l6UkMLS7ZpT6QQShtheExr$9FnTWHFBVXbPz5wcbqnC1WcACGwhPwyQjN6Pqtyhfks=",
+            "email": "juan_garcia@example.com",
+            "rol": "staff",
+            "profile_picture": "profile_staff.png",
+            "dni": "99999999E",
+            "address": "Calle de la Luna 10, Valencia",
+            "phone": 600000004
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 19,
+        "fields": {
+            "username": "trabajadormartagomez",
+            "password": "pbkdf2_sha256$600000$l6UkMLS7ZpT6QQShtheExr$9FnTWHFBVXbPz5wcbqnC1WcACGwhPwyQjN6Pqtyhfks=",
+            "email": "marta_gomez@example.com",
+            "rol": "staff",
+            "profile_picture": "profile_staff.png",
+            "dni": "11111111F",
+            "address": "Calle del Sol 20, Bilbao",
+            "phone": 600000005
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 20,
+        "fields": {
+            "username": "trabajadoranalopez",
+            "password": "pbkdf2_sha256$600000$l6UkMLS7ZpT6QQShtheExr$9FnTWHFBVXbPz5wcbqnC1WcACGwhPwyQjN6Pqtyhfks=",
+            "email": "ana_lopez@example.com",
+            "rol": "staff",
+            "profile_picture": "profile_staff.png",
+            "dni": "66666666B",
+            "address": "Calle Falsa 123, Madrid",
+            "phone": 600000001
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 21,
+        "fields": {
+            "username": "clientejosegarcia",
+            "password": "pbkdf2_sha256$600000$cQFZLic9D6QToeAEipxyMg$nGDQzqmlvtzax1kRten70K2z2b9z1rMO15PsOuydj+M=",
+            "email": "clientejosegarcia@example.com",
+            "rol": "client",
+            "profile_picture": "testing_data/user_clientejosegarcia.jpg",
+            "dni": "77777777B",
+            "address": "Avenida Siempre Viva 123, Madrid",
+            "phone": 600000001
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 22,
+        "fields": {
+            "username": "clientemariafernandez",
+            "password": "pbkdf2_sha256$600000$cQFZLic9D6QToeAEipxyMg$nGDQzqmlvtzax1kRten70K2z2b9z1rMO15PsOuydj+M=",
+            "email": "clientemariafernandez@example.com",
+            "rol": "client",
+            "profile_picture": "testing_data/user_clientemariafernandez.jpg",
+            "dni": "88888888C",
+            "address": "Calle Mayor 45, Barcelona",
+            "phone": 600000002
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 23,
+        "fields": {
+            "username": "clientepedrogonzalez",
+            "password": "pbkdf2_sha256$600000$cQFZLic9D6QToeAEipxyMg$nGDQzqmlvtzax1kRten70K2z2b9z1rMO15PsOuydj+M=",
+            "email": "clientepedrogonzalez@example.com",
+            "rol": "client",
+            "profile_picture": "testing_data/user_clientepedrogonzalez.jpg",
+            "dni": "99999999D",
+            "address": "Plaza Nueva 9, Valencia",
+            "phone": 600000003
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 24,
+        "fields": {
+            "username": "clientejuancarlos",
+            "password": "pbkdf2_sha256$600000$cQFZLic9D6QToeAEipxyMg$nGDQzqmlvtzax1kRten70K2z2b9z1rMO15PsOuydj+M=",
+            "email": "clientejuancarlos@example.com",
+            "rol": "client",
+            "profile_picture": "testing_data/user_clientejuancarlos.jpg",
+            "dni": "11111111E",
+            "address": "Calle de la Paz 10, Sevilla",
+            "phone": 600000004
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 25,
+        "fields": {
+            "username": "clienteangelalopez",
+            "password": "pbkdf2_sha256$600000$cQFZLic9D6QToeAEipxyMg$nGDQzqmlvtzax1kRten70K2z2b9z1rMO15PsOuydj+M=",
+            "email": "clienteangelalopez@example.com",
+            "rol": "client",
+            "profile_picture": "testing_data/user_clienteangelalopez.jpg",
+            "dni": "22222222F",
+            "address": "Avenida del Mar 20, Bilbao",
+            "phone": 600000005
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 26,
+        "fields": {
+            "username": "clientejaviermartin",
+            "password": "pbkdf2_sha256$600000$cQFZLic9D6QToeAEipxyMg$nGDQzqmlvtzax1kRten70K2z2b9z1rMO15PsOuydj+M=",
+            "email": "clientejaviermartin@example.com",
+            "rol": "client",
+            "profile_picture": "testing_data/user_clientejaviermartin.jpg",
+            "dni": "33333333G",
+            "address": "Calle de la Estrella 30, Granada",
+            "phone": 600000006
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 27,
+        "fields": {
+            "username": "clienteluisramirez",
+            "password": "pbkdf2_sha256$600000$cQFZLic9D6QToeAEipxyMg$nGDQzqmlvtzax1kRten70K2z2b9z1rMO15PsOuydj+M=",
+            "email": "clienteluisramirez@example.com",
+            "rol": "client",
+            "profile_picture": "testing_data/user_clienteluisramirez.jpg",
+            "dni": "44444444H",
+            "address": "Plaza del Sol 40, Zaragoza",
+            "phone": 600000007
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 28,
+        "fields": {
+            "username": "clientemonicadiaz",
+            "password": "pbkdf2_sha256$600000$cQFZLic9D6QToeAEipxyMg$nGDQzqmlvtzax1kRten70K2z2b9z1rMO15PsOuydj+M=",
+            "email": "clientemonicadiaz@example.com",
+            "rol": "client",
+            "profile_picture": "testing_data/user_clientemonicadiaz.jpg",
+            "dni": "55555555I",
+            "address": "Avenida de la Luna 50, Murcia",
+            "phone": 600000008
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 29,
+        "fields": {
+            "username": "clienteemiliarodriguez",
+            "password": "pbkdf2_sha256$600000$cQFZLic9D6QToeAEipxyMg$nGDQzqmlvtzax1kRten70K2z2b9z1rMO15PsOuydj+M=",
+            "email": "clienteemiliarodriguez@example.com",
+            "rol": "client",
+            "profile_picture": "testing_data/user_clienteemiliarodriguez.jpg",
+            "dni": "66666666J",
+            "address": "Calle del Río 60, Alicante",
+            "phone": 600000009
+        }
+    },
+    {
+        "model": "accounts.myuser",
+        "pk": 30,
+        "fields": {
+            "username": "clientemariotorres",
+            "password": "pbkdf2_sha256$600000$cQFZLic9D6QToeAEipxyMg$nGDQzqmlvtzax1kRten70K2z2b9z1rMO15PsOuydj+M=",
+            "email": "clientemariotorres@example.com",
+            "rol": "client",
+            "profile_picture": "testing_data/user_clientemariotorres.jpg",
+            "dni": "77777777K",
+            "address": "Avenida del Parque 70, Málaga",
+            "phone": 600000010
+        }
+    }
+]

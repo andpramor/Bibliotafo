@@ -1,0 +1,212 @@
+[
+    {
+        "model": "shop.genre",
+        "pk": 1,
+        "fields": {
+          "genre_name": "Infantil"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 2,
+        "fields": {
+          "genre_name": "Juvenil"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 3,
+        "fields": {
+          "genre_name": "Historieta"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 4,
+        "fields": {
+          "genre_name": "Ciencia ficción"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 5,
+        "fields": {
+          "genre_name": "Romance"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 6,
+        "fields": {
+          "genre_name": "Misterio"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 7,
+        "fields": {
+          "genre_name": "Fantasía"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 8,
+        "fields": {
+          "genre_name": "Thriller"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 9,
+        "fields": {
+          "genre_name": "Terror"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 10,
+        "fields": {
+          "genre_name": "Comedia"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 11,
+        "fields": {
+          "genre_name": "Drama"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 12,
+        "fields": {
+          "genre_name": "Histórico"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 13,
+        "fields": {
+          "genre_name": "Western"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 14,
+        "fields": {
+          "genre_name": "Suspense"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 15,
+        "fields": {
+          "genre_name": "Policial"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 16,
+        "fields": {
+          "genre_name": "Biografía"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 17,
+        "fields": {
+          "genre_name": "Autobiografía"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 18,
+        "fields": {
+          "genre_name": "Ciencia"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 19,
+        "fields": {
+          "genre_name": "Filosofía"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 20,
+        "fields": {
+          "genre_name": "Erótica"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 21,
+        "fields": {
+          "genre_name": "Negocios"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 22,
+        "fields": {
+          "genre_name": "Economía"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 23,
+        "fields": {
+          "genre_name": "Política"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 24,
+        "fields": {
+          "genre_name": "Historia"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 25,
+        "fields": {
+          "genre_name": "Arte"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 26,
+        "fields": {
+          "genre_name": "Música"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 27,
+        "fields": {
+          "genre_name": "Deporte"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 28,
+        "fields": {
+          "genre_name": "Cocina"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 29,
+        "fields": {
+          "genre_name": "Viajes"
+        }
+      },
+      {
+        "model": "shop.genre",
+        "pk": 30,
+        "fields": {
+          "genre_name": "Novela negra"
+        }
+      }
+]

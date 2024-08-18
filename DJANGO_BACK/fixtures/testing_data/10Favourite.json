@@ -1,0 +1,354 @@
+[
+    {
+        "model": "shop.favourite",
+        "pk": 1,
+        "fields": {
+            "user": 4,
+            "book": 57
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 2,
+        "fields": {
+            "user": 7,
+            "book": 18
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 3,
+        "fields": {
+            "user": 10,
+            "book": 39
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 4,
+        "fields": {
+            "user": 13,
+            "book": 52
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 5,
+        "fields": {
+            "user": 21,
+            "book": 87
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 6,
+        "fields": {
+            "user": 22,
+            "book": 48
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 7,
+        "fields": {
+            "user": 23,
+            "book": 63
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 8,
+        "fields": {
+            "user": 24,
+            "book": 6
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 9,
+        "fields": {
+            "user": 25,
+            "book": 79
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 10,
+        "fields": {
+            "user": 26,
+            "book": 47
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 11,
+        "fields": {
+            "user": 27,
+            "book": 7
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 12,
+        "fields": {
+            "user": 28,
+            "book": 83
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 13,
+        "fields": {
+            "user": 29,
+            "book": 96
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 14,
+        "fields": {
+            "user": 30,
+            "book": 37
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 15,
+        "fields": {
+            "user": 25,
+            "book": 54
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 16,
+        "fields": {
+            "user": 27,
+            "book": 97
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 17,
+        "fields": {
+            "user": 28,
+            "book": 99
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 18,
+        "fields": {
+            "user": 27,
+            "book": 87
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 19,
+        "fields": {
+            "user": 7,
+            "book": 85
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 20,
+        "fields": {
+            "user": 10,
+            "book": 83
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 21,
+        "fields": {
+            "user": 24,
+            "book": 10
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 22,
+        "fields": {
+            "user": 23,
+            "book": 42
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 23,
+        "fields": {
+            "user": 7,
+            "book": 65
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 24,
+        "fields": {
+            "user": 26,
+            "book": 33
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 25,
+        "fields": {
+            "user": 23,
+            "book": 28
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 26,
+        "fields": {
+            "user": 27,
+            "book": 19
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 27,
+        "fields": {
+            "user": 13,
+            "book": 46
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 28,
+        "fields": {
+            "user": 21,
+            "book": 22
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 29,
+        "fields": {
+            "user": 22,
+            "book": 74
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 30,
+        "fields": {
+            "user": 24,
+            "book": 59
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 31,
+        "fields": {
+            "user": 4,
+            "book": 12
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 32,
+        "fields": {
+            "user": 7,
+            "book": 1
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 33,
+        "fields": {
+            "user": 10,
+            "book": 5
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 34,
+        "fields": {
+            "user": 13,
+            "book": 9
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 35,
+        "fields": {
+            "user": 21,
+            "book": 14
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 36,
+        "fields": {
+            "user": 22,
+            "book": 8
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 37,
+        "fields": {
+            "user": 23,
+            "book": 11
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 38,
+        "fields": {
+            "user": 24,
+            "book": 2
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 39,
+        "fields": {
+            "user": 25,
+            "book": 3
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 40,
+        "fields": {
+            "user": 26,
+            "book": 4
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 41,
+        "fields": {
+            "user": 27,
+            "book": 15
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 42,
+        "fields": {
+            "user": 28,
+            "book": 16
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 43,
+        "fields": {
+            "user": 29,
+            "book": 17
+        }
+    },
+    {
+        "model": "shop.favourite",
+        "pk": 44,
+        "fields": {
+            "user": 30,
+            "book": 20
+        }
+    }
+]

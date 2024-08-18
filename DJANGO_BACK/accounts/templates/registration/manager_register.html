@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Nuevo encargado
+{% endblock %}
+
+{% block content %}
+    <h1>Vas a dar de alta a un nuevo encargado</h1>
+    <form action="" enctype="multipart/form-data" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-secondary w-100 mt-3">Registrar encargado</button>
+    </form>
+{% endblock content %}

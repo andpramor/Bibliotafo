@@ -1,0 +1,53 @@
+.photo-container {
+    width: 20vw;
+    height: 20vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+.photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.book-info-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.book-info {
+    flex: 1;
+    padding: 8px;
+    margin: 0;
+}
+
+.book-tools {
+    padding: 8px;
+    margin-top: auto;
+}
+
+.cover-container {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover {
+    aspect-ratio: 0.65;
+    width: 100%;
+    object-fit: cover;
+}
+
+.synopsis {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* Número de líneas a mostrar */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
