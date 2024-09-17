@@ -4,7 +4,7 @@
 
 Bibliótafo is a mockup e-commerce site for a library, serving both as an online shop, and as a webapp for the employers of the library to keep track of sales and validate them. 
 
-I used Angular for the front end and Django with Django Rest Framework to develop the backend's API. MySQL takes care of the database.
+I used Angular for the front and Django with Django Rest Framework to develop the backend's API. MySQL takes care of the database.
 
 ## Features
 <b>Anon users</b>
