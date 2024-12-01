@@ -2,20 +2,22 @@
 
 <h1>Bibliótafo</h1>
 
-Bibliótafo is a mockup e-commerce site for a library, serving both as an online shop, and as a webapp for the employers of the library to keep track of sales and validate them. 
+Bibliótafo is a mockup e-commerce site for a library, serving both as an online shop, and as a webapp for the employers of the library to keep track of sales and validate them.
 
-I used Angular for the front and Django with Django Rest Framework to develop the backend's API. MySQL takes care of the database.
+I used Angular for the front end and Django with Django Rest Framework to develop the backend's REST API.
 
 ## Features
+
 <b>Anon users</b>
 
 - [x] Access to Home / Welcome page.
-- [x] Access to books and authors pages.
+- [x] Access to books and authors lists and detail pages.
+- [x] Ability to register as a client.
 
 <b>Clients</b>
 
 - [x] User profile.
-- [x] Make purchases.
+- [x] Make purchases (I didn't mockup a payment gateway, purchases get auto validated if there's enough stock for them to go through).
 - [x] Mark books as favourites.
 - [x] Rate books 1-5 stars.
 - [x] Review books.
@@ -24,11 +26,11 @@ I used Angular for the front and Django with Django Rest Framework to develop th
 
 <b>Staff members</b>
 
-- [x] Sell books.
+- [x] Make sales (intended for a physical store).
 - [x] Add the client's mail to a sale so it appears in the client's purchases list.
 
 <b>Managers</b>
 
-- [x] Everything a staff can do.
+- [x] Everything a staff user can do.
 - [x] CRUD operations: books, authors, genres, themes.
 - [x] Ability to create new manager / staff accounts.
